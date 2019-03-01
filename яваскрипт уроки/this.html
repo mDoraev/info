@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+	var objj = {
+		yser: 'hhhhhhhhhh',
+
+		func1: function(){
+			alert(this.yser);
+		},
+		func2: function(){
+			alert('func2');
+		}
+	};
+
+	// objj.func1();
+	function aaa(){
+		console.log(this.yser);
+	}
+	aaa.call(objj);
+
+
+
+
+// OOP OOP OOP OOP
+function big(e){
+this.param = 0;
+function act(){
+	console.log('просто функция, хранится, вызывается');
+}
+function showparam(){
+	console.log(e+' parameter');
+}
+this.spec = function (a){
+	console.log('spec!!!'+a);
+	act();
+	showparam();
+}
+
+
+
+}
+
+var big = new big('big func');
+big.spec('hahaha');
+</script>
+</html>

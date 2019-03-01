@@ -1,0 +1,19 @@
+
+
+var user = {
+  name: "Вася",
+  age: 25,
+  window: window
+};
+
+
+alert( JSON.stringify(user, ["name", "age"]) );
+// {"name":"Вася","age":25}
+
+//ИЛИ ТАК
+var str = JSON.stringify(user, function(key, value) {
+  if (key == 'window') return undefined;
+  return value;
+});
+
+alert( str ); // {"name":"Вася","age":25}
