@@ -1,0 +1,32 @@
+
+.documents_frame-wrap{
+    position: relative;
+    width: 290px;
+    height: 415px;
+    padding: 0;
+    overflow: hidden;
+    border: #2699a5 solid 1px;
+}
+
+
+.documents_frame{
+width: 880px;
+height: 2000px;
+border: 0;
+-ms-transform: scale(0.35);
+-moz-transform: scale(0.35);
+-o-transform: scale(0.35);
+-webkit-transform: scale(0.35);
+transform: scale(0.35);
+-ms-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+-webkit-transform-origin: 0 0;
+transform-origin: 0 0;
+
+box-sizing: content-box;
+display: inline;
+line-height: 19px;
+position: static;
+
+}

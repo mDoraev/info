@@ -1,0 +1,55 @@
+
+
+function loadCelebrate(){
+
+var inpCel = jQuery('#input-celebrate');
+
+var inpCelVal = inpCel.val();
+inpCelVal = JSON.parse(inpCelVal);
+console.log(inpCelVal);
+var table = jQuery('.celebrate-table');
+    var i = 1;
+//ПРОЧИТАТЬ
+for (var key in inpCelVal) {
+  // этот код будет вызван для каждого свойства объекта
+  // ..и выведет имя свойства и его значение
+     var data = key;
+    var name = inpCelVal[key]; 
+// table.find('tr').each(function(){
+table.find('tr:nth-child('+i+')').each(function(){
+
+    var that = jQuery(this);
+
+
+    that.find('td:first-child').find('input').val(data);
+    that.find('td:nth-child(2)').find('input').val(name);
+
+});
+  // console.log( "Ключ: " + key + " значение: " + inpCelVal[key] );
+  i++;
+}
+}
+function loadNewCelebrate(){
+//СОЗДАТЬ
+var newinpCelVal = {};
+
+var inpCel = jQuery('#input-celebrate');
+
+var table = jQuery('.celebrate-table');
+
+table.find('tr').each(function(){
+
+    var that = jQuery(this);
+    var data = that.find('td:first-child').find('input').val();
+    var name = that.find('td:nth-child(2)').find('input').val();
+    data = jQuery.trim(data);
+    name = jQuery.trim(name);
+if(data !== '' && name !== ''){
+//ДОБАВИТЬ ПАРУ КЛЮЧ-ЗНАЧЕНИЕ
+newinpCelVal[data] = name;
+}
+});
+newinpCelVal = JSON.stringify(newinpCelVal);
+// console.log(newinpCelVal);
+inpCel.val(newinpCelVal);
+}

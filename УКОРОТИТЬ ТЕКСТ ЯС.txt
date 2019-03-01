@@ -1,0 +1,52 @@
+//яйпхор дкъ напегюмхъ дкхммнцн рейярю,
+//ме напшбюер якнбю  
+
+//тсмйжхъ
+
+ function textLimit(elem, limit){
+    		// SCRIPT FOR MAX-LENGTH TEXT IN RIGHT BANNER
+    		var flag = false;
+        var el = jQuery(elem);
+var text = el.text();
+text = jQuery.trim(text);
+var textLength = text.length;
+// var limit = 100;
+var symbol;
+var newLimit = limit;
+for(var i=0; i<textLength; i++){
+symbol = text.charAt(i);
+if(i>limit){ 
+flag = true; 
+if(symbol!==' '){
+    newLimit++;
+}
+else{
+    newLimit++;
+    break;
+}
+
+}
+
+}
+
+var newText = text.substring(0, newLimit);
+console.log(newText);
+if(flag){
+el.html(newText+'<span>)))))</span>');
+
+}
+    		// END SCRIPT FOR MAX-LENGTH TEXT IN RIGHT BANNER
+
+   }
+
+    jQuery(document).ready(function(){
+//бшгнб тсмйжхх
+//сйюгшбюеряъ щкелемр х люйя.дкхмю
+
+    	textLimit('.sliderbutton--js-max-length p', 110);
+
+
+
+
+
+});

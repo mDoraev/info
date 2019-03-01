@@ -1,0 +1,14 @@
+// КЛИК НЕ ПО ЭЛЕМЕНТУ
+
+
+
+// вызываем событие
+jQuery(document).mouseup(function (e) {
+	// элемент
+    var container = jQuery(".header-minicart");
+    // если не элемент и не его дочери
+    if (container.has(e.target).length === 0){
+    	// выполняем действие
+        jQuery('#header-cart').removeClass('skip-active');
+    }
+});

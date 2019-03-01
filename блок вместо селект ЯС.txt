@@ -1,0 +1,171 @@
+<style>
+/*copy here*/
+	.js-select{
+		width: 95%;
+		height: 40px;
+    border: #dfd8d1 solid 1px;
+    cursor: pointer;
+    line-height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+        color: #a5630c;
+        position: relative;
+	}
+
+	.js-select:after{
+content: '';
+display: block;
+width: 28px;
+height: 40px;
+background-color: #a19489;
+position: absolute;
+right: -1px;
+bottom: -1px;
+background-image: url('../images/bot.png');
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: 14px;
+background-size: 14px;
+
+	}
+	.js-options{
+		display: none;
+		width: 95%;
+		height: auto;
+		max-height: 300px;
+		overflow-y: scroll;
+    border: #dfd8d1 solid 1px;
+		
+		padding: 10px;
+		position: absolute;
+		background-color: #fff;
+		z-index: 100;
+    font-size: 15px;
+
+	}
+	.js-options span{
+		display: block;
+		margin-bottom: 5px;
+		cursor: pointer;
+	}
+.js-open-opt .js-options{
+	display: block;
+}
+</style>
+
+
+<script>
+//вызываем функцию replaceSelect(сюда пишем родителя) и радуемся!
+//оформлено через css, after
+
+
+
+// SELECT
+
+function replaceSelect(parent){
+// for payment
+parent = jQuery(parent);
+parent.find('select').addClass('dn');
+parent.find('select').each(function(){
+  var that = jQuery(this);
+  that.wrap('<div class="data_area"></div>');  
+  that.after('<div class="js-select"></div>');
+var blok = that.siblings('.js-select');
+blok.after('<div class="js-options"></div>');
+var opt = that.siblings('.js-options');
+
+
+
+// load
+that.find('option').each(function(){
+
+    var thatOpt = jQuery(this);
+    var sel = thatOpt.parent('select');
+    var blokSel = sel.siblings('.js-select');
+    var selVal = sel.find('option:selected').text();
+    blokSel.html('<span>'+selVal+'</span>');
+    var blokOptWrap = sel.siblings('.js-options');
+    var blokOpt = thatOpt.text();
+    var val = thatOpt.val();
+    blokOptWrap.append('<span class="val'+val+'">'+blokOpt+'</span>');
+});
+
+// open options
+var flag = true;
+blok.on('click', function(){
+    if(flag){
+    jQuery(this).parent('.data_area').addClass('js-open-opt');
+    flag = false;
+    }
+    else{
+    jQuery(this).parent('.data_area').removeClass('js-open-opt');
+flag = true;
+    }
+    console.log(flag);
+});
+
+// hidden
+jQuery(document).mouseup(function (e) {
+
+
+    if (blok.has(e.target).length === 0){
+
+
+        // auiieiyai aaenoaea
+ 
+    blok.parent('.data_area').removeClass('js-open-opt');
+flag = true;
+       
+    }
+    console.log(flag);
+
+});
+
+
+
+// click
+
+opt.on('click', 'span', function(){
+var that = jQuery(this);
+var val = that.attr('class');
+val = val.trim();
+val = val.substring(3);
+// console.log(val);
+var thisOpt = that.parent('.js-options');
+var thisSel = thisOpt.siblings('select');
+var thisSelBlock = thisOpt.siblings('.js-select');
+thisSelBlock.html(that.html());
+
+thisSel.find('option').each(function(){
+    var that2 = jQuery(this);
+    var val2 = that2.val();
+    console.log(val2);
+    val2 = val2.trim();
+if(val2 == val){
+    thisSel.find('option').prop('selected', false);
+    that2.prop('selected', true);
+// thisSel.html('<span>'+that2.text()+'</span>');
+return false;
+}
+
+});
+
+    thisOpt.parent('.data_area').removeClass('js-open-opt');
+flag = true;
+});
+
+});
+}
+
+// setTimeout(function(){
+// }, 4000)
+replaceSelect('.customer-account');
+
+
+// var sss = setTimeout(aaa, 4000);
+
+</script>
+
+
+
+

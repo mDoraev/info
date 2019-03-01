@@ -1,0 +1,57 @@
+
+	/* one item */
+td:nth-last-child(1) {
+/* -or- li:only-child { */
+    width: 100% !important;
+}
+
+/* two items */
+td:nth-last-child(2),
+td:nth-last-child(2) ~ td {
+    width: 50% !important;
+}
+
+/* three items */
+td:nth-last-child(3),
+td:nth-last-child(3) ~ td {
+    width: 33% !important;
+}
+td p{
+	width: 100% !important;
+}
+
+table td{
+padding: 1%;
+
+}
+table td img{
+max-width: 98%;
+}
+
+
+
+}
+
+
+
+
+@media(max-width: 770px){
+
+table tr td{
+	display: block;
+}
+td:nth-last-child(1),
+td:nth-last-child(2),
+td:nth-last-child(2) ~ td,
+td:nth-last-child(3),
+td:nth-last-child(3) ~ td{
+    width: 100% !important;
+}
+
+td p{
+	width: 100% !important;
+}
+td p{
+	text-align: center;
+}
+}

@@ -1,0 +1,3 @@
+jQuery('body').on('click', '.js-new-opt__but', function(){
+alert('$newOptInput.val()');
+});

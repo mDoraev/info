@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){SnsExtend.init();$(window).load(function(){$('.banner-slider').owlCarousel({pagination:true,itemsScaleUp:true,slideSpeed:800,autoPlay:true,addClassActive:true,singleItem:true,transitionStyle:'fadeUp',});});});

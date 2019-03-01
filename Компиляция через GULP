@@ -1,0 +1,137 @@
+Компиляция через GULP
+
+Создаём файл зависимостей packege.json
+
+1
+
+	
+
+npm init
+
+Установка пакетов less gulp без сохранения на продакшене
+
+1
+
+	
+
+npm i --save-dev less gulp
+
+Установка дополнительный пакетов
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+	
+
+/*
+gulp-less - преобразует less в css,
+gulp-concat - сборка одного css из файлов less,
+gulp-autoprefixer - добавление автопрефиксов,
+gilp-sourcemaps - отслеживание позиции изменений less файла
+gulp-clean-css - минификация css
+browser-sync - синхронизация 
+*/
+ 
+npm i --save-dev gulp-less gulp-concat gulp-autoprefixer gilp-sourcemaps gulp-clean-css browser-sync
+
+Создаём файл gulp.js с кодом:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+
+	
+
+var gulp = require('gulp');
+var less = require('gulp-less'); (преобразуем все файлы less в css)
+var autoprefixer = require('gulp-autoprefixer'); (автоматическое добавление префиксов для разных браузеров)
+var concat = require('gulp-concat'); (все файлы less, данного проекта, сохраняем в один файл rezstyle.css)
+var sourcemaps = require('gulp-sourcemaps'); (отслеживание позиции изменения less файла)
+var cleancss = require('gulp-clean-css'); (сжатие css файла)
+var browsersync = require('browser-sync').create(); (автоматическое обновление)
+ 
+var config = {
+	paths:{
+		less: './lessfiles/**/*.less', // путь к файлам less
+		html: './index.html' // путь к index.html
+	}
+	output:{
+		cssname: 'rezstyle.css', // все файлы less, данного проекта, сохраняем в один файл rezstyle.css
+		path: 'css' // путь к файлу css
+	}
+};
+ 
+gulp.task('less', function(){
+	// получаем все файлы less, инициализируем sourcemaps, компилируем less в css, объединение всех less в rezstyle.css, добавление автопрефиксов, минификация css, куда сохранять результат, синхронизация
+ 
+	return gulp.src(config.paths.less).pipe(sourcemaps.init()).pipe(less()).pipe(concat(config.output.cssname)).pipe(autoprefixer()).pipe(cleancss()).pipe(sourcemaps.write()).pipe(gulp.dest(config.output.path)).pipe(browsersync.stream());
+});
+ 
+gulp.task('serve', function(){
+	browsersync.init({
+		server: {
+			basedir: config.output.path
+		}
+	});
+ 
+	// смотреть за файлами всеми less
+	gulp.watch(config.paths.less, ['less']);
+ 
+	gulp.watch(config.paths.html).on('change', browsersync.reload);
+});
+ 
+// запуск функций less и serve
+gulp.task('default', ['less', 'serve']);
+
+Подаём команду в терминале
+
+1
+
+	
+
+gulp

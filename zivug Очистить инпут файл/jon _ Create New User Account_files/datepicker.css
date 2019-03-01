@@ -1,0 +1,2964 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+<!-- DEV1 code start -->
+<!-- DEV1 code finish -->
+<!-- Sns Luxury v1.0.0 -->
+<title>jon / Create New User Account</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-touch-fullscreen" content="yes"/>
+
+<meta name="description" content="Top Quality Matchmaking site" />
+<meta name="keywords" content="Zivug Zone Match Making site" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<!--<link rel="icon" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />-->
+<link rel="icon" href="http://dev3.developer.chatanvekala.com/media/favicon/default/zivug-zone-logo.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://dev3.developer.chatanvekala.com/media/favicon/default/zivug-zone-logo.png" type="image/x-icon" />
+
+
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/fancybox2/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/jssor/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/fancybox2/helpers/jquery.fancybox-buttons.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/fancybox2/helpers/jquery.fancybox-thumbs.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/owl-carousel/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/owl-carousel/owl.transitions.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/sns/jqtransform/css/jqtransform.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/extjs/resources/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/js/extjs/resources/css/ytheme-magento.css" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/assets/bootstrap/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/assets/fonts/awesome/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/assets/fonts/payment/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/assets/fonts/elegant/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/animate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/custom-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/mystyle.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/aw_raf.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/amscroll.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/amshopby.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/tour/trip/src/trip.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/feedback/css/popup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/ced/csvendorchat/customer_chat.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magebuzz/bannerads/css/bannerads.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magebuzz/bannerads/css/bx.slider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magehit_newproducts/css/owl.carousel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magehit_newproducts/css/owl.theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magehit_newproducts/css/owl.transitions.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/mageplaza_kb/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/formbuilder/custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/sns/proaddto/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/sns/quicksearch/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/product_slider/owl.carousel.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/product_slider/owl.transitions.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/product_slider/owl.theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/css/product_slider/product_slider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/theme-d31c23.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/base_layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/vssmp_product_form.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/multiple-select.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/dt/jquery.dataTables.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/dt/shCore.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/css/datepicker/protoplasm_full.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/jquery/jquery-noconflict.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/cookie/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/easing/jquery.easing.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/aw_raf/invite.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/amasty/amscroll/amscroll.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/fancybox2/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/proaddto/script.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/jssor/js/jssor.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/jssor/js/jssor.slider.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/countdown/jquery.plugin.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/tabdrop/bootstrap-tabdrop.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/jqtransform/js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/sns/waypoints/waypoints.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/extjs/ext-tree.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/extjs/ext-tree-checkbox.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/extjs/fix-defer.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/extjs/fix-defer-before.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/mage/adminhtml/form.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/js/varien/weee.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/js/msrp.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/tour/trip/src/trip.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/feedback/js/popup.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magebuzz/bannerads/js/bannerads.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magebuzz/bannerads/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magehit_newproducts/js/noconflict.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/magehit_newproducts/js/owl.carousel.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/sns/twitter/js/twitterfetcher-min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/js/product_slider/owl.carousel.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/lib/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/lib/matchMedia.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/lib/matchMedia.addListener.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/lib/enquire.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/lib/imagesloaded.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/sns-extend.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/app.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/js/sns-script.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/vssmp-product-form.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/vssmp_base.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/dt/jquery.dataTables.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/dt/shCore.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/dt/demo.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/datepicker/protoplasm.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/datepicker/datepicker.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/jquery.multiple.select.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/vssmp_bundle.js"></script>
+<script type="text/javascript" src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/vss_marketplace/js/vssmp_downloadable.js"></script>
+<link href="http://dev3.developer.chatanvekala.com/index.php/blog/rss/index/store_id/1/" title="Blog" rel="alternate" type="application/rss+xml" />
+
+<!-- Style get config -->
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css">
+#sns_wrapper #sns_header #sns_menu {
+	
+		background:rgba(0,0,0,0.1) ;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	}
+body#bd{
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+body#bd.boxed-layout{
+	background-color: #cccccc;
+	background-image: url("http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/images/pattern/pattern_0.png");
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-position: center top;
+}
+#sns_testimonial_wrap {
+        background-image: url("http://dev3.developer.chatanvekala.com/media/wysiwyg/imgbackground/backgroundpage.jpg");
+}
+
+body#bd{
+	font-family: Roboto Slab, sans-serif !important;
+}
+	
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting a:hover
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .myaccount .tongle a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle span:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle span.number:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle:hover span,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .top_search a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle:hover .fa
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle:hover .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle:hover .fa
+#sns_header #sns_menu .header-menu-block .header-tools .mycart:hover .tongle .fa-shopping-cart,
+#sns_header #sns_menu .header-menu-block .header-tools .myaccount .tongle:hover .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle:hover .fa,
+#sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools:hover .fa.fa-cog,
+#sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools:hover .fa.fa-user,
+#sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools:hover .fa.fa-shopping-cart,
+#sns_header #sns_menu .header-menu-block .header-tools .top_search:hover .fa
+{
+	color:#666666 !important;
+}
+
+/*#sns_header #sns_menu .header-menu-block .header-tools .mysetting .fa
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle .fa-shopping-cart,
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .myaccount .tongle .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle span .fa,
+#sns_header #sns_menu .header-menu-block .header-tools .top_search .fa,
+#sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools .fa.fa-cog, #sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools .fa.fa-user, #sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools .fa.fa-shopping-cart
+{
+	color:#d31c23 !important;
+}*/
+
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting a
+#sns_header #sns_menu .header-menu-block .header-tools .mycart a
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle a,
+#sns_header #sns_menu .header-menu-block .header-tools .myaccount .tongle a,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle span,
+#sns_header #sns_menu .header-menu-block .header-tools .top_search a
+{
+	color:#d31c23 !important;
+}
+#sns_header #sns_slideshow .tp-caption.link_text a
+{
+	background-color: #d31c23;
+	border:1px solid #d31c23;
+}
+#sns_header #sns_slideshow .tp-caption.link_text a:hover
+{
+	background-color: #000000;
+	border:1px solid #000000;
+}
+/*#sns_header #sns_menu .header-menu-block .header-tools .mysetting a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mycart a:hover,
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle a:hover
+{
+	color:#666666 !important;
+}*/
+
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting a:hover, #sns_header #sns_menu .header-menu-block .header-tools .mycart a:hover,#sns_header #sns_menu .header-menu-block .header-tools .mysetting .tongle a:hover, #sns_header #sns_menu .header-menu-block .header-tools .mycart .tongle a:hover,#sns_header #sns_header_top #sns_menu .container_in .header-menu-block .header-tools .tongle span,.top_search a:hover
+{
+	/*color:#666666 !important;*/
+}#sns_header #sns_menu .header-menu-block .header-tools .mysetting, #sns_header #sns_menu .header-menu-block .header-tools .myaccount, #sns_header #sns_menu .header-menu-block .header-tools .mycart
+{
+	color:#d31c23 !important;
+}
+#sns_right .block .block-content, #sns_left .block .block-content {
+	padding:0px 15px;
+}
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .content .relative .relative1 .block-inner .btomame .action001 .actions button, #sns_header #sns_menu .header-menu-block .header-tools .myaccount .content .relative .relative1 .block-inner .btomame .action001 .actions button, #sns_header #sns_menu .header-menu-block .header-tools .mycart .content .relative .relative1 .block-inner .btomame .action001 .actions button {
+
+	background:#d31c23;
+}
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .content .relative .relative1 .block-inner .btomame .action001 .actions button span, #sns_header #sns_menu .header-menu-block .header-tools .myaccount .content .relative .relative1 .block-inner .btomame .action001 .actions button span, #sns_header #sns_menu .header-menu-block .header-tools .mycart .content .relative .relative1 .block-inner .btomame .action001 .actions button span {
+	color:#fff;
+}
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover, #sns_header #sns_menu .header-menu-block .header-tools .myaccount .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover, #sns_header #sns_menu .header-menu-block .header-tools .mycart .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover {
+	background:#cccccc;
+}
+#sns_header #sns_menu .header-menu-block .header-tools .mysetting .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover span, #sns_header #sns_menu .header-menu-block .header-tools .myaccount .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover span, #sns_header #sns_menu .header-menu-block .header-tools .mycart .content .relative .relative1 .block-inner .btomame .action001 .actions button:hover span {
+	color:#666;
+}
+.green_button a{background-color: #32ce38; color:#fff; padding:20px;     height: auto;}
+.sns-product-detail #sns_tab_products ul.nav-tabs > li > a
+{ background-color:#f5f5f5;}
+.pabsolute{position:absolute; right:0px; top:15px; width:130px;}
+.prelative{ position:relative;}
+.no-padding
+{
+	padding:0px !important;
+}
+.read_articles
+{
+	background-color:#ffffff !important;
+}
+.unread_articles
+{
+	background-color:#dddddd !important;
+}
+#sns_slideshow .sns-slideshow-wraper
+{
+	height:584px;
+	overflow:hidden;
+}
+
+.accepting_button{
+	float: left;
+	background-color: #32ce38;
+	color: #fff;
+	font-size: 24px;
+	padding: 30px;
+}
+.decline_button {
+		float: right;
+	background-color: #f44336;
+	color: #fff;
+	font-size: 24px;
+	padding: 30px;
+}
+
+input[type="button"], .button, button {
+	background: #d31c23 none repeat scroll 0 0;
+    color: #fff;
+   
+    border: medium none;
+    
+    display: inline-block;
+    font-size: 100%;
+    height: 34px;
+    line-height: 20px;
+    padding: 7px 16px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.25s ease-out 0s;
+    vertical-align: middle;
+}
+
+input[type="button"]:hover, .button:hover, button:hover {
+    
+	 background: #f5f5f5 none repeat scroll 0 0;
+
+    color: #666;
+}
+.margin-tb-20{ margin:20px 0px;}
+
+
+</style>
+
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.dev3.developer.chatanvekala.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+
+						<script type="text/javascript">jQuery.noConflict();</script>
+					
+<script type="text/javascript">
+//<![CDATA[
+	function isHandheldDevices() {
+		var check = false;
+		(function(a){if(/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+		return check;
+	}
+	var SKIN_URL = 'http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/';
+	var TMPL_NAME = 'sns_luxury_default';
+		var IS_HANDHELD = isHandheldDevices();
+	var KEEP_MENU = 0;
+	var ENCODEDURL = 'aHR0cDovL2RldjMuZGV2ZWxvcGVyLmNoYXRhbnZla2FsYS5jb20vaW5kZXgucGhwL21hcmtldHBsYWNlL3Byb2R1Y3QvZWRpdC9pZC8zMjU4L2RhdGVwaWNrZXIuY3Nz';
+    //]]>
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script><meta property="og:url"           content="http://www.chatanvekala.com" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Chatan VeKallah Matchmaking For the Frum Community" />
+<meta property="og:description"   content="Top Quality Matchmaking site" />
+<meta property="og:image"         content="" /></head>
+<body id="bd" class=" marketplace-product-edit chrome default">
+<!-- 2right -->
+<div id="fb-root"></div>
+<div id="preloaderbg" class="centerbg1" style="display:none">
+  <div class="centerbg2">
+    <div id="preloader"></div>
+  </div>
+</div>
+ 
+<script type="text/javascript">
+//document.getElementById('preloaderbg').style.display = 'n';
+//document.body.style.overflow = 'hidden';
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=374055606059451";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="sns_wrapper" class="crvpage_">
+                    <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+        <script>
+    function set_cookie(name, value, expires)
+    {
+        document.cookie = name + "=" + value;
+    }
+
+// Created by Oleg V. Kryuchin
+    function get_cookie(name)
+    {
+        cookie_name = name + "=";
+        cookie_length = document.cookie.length;
+        cookie_begin = 0;
+        while (cookie_begin < cookie_length)
+        {
+            value_begin = cookie_begin + cookie_name.length;
+            if (document.cookie.substring(cookie_begin, value_begin) == cookie_name)
+            {
+                var value_end = document.cookie.indexOf(";", value_begin);
+                if (value_end == -1)
+                {
+                    value_end = cookie_length;
+                }
+                return unescape(document.cookie.substring(value_begin, value_end));
+            }
+            cookie_begin = document.cookie.indexOf(" ", cookie_begin) + 1;
+            if (cookie_begin == 0)
+            {
+                break;
+            }
+        }
+        return null;
+    }
+</script>
+
+<div id="sns_header" class="wrap transparent">
+    <div id="sns_header_top" class="wrap ">
+        <div id="sns_menu" class="wrap ">
+            <div class="container">
+                <div class="container_in">
+                    <div class="mysetting col-xs-12 col-lg-3 col-md-3 col-sm-12">
+                        
+
+
+
+
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <h1 id="logo" class="col-phone-12" style="margin: -5px 0px 0px;">
+                            <a title="Zivug Zone" href="http://dev3.developer.chatanvekala.com/index.php/">
+                                                                    <img src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/images/logo.png" alt="Zivug Zone" />
+                                                            </a>
+                        </h1>
+                    </div>
+                    <div class="header-menu-block  col-xs-12 col-lg-9 col-md-9 col-sm-12 gr_5" id="header_menu_block">
+                        <div class="header-tools group_5">
+                                                            <div class="myaccount" style="padding-right:10px">
+                                    <div class="tongle">
+                                        <span>
+                                            <a href="http://dev3.developer.chatanvekala.com/index.php/subscription/">
+                                                Subscription                                            </a>
+                                        </span>	
+                                    </div>
+                                </div>
+                                                                                                                    <div class="myaccount">
+                                    <div class="tongle">
+                                        <a href="http://dev3.developer.chatanvekala.com/index.php/csvendorchat/frontend/inbox/"><i class="fa fa-envelope"></i></a>
+                                        <span>
+                                            <a href="http://dev3.developer.chatanvekala.com/index.php/csvendorchat/frontend/inbox/">
+                                                Messages(12)                                            </a>
+                                        </span>	
+                                    </div>
+                                </div>
+
+
+                                                                    <div class="myaccount">
+                                        <div class="tongle">
+                                            <a href="http://dev3.developer.chatanvekala.com/index.php/my_shadchanim/"><i class="fa fa-shopping-cart"></i></a>
+                                            <span>
+                                                <a href="http://dev3.developer.chatanvekala.com/index.php/my_shadchanim/">
+                                                    My Shadchanim                                                </a>
+                                            </span>	
+                                        </div>
+                                    </div>
+                                                                    <div class="myaccount" style="display:none;">
+                                    <div class="tongle">
+                                        <a href="http://dev3.developer.chatanvekala.com/index.php/marketplace/index"><i class="fa fa-user"></i></a>
+                                        <span>
+                                            <a href="http://dev3.developer.chatanvekala.com/index.php/marketplace/index">
+                                            Seller Account</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                
+
+                                <div class="myaccount" style="display:none;">
+                                    <div class="tongle">
+                                        <i class="fa fa-user"></i>
+                                        <span>
+                                            127SELECT * from recommend_match where recommend_user='127' AND status = 'none'                                    </div>
+                                </div>
+                            		
+                            <div class="myaccount">
+                                <div class="tongle">
+                                    <a href="http://dev3.developer.chatanvekala.com/index.php/customer/account/">
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                    <span>
+                                        <a href="http://dev3.developer.chatanvekala.com/index.php/my/account/">
+                                            My Account                                        </a>
+                                    </span>
+                                </div>
+                                <!-- <div class="content">
+                                     <div class="relative">
+                                         <div class="relative1">
+                                
+<ul class="links">
+            								 <li class="first" ><a href="http://dev3.developer.chatanvekala.com/index.php/customer/account/" title="My Account" class="top-link-myaccount">My Account</a></li>
+					           
+                        									<li >
+										<a href="http://dev3.developer.chatanvekala.com/index.php/wishlist/" title="My Wishlist (1 item)" class="top-link-wishlist" >My Wishlist (1 item)</a>
+									</li>
+			                    								 <li ><a href="http://dev3.developer.chatanvekala.com/index.php/checkout/cart/" title="My Cart (1 item)" class="top-link-cart">My Cart (1 item)</a></li>
+					           
+                    								 <li ><a href="http://dev3.developer.chatanvekala.com/index.php/marketplace/index/" title="Seller Account" class="top-link-selleraccount">Seller Account</a></li>
+					           
+                    								 <li ><a href="http://dev3.developer.chatanvekala.com/index.php/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+					           
+                    								 <li class=" last" ><a href="http://dev3.developer.chatanvekala.com/index.php/customer/account/logout/" title="Log Out" class="top-link-logout">Log Out</a></li>
+					           
+            	</ul>
+                                         </div>
+                                     </div>
+                                 </div>-->
+                            </div>
+                            <div class="mycart mini-cart">
+                                <div class="block-content contents12">
+                                    <div class="block-minicart">
+    <div class="tongle">
+                <i class="fa fa-shopping-cart"></i>
+        <!--5-->                <span><a class="item_io_ot" href="http://dev3.developer.chatanvekala.com/index.php/matches">My Matches</a></span>
+                        <style>
+            .item_io_ot{
+                color:#d31c23;
+            } 
+        </style>
+                                                <span class="number">(1)</span>
+                        </div>
+
+    <div class="block-content content">
+        <div class="relative">
+            <div class="relative1">
+                                    <div class="block-inner">
+                                                                                                                            <p class="block-subtitle crvminicarttottitle_5">New Match(es)</p>
+                            <!--  DEV6 code start -->
+                            <ul id="cart-sidebar" class="mini-products-list crvtopitems_c">
+                                <!--  DEV6 code finish -->
+                                                                    <!-- 4 -->
+<li class="item sub7655"  >
+	<a href="http://dev3.developer.chatanvekala.com/index.php/shidduch.html" style="float:left;width:100%;">
+            <!--a href="http://dev3.developer.chatanvekala.com/index.php/shidduch.html" title="shidduch" class="product-image"-->
+        				<img src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/images/female_image.jpg" alt="shidduch" width="80" />
+				        
+        <!--/a-->
+          
+    <div class="product-details crvdetail" style="float:right;">
+        <!--a style="display:none;" href="http://dev3.developer.chatanvekala.com/index.php/checkout/cart/delete/id/487/form_key/RMOuOq9kRMXNFnZz/uenc/aHR0cDovL2RldjMuZGV2ZWxvcGVyLmNoYXRhbnZla2FsYS5jb20vaW5kZXgucGhwL21hcmtldHBsYWNlL3Byb2R1Y3QvZWRpdC9pZC8zMjU4L2RhdGVwaWNrZXIuY3Nz/" title="Remove This Item" onclick="return confirm('Are you sure you would like to remove this item from the shopping cart?');" class="btn-remove">Remove This Item</a-->
+                <p class="product-name">shidduch</p>
+        <strong style="display:none;">1</strong>
+
+    
+                                <span class='price'>0 years old. </span>                    
+
+
+    
+    
+            </div>
+	</a>
+</li>
+                                                            </ul>
+                                                            <div class="summary">
+                                                                                                                <p class="amount">You have <a href="http://dev3.developer.chatanvekala.com/index.php/checkout/cart/">1 match(es)</a></p>
+                                                                                                            </div>
+                                                        <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+                                                <div class="btomame">
+                            <div class="btomame001" style="display:none;">
+                                <p class="subtotal">
+                                                                            <span class="label">TOTAL</span> <span class="price">$9.99</span>                                                                                                            </p>
+                            </div>
+                            <div class="action001">
+                                <!--<div class="actions">
+                                <p class="paypal-logo" style="display:none;">
+<a data-action="checkout-form-submit" id="ec_shortcut_1d182343647bc1cc3b6eb4841f51ad34" href="http://dev3.developer.chatanvekala.com/index.php/paypal/express/start/button/1/"><img src="" alt="Checkout with PayPal" title="Checkout with PayPal" /></a>
+    </p>
+                                    <button type="button" title="Checkout" class="button" onclick="setLocation('http://dev3.developer.chatanvekala.com/index.php/checkout/onepage/')"><span><span>Checkout</span></span></button>
+                                </div>-->
+                                <div class="actions">
+                                                                        <!-- 5 -->
+                                    <button type="button" title="Cart" class="button gfont" onclick="setLocation('/index.php/matches/')">
+                                        <span><span>View Matches</span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                                                            <div class="myaccount">
+                                    <div class="tongle">
+                                        <a href="http://dev3.developer.chatanvekala.com/index.php/customer/account/logout/"><i class="fa fa-sign-out"></i></a>
+                                        <span>
+                                            <a href="http://dev3.developer.chatanvekala.com/index.php/customer/account/logout/">
+                                            Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sns_header_bot" style=" ">
+            <div class="container">
+                <div class="container_in1">
+                    <!--<div class="block_categories">
+                        <h1 id="logo" class="col-phone-12">
+                            <a title="Zivug Zone" href="http://dev3.developer.chatanvekala.com/index.php/">
+                                                                        <img src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/images/logo.png" alt="Zivug Zone" />
+                                                </a>
+                        </h1>
+
+                        <h1 id="logo1" class="col-phone-12">
+                            <a title="Zivug Zone" href="http://dev3.developer.chatanvekala.com/index.php/">
+                                                </a>
+                        </h1>
+                    </div>-->
+					<script type="text/javascript">
+					// Filter Changes on Gender New Changes On Search Page
+					jQuery(document).ready(function($){
+						ul = $("a").hasClass("amshopby-attr-selected");
+						if(ul){
+							response = $("a.amshopby-attr-selected").attr("data-config");
+							data = $.parseJSON(response);
+							console.log(data.code);
+							if(data.code == "gender")
+							{
+								if(data.option == 78){
+									$("a.amshopby-attr-selected").parent().siblings().addClass("hidden");
+								}
+								if(data.option == 77){
+									$("a.amshopby-attr-selected").parent().siblings().addClass("hidden");
+								}
+							}
+						}
+					});
+					</script>
+                    <div class="block_topsearch">
+                        <div id="sns_mainnav">
+                            <div id="sns_custommenu" class="visible-md visible-lg">
+	<ul class="mainnav">
+			</ul>
+</div>
+<div id="sns_mommenu" class="menu-offcanvas hidden-md hidden-lg">
+	<span class="btn2 btn-navbar leftsidebar">
+		<i class="fa fa-align-left"></i>
+	    <span class="overlay"></span>
+	</span>
+	<span class="btn2 btn-navbar offcanvas" style="display:none;">
+		<i class="fa fa-align-justify"></i>
+	    <span class="overlay"></span>
+	</span>
+	<span class="btn2 btn-navbar rightsidebar">
+		<i class="fa fa-align-right"></i>
+	    <span class="overlay"></span>
+	</span>
+	<div id="menu_offcanvas" class="offcanvas">
+		<ul class="mainnav">
+					</ul>
+	</div>
+</div>
+
+<script>
+	jQuery(document).ready(function($){
+					$('#menu_offcanvas').SnsAccordion({
+				accordion: false,
+				expand: false,
+				btn_open: '<i class="fa fa-plus"></i>',
+				btn_close: '<i class="fa fa-minus"></i>'
+			});
+			$('#sns_mommenu .btn2.offcanvas').on('click', function(){
+				if($('#menu_offcanvas').hasClass('active')){
+					$(this).find('.overlay').fadeOut(250);
+					$('#menu_offcanvas').removeClass('active');
+					$('body').removeClass('show-sidebar');
+				} else {
+					$('#menu_offcanvas').addClass('active');
+					$(this).find('.overlay').fadeIn(250);
+					$('body').addClass('show-sidebar');
+				}
+			});
+				if($('#sns_right').length) {
+			$('#sns_mommenu .btn2.rightsidebar').css('display', 'inline-block').on('click', function(){
+				if($('#sns_right').hasClass('active')){
+					$(this).find('.overlay').fadeOut(250);
+					$('#sns_right').removeClass('active');
+					$('body').removeClass('show-sidebar');
+				} else {
+					$('#sns_right').addClass('active');
+					$(this).find('.overlay').fadeIn(250);
+					$('body').addClass('show-sidebar');
+				}
+			});
+		}
+		if($('#sns_left').length) {
+			$('#sns_mommenu .btn2.leftsidebar').css('display', 'inline-block').on('click', function(){
+				if($('#sns_left').hasClass('active')){
+					$(this).find('.overlay').fadeOut(250);
+					$('#sns_left').removeClass('active');
+					$('body').removeClass('show-sidebar');
+				} else {
+					$('#sns_left').addClass('active');
+					$(this).find('.overlay').fadeIn();
+					$('body').addClass('show-sidebar');
+				}
+			});
+		}
+	});
+</script>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sns_slideshow" style="position:relative;overflow:hidden;">
+                            </div>
+</div>
+
+                         <!-- BEGIN: breadcrumbs -->
+        <div id="sns_breadcrumbs" class="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="sns_titlepage"></div>
+                        
+
+    <div id="sns_breadcrumbs1" class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="sns_titlepage1"></div>
+                    <div id="sns_pathway" class="clearfix">
+                        <div class="pathway-inner">
+                            <!--<h4></h4>-->
+                            <span class="icon-pointer "></span>
+                            <ul class="breadcrumbs">
+                                                                    <li class="Home">
+                                                                                    <a href="/home" title="Home">Home</a>
+                                                                                                                            <!--<span class="separator">&nbsp</span>-->
+                                                                            </li>
+                                                                    <li class="My Account last">
+                                        																							<span>My Account</span>
+												                                            
+                                                                                                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: breadcrumbs -->
+        		        <div id="sns_content" class="wrap layout-mr">
+           <div class="container">
+                <div class="row">
+                    <div id="sns_main" class="col-md-9 col-main">
+                                    
+                                    
+                                                <div id="sns_mainmidle">
+                            
+
+<script type="text/javascript">
+    var RecaptchaOptions = {
+        theme : 'red',
+        lang : 'en',
+    };
+</script>
+    <div class="side-feedback">
+        <a href="javascript:void(0)" onclick="openFeedbackWindow('feedback_information')" title="Feedback" id="link_feedback"></a>
+    </div>
+    <div id="backgroundpopup" class="background-opacity" style="display: none; background: none repeat scroll 0% 0% rgb(0, 0, 0);"></div>  
+    
+            <div style="display: none;" id="feedback_information" class="feedback-container  no-captcha ">
+        <a class="feedback_close" title="close" href="#" onclick="closeFeedbackWindow('feedback_information'); return false;"></a>
+        <div class="feedback-popup-content">
+            <div class="feedback-title"> Feedback  </div>
+            <div class="feedback-content">
+                <form action="http://dev3.developer.chatanvekala.com/index.php/feedback/index/post/" method="post" id="frm_feedback">
+                    <div id="success_message" style="display: none;" class="feedback-success-msg"></div>
+                    <div id="loader" class="loader-feedback" style="text-align: center;display: none;"><p><img src='http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/feedback/images/ajax-loader-onestep.gif' alt='' title=''/></p></div>
+                    <br/>
+                    <ul class="form-list" id="feedback_options">
+                        <li>
+                            <label for="fname">Your Full Name: <span class="required">*</span></label>
+                            <input name="feedbackbuname" value="jon y red" title="Name" id="fname" type="text" class="input-text required-entry"  />
+                        </li>
+                        <li>      
+                            <label for="email">Your E-mail: <span class="required">*</span></label>
+                            <input name="feedbackmail" value="jonred613@gmail.com" title="Email Address" id="email" type="text" class="input-text required-entry validate-email" />
+                        </li> 
+                        
+                        <li>
+                            <label for="details">Details: <span class="required">*</span></label>
+                            <textarea id="details" class="input-text required-entry"  name="feedbackdetails" rows="10" col="50"></textarea>
+                        </li> 
+                                                <li>
+                            <button id="btnsubmit" name="btnsubmit"  type="button" class="button-feedback" onclick="sendFeedback('http://dev3.developer.chatanvekala.com/index.php/feedback/index/post/')">
+                                <span><span>Submit</span></span></button>
+                        </li>    
+                    </ul>
+                </form>
+                <script type="text/javascript">
+                    var feedback_form = new Validation($('frm_feedback'));
+                </script>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; // full day names
+Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]; // short day names
+Calendar._FD = 0; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; // full month names
+Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = 'About the calendar';
+
+Calendar._TT["ABOUT"] =
+'DHTML Date/Time Selector\n' +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+'For latest version visit: http://www.dynarch.com/projects/calendar/\n' +
+'Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details.' +
+'\n\n' +
+'Date selection:\n' +
+'- Use the \xab, \xbb buttons to select year\n' +
+'- Use the \u2039 buttons to select month\n' +
+'- Hold mouse button on any of the above buttons for faster selection.';
+Calendar._TT["ABOUT_TIME"] = '\n\n' +
+'Time selection:\n' +
+'- Click on any of the time parts to increase it\n' +
+'- or Shift-click to decrease it\n' +
+'- or click and drag for faster selection.';
+
+Calendar._TT["PREV_YEAR"] = 'Prev. year (hold for menu)';
+Calendar._TT["PREV_MONTH"] = 'Prev. month (hold for menu)';
+Calendar._TT["GO_TODAY"] = 'Go Today';
+Calendar._TT["NEXT_MONTH"] = 'Next month (hold for menu)';
+Calendar._TT["NEXT_YEAR"] = 'Next year (hold for menu)';
+Calendar._TT["SEL_DATE"] = 'Select date';
+Calendar._TT["DRAG_TO_MOVE"] = 'Drag to move';
+Calendar._TT["PART_TODAY"] = ' (' + "today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = 'Display %s first';
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = 'Close';
+Calendar._TT["TODAY"] = "today";
+Calendar._TT["TIME_PART"] = '(Shift-)Click or drag to change value';
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%b %e, %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%B %e, %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = 'Time:';
+//]]>
+</script>
+<div id="vssmp-product-form" class="vss_mp_wrapper">
+        </div>
+
+<div id="vssmp-product-form" class="vssmp-row-block col-md-9">
+    
+        <!-- <div class="vssmp-overlay" style="display:none;"> -->
+        <div class="vssmp-overlay" style="display:none;">
+
+        <div class="vssmp-overlay__bg"></div>
+            <!-- <div class="vssmp-overlay__preloader"></div> -->
+            <div class="vssmp-overlay__wrap">
+  <div class="vssmp-overlay__cont"><div class="vssmp-overlay__stat">
+<div class="vssmp-overlay__stat__anim"></div>
+  <span></span></div></div>
+</div>
+
+
+<p class="vssmp-overlay__text">Uploading...</p>
+        </div>
+
+                
+                <form id="vssmp-product-form-inner" class="crv_unusualform" enctype="multipart/form-data" method="post" action="http://dev3.developer.chatanvekala.com/index.php/marketplace/product/edit/id/3258/">
+            <input type="hidden" name="edit_mode" value="0" />
+            <input type="hidden" name="product[country]" value="466" id="mytext" />
+            <input type="hidden" name="process_step" value="4" />
+                                <input type="hidden" name="id" value="3258" />
+                                    <input type="hidden" name="set" value="4" />
+                                    <input type="hidden" name="type" value="virtual" />
+                                    <input type="hidden" name="attributes" value="" />
+                            <div class="vssmp-row-block">
+                <div class="vssmp_small_block">
+                    <div class="page-title">
+                        <h1>Edit Profile</h1>
+                    </div>
+                </div>
+                <div class="vssmp-ryt">
+                    <div class="vssmp_loading_164"></div>
+                    <button type="button" title="Save Product" class="button js-vssmpValidateForm"><span><span>Save & Continue</span></span></button>
+                                            <button type="button" class="button js-vssmpSaveAndContinue"><span><span>Save</span></span></button>
+                    
+                                                                    <button type="button" onclick="cancelProductEditing('http://dev3.developer.chatanvekala.com/index.php/marketplace/product/list/');" class="button"><span><span>Cancel</span></span></button>
+                    </div>
+                <div class="vssmp-clearboth"></div>
+            </div>
+            <div id="vssmp_glob_msg_content" class="vssmp-glob-warning" style="display:none;"></div>
+            <!-- Start - General Information -->
+<div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk wbx_editprofile">
+    <div class="vss-bordered-row">
+        <span class="form-title">General Information</span>
+    </div>
+                        <div class="vss-bordered-row">
+            <!-- Name -->
+                            <div class="vssmp_small_block wbx_editaccountnameblock">
+                    <div class="form-label-block"><span class="form-label">First Name<span class="required-mark">*</span>:</span></div>
+                    <div class="form-field-block">
+                        <input name="product[name]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar vssmp_req_field" value="jon"/>
+                    </div>
+                </div>
+                        <!-- Sku -->
+                            <div class="vssmp_small_block wbx_editaccountnameblock">
+                    <div class="form-label-block"><span class="form-label">Last Name<span class="required-mark">*</span>:</span></div>
+                    <div class="form-field-block">
+                        <input id="vssmp_sku_field" onblur="vssmpCheckSkuExistence(this)" name="product[sku]" type="hidden" class="custom-input-field input-width3 vssmp_validate_static vssmp_req_field"  value="profile_127"/>
+                        <input id="vssmp_sku_field" name="product[last]" type="text" class="custom-input-field input-width3"  value="red"/>
+                    </div>
+                </div>
+                <div class="vssmp_small_block wbx_editaccountnameblock">
+                    <div class="form-label-block">
+                        <span class="form-label">Middle Name:</span>
+                    </div>
+                                        <div class="form-field-block">
+                        <input id="vssmp_sku_field" onblur="vssmpCheckSkuExistence(this)" name="product[sku]" type="hidden" class="custom-input-field input-width3 vssmp_validate_static vssmp_req_field"  value="profile_127"/>
+                        <input id="vssmp_sku_field" name="crv_middlename_" type="text" class="custom-input-field input-width3"  value="y"/>
+                    </div>
+                </div>
+            
+                    </div>
+                        <div class="vss-bordered-row">
+            <!-- Status -->
+                            <div class="vssmp_small_block">
+                    <div class="form-label-block"><span class="form-label">Status<span class="required-mark">*</span>:</span></div>
+                    <div class="form-field-block">
+                                                                                <select name="product[status]" class="custom-input-field input-width3 vssmp_validate_int vssmp_req_field"  >
+                                                                    <option value="1" selected="selected" >Available</option>
+                                                                    <option value="2"  >Not Available</option>
+                                                            </select>
+                        
+                    </div>
+                </div>
+            
+            <!----------------- Add Title of Person ---------------->
+                            <div class="vssmp_small_block">
+                    <div class="form-label-block"><span class="form-label">Title:</span></div>
+                    <div class="form-field-block">
+                                                <select id="p_title_block" name="product[p_title]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                                        <option value="93" selected="selected" >Dr</option>
+                                                            <option value="90"  >Mr</option>
+                                                            <option value="92"  >Rabbi</option>
+                                                    </select>
+                    </div>
+                </div>
+                    </div>	
+    
+    <!-- Short Description -->
+                    <div class="vss-bordered-row">
+                <div class="form-label-block">
+                    <span class="form-label">Short Description<span class="required-mark">*</span>:</span>
+                    <span class="vss_hint">Maximum 250 characters allowed.</span>
+                </div>
+                <div class="form-field-block txt-area-blk">
+                                            <textarea onkeyup="vssmpShowLengthStatus(this, 'short')" maxlength="250" rows="5" name="product[short_description]" class="custom-input-field input-width3 vssmp_validate_varchar vssmp_req_field">y</textarea>
+                        <span class="vss_hint"></span>
+                                    </div>
+            </div>
+            <!-- Long Description -->
+            <div class="vss-bordered-row">
+            <div class="form-label-block">
+                <span class="form-label">Description<span class="required-mark">*</span>:</span>
+                <span class="vss_hint">Maximum 1500 characters allowed.</span>
+            </div>
+            <div class="form-field-block txt-area-blk">
+                                    <textarea onkeyup="vssmpShowLengthStatus(this, 'long')" maxlength="1500" rows="5" name="product[description]" class="custom-input-field input-width3 vssmp_validate_varchar vssmp_req_field">y</textarea>
+                    <span class="vss_hint"></span>
+                </div>
+        </div>
+                    <div class="vss-bordered-row">
+            <!-- Birth Date -->
+                                <div class="vssmp_small_block" style="vertical-align: top;">
+                        <div class="form-label-block"><span class="form-label">Birth Date:</span></div>
+                        <div class="form-field-block">
+                            <input name="product[birth_date]" type="text" class="custom-input-field input-width100 vssmp_validate_datepicker " value="01/14/1999" />
+                        </div>
+                    </div>
+                            <!-- Ethnicity -->
+                    <div class="vssmp_small_block">
+                    <div class="form-label-block"><span class="form-label">Ethnicity:</span></div>
+                    <div class="form-field-block">
+                        	
+                        <select name="product[ethnicity]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                                                                                                <option value="104" selected="selected" >Ashkenazi</option>
+                                                                    <option value="106"  >Mixed</option>
+                                                                    <option value="746"  >Mixed/Other</option>
+                                                                    <option value="105"  >Sefardi</option>
+                                </select>
+                    </div>
+                </div>
+                </div>
+    
+                    <div class="vss-bordered-row">
+            <!-- Religious -->
+                    <div class="vssmp_small_block" style="vertical-align: top;">
+                    <div class="form-label-block"><span class="form-label">Religious Orientation:</span></div>
+                    <div class="form-field-block">
+                                                <select name="product[religious]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                                        <option value="704"  >Chabad</option>
+                                        <option value="703" selected="selected" >Heimish</option>
+                                        <option value="685"  >Modern Orthodox</option>
+                                        <option value="686"  >Yeshivish</option>
+                                        <option value="109"  >Modern Orthodox (Machmir)</option>
+                                        <option value="107"  >Modern Yeshivish</option>
+                                        <option value="108"  >Traditional</option>
+                                        <option value="699"  >Chassidish</option>
+                                </select>
+                    </div>
+                </div>
+                    </div>
+    <div class="vss-bordered-row">
+        <div class="vssmp_small_block crvaccountedit_8">
+            <div class="form-label-block"><span class="form-label">Gender</span></div>
+                        <div class="form-field-block">
+                <select id="gender" class="select" name="product[gender]">
+                    <option disabled value="">Select Gender</option>
+                                                                    <option selected value="77">
+                            Female                        </option>
+                                                                    <option disabled value="78">
+                            Male                        </option>
+                                        
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="vss-bordered-row" style="width:100%;">	
+        <div class="">
+            <div class="form-label-block" style="width:100%;"><span class="form-label">What language do you speak?</span></div>
+            <div class="form-field-block" style="width:100% !important;">
+                                                    <input type="checkbox" name="product[lang][]" value="731" checked>Chinese                    <input type="checkbox" name="product[lang][]" value="790" >Chinese;Dutch                    <input type="checkbox" name="product[lang][]" value="791" >Chinese;Russian;Spanish;Yiddish                    <input type="checkbox" name="product[lang][]" value="705" checked>Dutch                    <input type="checkbox" name="product[lang][]" value="319" >English                    <input type="checkbox" name="product[lang][]" value="721" >Farsi                    <input type="checkbox" name="product[lang][]" value="320" >French                    <input type="checkbox" name="product[lang][]" value="706" >German                    <input type="checkbox" name="product[lang][]" value="321" >Hebrew                     <input type="checkbox" name="product[lang][]" value="325" >Other                    <input type="checkbox" name="product[lang][]" value="722" >Polish                    <input type="checkbox" name="product[lang][]" value="322" >Portuguese                     <input type="checkbox" name="product[lang][]" value="740" checked>Romanian                    <input type="checkbox" name="product[lang][]" value="732" checked>Russian                    <input type="checkbox" name="product[lang][]" value="323" >Spanish                    <input type="checkbox" name="product[lang][]" value="324" >Yiddish            </div>
+        </div>
+    </div>
+    <div class="vss-bordered-row">
+        <div class="vssmp_small_block" style="vertical-align: top;">
+            <div class="form-label-block"><span class="form-label">My Marriage Status:</span></div>
+            <div class="form-field-block">
+                                <select id="marriage_status_select" name="product[marriage_status]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                <option value="289"  >Single</option>
+                        <option value="288" selected="selected" >Divorced</option>
+                        <option value="679"  >Widow / Spouse Deceased</option>
+                </select>
+            </div>
+        </div>
+        <div class="vssmp_small_block" style="vertical-align: top;">
+            <div class="form-label-block"><span class="form-label">Have Children?:</span></div>
+            <div class="form-field-block">
+                                <select name="product[user_children]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                <option value="700"  >Yes</option>
+                        <option value="664"  >No</option>
+                        <option value="665"  >1</option>
+                        <option value="666"  >2</option>
+                        <option value="667"  >3</option>
+                        <option value="668"  >4</option>
+                        <option value="669"  >5</option>
+                        <option value="670"  >6</option>
+                        <option value="671"  >7</option>
+                        <option value="672"  >8</option>
+                        <option value="673"  >9</option>
+                        <option value="674"  >10</option>
+                        <option value="675"  >11</option>
+                        <option value="676"  >12</option>
+                        <option value="677"  >13</option>
+                        <option value="678" selected="selected" >14</option>
+                        <option value="682"  >15</option>
+                        <option value="290"  >15+</option>
+                </select>
+            </div>
+        </div>
+        <div class="vss-bordered-row">
+            <div class="vssmp_small_block crvcae9">
+                <div class="form-label-block"><span class="form-label">Occupation:</span></div>
+                <div class="form-field-block">
+                    <input name="product[occupation]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+                </div>
+            </div>
+                            <div class="vssmp_small_block" style="vertical-align: top;">
+                    <div class="form-label-block"><span class="form-label">Willing to relocate ?:</span></div>
+                    <div class="form-field-block">
+                                                <select name="product[rellocate]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                                        <option value="681"  >Yes</option>
+                                    <option value="680" selected="selected" >No</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="vss-bordered-row">
+            <div class="vssmp_small_block" style="vertical-align: top;">
+                <div class="form-label-block"><span class="form-label">Are you a Convert?:</span></div>
+                <div class="form-field-block">
+                                        <select name="product[converted]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                            <option value="684"  >Yes</option>
+                            <option value="683" selected="selected" >No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            var vssmp_check_sku_url = "http://dev3.developer.chatanvekala.com/index.php/marketplace/Product/validateSku/";
+            var vssmp_product_id = "3258";
+
+        </script>
+        <!-- End - General Information -->
+
+
+            <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_1" >
+<div class="vss-bordered-row">
+        <span class="form-title">Personal Shadchan (from outside this website)</span>
+    </div>
+        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shadchan First Name:</span></div>
+            <div class="form-field-block">
+                <input name="product[shadchan_fname]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="yyyyyyyyyy"/>
+            </div>
+        </div>
+                </div>
+                    <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shadchan Last Name:</span></div>
+            <div class="form-field-block">
+                <input name="product[shadchan_lname]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="yhhhhh"/>
+            </div>
+        </div>
+                </div>
+                  <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shadchan Email:</span></div>
+            <div class="form-field-block">
+                <input name="product[shadchan_email]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="yh"/>
+            </div>
+        </div>
+                </div>
+                    <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shadchan Phone:</span></div>
+            <div class="form-field-block">
+                <input name="product[shadchan_phone1]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+                </div>
+                    <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shadchan Phone2:</span></div>
+            <div class="form-field-block">
+                <input name="product[shadchan_phone2]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+                </div>
+</div>
+<div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_2">
+    <div class="vss-bordered-row">
+        <span class="form-title">Contact Information</span>
+    </div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Phone Number:</span></div>
+            <div class="form-field-block">
+                <input name="product[phone_number]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Additional Number:</span></div>
+            <div class="form-field-block">
+                <input name="product[additional_number]" type="text" class="custom-input-field input-width3"  value="y"/>
+            </div>
+        </div>
+        	</div>
+	    <div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Email:</span></div>
+            <div class="form-field-block">
+                <input name="product[user_email]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="jonred613@gmail.com"/>
+            </div>
+        </div>
+        	</div>
+		<div class="vss-bordered-row">
+				<div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Country:</span></div>
+            <div class="form-field-block">
+								<select name="product[user_country]" id="country" class="selectpicker custom-input-field input-width3" onchange="getstate(this.value)">  
+					<option value="">Select Country</option>
+										<option  value="Afghanistan">Afghanistan</option>
+										<option  value="Åland Islands">Åland Islands</option>
+										<option  value="Albania">Albania</option>
+										<option  value="Algeria">Algeria</option>
+										<option  value="American Samoa">American Samoa</option>
+										<option  value="Andorra">Andorra</option>
+										<option  value="Angola">Angola</option>
+										<option  value="Anguilla">Anguilla</option>
+										<option  value="Antarctica">Antarctica</option>
+										<option  value="Antigua and Barbuda">Antigua and Barbuda</option>
+										<option  value="Argentina">Argentina</option>
+										<option  value="Armenia">Armenia</option>
+										<option  value="Aruba">Aruba</option>
+										<option  value="Australia">Australia</option>
+										<option  value="Austria">Austria</option>
+										<option  value="Azerbaijan">Azerbaijan</option>
+										<option  value="Bahamas">Bahamas</option>
+										<option  value="Bahrain">Bahrain</option>
+										<option  value="Bangladesh">Bangladesh</option>
+										<option  value="Barbados">Barbados</option>
+										<option  value="Belarus">Belarus</option>
+										<option  value="Belgium">Belgium</option>
+										<option  value="Belize">Belize</option>
+										<option  value="Benin">Benin</option>
+										<option  value="Bermuda">Bermuda</option>
+										<option  value="Bhutan">Bhutan</option>
+										<option  value="Bolivia">Bolivia</option>
+										<option  value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+										<option  value="Botswana">Botswana</option>
+										<option  value="Bouvet Island">Bouvet Island</option>
+										<option  value="Brazil">Brazil</option>
+										<option  value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+										<option  value="British Virgin Islands">British Virgin Islands</option>
+										<option  value="Brunei">Brunei</option>
+										<option  value="Bulgaria">Bulgaria</option>
+										<option  value="Burkina Faso">Burkina Faso</option>
+										<option  value="Burundi">Burundi</option>
+										<option  value="Cambodia">Cambodia</option>
+										<option  value="Cameroon">Cameroon</option>
+										<option  value="Canada">Canada</option>
+										<option  value="Cape Verde">Cape Verde</option>
+										<option  value="Cayman Islands">Cayman Islands</option>
+										<option  value="Central African Republic">Central African Republic</option>
+										<option  value="Chad">Chad</option>
+										<option  value="Chile">Chile</option>
+										<option  value="China">China</option>
+										<option  value="Christmas Island">Christmas Island</option>
+										<option  value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+										<option  value="Colombia">Colombia</option>
+										<option  value="Comoros">Comoros</option>
+										<option  value="Congo - Brazzaville">Congo - Brazzaville</option>
+										<option  value="Congo - Kinshasa">Congo - Kinshasa</option>
+										<option  value="Cook Islands">Cook Islands</option>
+										<option  value="Costa Rica">Costa Rica</option>
+										<option  value="Côte d’Ivoire">Côte d’Ivoire</option>
+										<option  value="Croatia">Croatia</option>
+										<option  value="Cuba">Cuba</option>
+										<option  value="Cyprus">Cyprus</option>
+										<option  value="Czech Republic">Czech Republic</option>
+										<option  value="Denmark">Denmark</option>
+										<option  value="Djibouti">Djibouti</option>
+										<option  value="Dominica">Dominica</option>
+										<option  value="Dominican Republic">Dominican Republic</option>
+										<option  value="Ecuador">Ecuador</option>
+										<option  value="Egypt">Egypt</option>
+										<option  value="El Salvador">El Salvador</option>
+										<option  value="Equatorial Guinea">Equatorial Guinea</option>
+										<option  value="Eritrea">Eritrea</option>
+										<option  value="Estonia">Estonia</option>
+										<option  value="Ethiopia">Ethiopia</option>
+										<option  value="Falkland Islands">Falkland Islands</option>
+										<option  value="Faroe Islands">Faroe Islands</option>
+										<option  value="Fiji">Fiji</option>
+										<option  value="Finland">Finland</option>
+										<option  value="France">France</option>
+										<option  value="French Guiana">French Guiana</option>
+										<option  value="French Polynesia">French Polynesia</option>
+										<option  value="French Southern Territories">French Southern Territories</option>
+										<option  value="Gabon">Gabon</option>
+										<option  value="Gambia">Gambia</option>
+										<option  value="Georgia">Georgia</option>
+										<option  value="Germany">Germany</option>
+										<option  value="Ghana">Ghana</option>
+										<option  value="Gibraltar">Gibraltar</option>
+										<option  value="Greece">Greece</option>
+										<option  value="Greenland">Greenland</option>
+										<option  value="Grenada">Grenada</option>
+										<option  value="Guadeloupe">Guadeloupe</option>
+										<option  value="Guam">Guam</option>
+										<option  value="Guatemala">Guatemala</option>
+										<option selected="selected" value="Guernsey">Guernsey</option>
+										<option  value="Guinea">Guinea</option>
+										<option  value="Guinea-Bissau">Guinea-Bissau</option>
+										<option  value="Guyana">Guyana</option>
+										<option  value="Haiti">Haiti</option>
+										<option  value="Heard & McDonald Islands">Heard & McDonald Islands</option>
+										<option  value="Honduras">Honduras</option>
+										<option  value="Hong Kong SAR China">Hong Kong SAR China</option>
+										<option  value="Hungary">Hungary</option>
+										<option  value="Iceland">Iceland</option>
+										<option  value="India">India</option>
+										<option  value="Indonesia">Indonesia</option>
+										<option  value="Iran">Iran</option>
+										<option  value="Iraq">Iraq</option>
+										<option  value="Ireland">Ireland</option>
+										<option  value="Isle of Man">Isle of Man</option>
+										<option  value="Israel">Israel</option>
+										<option  value="Italy">Italy</option>
+										<option  value="Jamaica">Jamaica</option>
+										<option  value="Japan">Japan</option>
+										<option  value="Jersey">Jersey</option>
+										<option  value="Jordan">Jordan</option>
+										<option  value="Kazakhstan">Kazakhstan</option>
+										<option  value="Kenya">Kenya</option>
+										<option  value="Kiribati">Kiribati</option>
+										<option  value="Kuwait">Kuwait</option>
+										<option  value="Kyrgyzstan">Kyrgyzstan</option>
+										<option  value="Laos">Laos</option>
+										<option  value="Latvia">Latvia</option>
+										<option  value="Lebanon">Lebanon</option>
+										<option  value="Lesotho">Lesotho</option>
+										<option  value="Liberia">Liberia</option>
+										<option  value="Libya">Libya</option>
+										<option  value="Liechtenstein">Liechtenstein</option>
+										<option  value="Lithuania">Lithuania</option>
+										<option  value="Luxembourg">Luxembourg</option>
+										<option  value="Macau SAR China">Macau SAR China</option>
+										<option  value="Macedonia">Macedonia</option>
+										<option  value="Madagascar">Madagascar</option>
+										<option  value="Malawi">Malawi</option>
+										<option  value="Malaysia">Malaysia</option>
+										<option  value="Maldives">Maldives</option>
+										<option  value="Mali">Mali</option>
+										<option  value="Malta">Malta</option>
+										<option  value="Marshall Islands">Marshall Islands</option>
+										<option  value="Martinique">Martinique</option>
+										<option  value="Mauritania">Mauritania</option>
+										<option  value="Mauritius">Mauritius</option>
+										<option  value="Mayotte">Mayotte</option>
+										<option  value="Mexico">Mexico</option>
+										<option  value="Micronesia">Micronesia</option>
+										<option  value="Moldova">Moldova</option>
+										<option  value="Monaco">Monaco</option>
+										<option  value="Mongolia">Mongolia</option>
+										<option  value="Montenegro">Montenegro</option>
+										<option  value="Montserrat">Montserrat</option>
+										<option  value="Morocco">Morocco</option>
+										<option  value="Mozambique">Mozambique</option>
+										<option  value="Myanmar (Burma)">Myanmar (Burma)</option>
+										<option  value="Namibia">Namibia</option>
+										<option  value="Nauru">Nauru</option>
+										<option  value="Nepal">Nepal</option>
+										<option  value="Netherlands">Netherlands</option>
+										<option  value="Netherlands Antilles">Netherlands Antilles</option>
+										<option  value="New Caledonia">New Caledonia</option>
+										<option  value="New Zealand">New Zealand</option>
+										<option  value="Nicaragua">Nicaragua</option>
+										<option  value="Niger">Niger</option>
+										<option  value="Nigeria">Nigeria</option>
+										<option  value="Niue">Niue</option>
+										<option  value="Norfolk Island">Norfolk Island</option>
+										<option  value="Northern Mariana Islands">Northern Mariana Islands</option>
+										<option  value="North Korea">North Korea</option>
+										<option  value="Norway">Norway</option>
+										<option  value="Oman">Oman</option>
+										<option  value="Pakistan">Pakistan</option>
+										<option  value="Palau">Palau</option>
+										<option  value="Palestinian Territories">Palestinian Territories</option>
+										<option  value="Panama">Panama</option>
+										<option  value="Papua New Guinea">Papua New Guinea</option>
+										<option  value="Paraguay">Paraguay</option>
+										<option  value="Peru">Peru</option>
+										<option  value="Philippines">Philippines</option>
+										<option  value="Pitcairn Islands">Pitcairn Islands</option>
+										<option  value="Poland">Poland</option>
+										<option  value="Portugal">Portugal</option>
+										<option  value="Puerto Rico">Puerto Rico</option>
+										<option  value="Qatar">Qatar</option>
+										<option  value="Réunion">Réunion</option>
+										<option  value="Romania">Romania</option>
+										<option  value="Russia">Russia</option>
+										<option  value="Rwanda">Rwanda</option>
+										<option  value="Saint Barthélemy">Saint Barthélemy</option>
+										<option  value="Saint Helena">Saint Helena</option>
+										<option  value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+										<option  value="Saint Lucia">Saint Lucia</option>
+										<option  value="Saint Martin">Saint Martin</option>
+										<option  value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+										<option  value="Samoa">Samoa</option>
+										<option  value="San Marino">San Marino</option>
+										<option  value="São Tomé and Príncipe">São Tomé and Príncipe</option>
+										<option  value="Saudi Arabia">Saudi Arabia</option>
+										<option  value="Senegal">Senegal</option>
+										<option  value="Serbia">Serbia</option>
+										<option  value="Seychelles">Seychelles</option>
+										<option  value="Sierra Leone">Sierra Leone</option>
+										<option  value="Singapore">Singapore</option>
+										<option  value="Slovakia">Slovakia</option>
+										<option  value="Slovenia">Slovenia</option>
+										<option  value="Solomon Islands">Solomon Islands</option>
+										<option  value="Somalia">Somalia</option>
+										<option  value="South Africa">South Africa</option>
+										<option  value="South Georgia & South Sandwich Islands">South Georgia & South Sandwich Islands</option>
+										<option  value="South Korea">South Korea</option>
+										<option  value="Spain">Spain</option>
+										<option  value="Sri Lanka">Sri Lanka</option>
+										<option  value="St. Vincent & Grenadines">St. Vincent & Grenadines</option>
+										<option  value="Sudan">Sudan</option>
+										<option  value="Suriname">Suriname</option>
+										<option  value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+										<option  value="Swaziland">Swaziland</option>
+										<option  value="Sweden">Sweden</option>
+										<option  value="Switzerland">Switzerland</option>
+										<option  value="Syria">Syria</option>
+										<option  value="Taiwan">Taiwan</option>
+										<option  value="Tajikistan">Tajikistan</option>
+										<option  value="Tanzania">Tanzania</option>
+										<option  value="Thailand">Thailand</option>
+										<option  value="Timor-Leste">Timor-Leste</option>
+										<option  value="Togo">Togo</option>
+										<option  value="Tokelau">Tokelau</option>
+										<option  value="Tonga">Tonga</option>
+										<option  value="Trinidad and Tobago">Trinidad and Tobago</option>
+										<option  value="Tunisia">Tunisia</option>
+										<option  value="Turkey">Turkey</option>
+										<option  value="Turkmenistan">Turkmenistan</option>
+										<option  value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+										<option  value="Tuvalu">Tuvalu</option>
+										<option  value="Uganda">Uganda</option>
+										<option  value="Ukraine">Ukraine</option>
+										<option  value="United Arab Emirates">United Arab Emirates</option>
+										<option  value="United Kingdom">United Kingdom</option>
+										<option  value="United States">United States</option>
+										<option  value="Uruguay">Uruguay</option>
+										<option  value="U.S. Outlying Islands">U.S. Outlying Islands</option>
+										<option  value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+										<option  value="Uzbekistan">Uzbekistan</option>
+										<option  value="Vanuatu">Vanuatu</option>
+										<option  value="Vatican City">Vatican City</option>
+										<option  value="Venezuela">Venezuela</option>
+										<option  value="Vietnam">Vietnam</option>
+										<option  value="Wallis and Futuna">Wallis and Futuna</option>
+										<option  value="Western Sahara">Western Sahara</option>
+										<option  value="Yemen">Yemen</option>
+										<option  value="Zambia">Zambia</option>
+										<option  value="Zimbabwe">Zimbabwe</option>
+									</select>
+            </div>
+        </div>
+								<div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">State:</span></div>
+            <div class="form-field-block" id="statediv">
+				                				<input type="text" id="region" name="product[user_state]" placeholder="State/Province" title="State/Province" class="custom-input-field input-width3" value=""/>
+            </div>
+        </div>
+		       	<div class="vss-bordered-row"> 
+        				<div class="vssmp_small_block" >
+            <div class="form-label-block"><span class="form-label">City:</span></div>
+            <div class="form-field-block" id="statediv">
+								<input type="text" id="city" name="product[city]" placeholder="City" title="City" class="custom-input-field input-width3" value="Jerusalem"/>
+            </div>
+        </div>
+		        </div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+function getstate(countryValue) {
+	//alert(countryValue);
+
+    if (countryValue =="Canada") {
+    document.getElementById("mytext").value = '179';
+} else if (countryValue =="United States") {
+     document.getElementById("mytext").value = '177';
+} 
+else if (countryValue =="Brazil") {
+     document.getElementById("mytext").value = '467';
+}
+else if (countryValue =="Canada") {
+     document.getElementById("mytext").value = '468';
+}
+else {
+    document.getElementById("mytext").value = '466';
+}     
+	
+	
+    var reloadurl = 'http://dev3.developer.chatanvekala.com/index.php/marketplace/product/state/' + 'country/' + countryValue;
+    jQuery.ajax({
+        url: reloadurl, //Relative or absolute path to response.php file
+        method: 'get',
+        success: function (data) {
+            jQuery('#statediv').html(data);
+        }
+    });
+}
+	new RegionUpdater('country', 'region', 'region_id', {"config":{"show_all_regions":true,"regions_required":["AT","CA","EE","FI","FR","DE","LV","LT","RO","ES","CH","US"]},"ES":{"130":{"code":"A Coru\u0441a","name":"A Coru\u00f1a"},"131":{"code":"Alava","name":"Alava"},"132":{"code":"Albacete","name":"Albacete"},"133":{"code":"Alicante","name":"Alicante"},"134":{"code":"Almeria","name":"Almeria"},"135":{"code":"Asturias","name":"Asturias"},"136":{"code":"Avila","name":"Avila"},"137":{"code":"Badajoz","name":"Badajoz"},"138":{"code":"Baleares","name":"Baleares"},"139":{"code":"Barcelona","name":"Barcelona"},"140":{"code":"Burgos","name":"Burgos"},"141":{"code":"Caceres","name":"Caceres"},"142":{"code":"Cadiz","name":"Cadiz"},"143":{"code":"Cantabria","name":"Cantabria"},"144":{"code":"Castellon","name":"Castellon"},"145":{"code":"Ceuta","name":"Ceuta"},"146":{"code":"Ciudad Real","name":"Ciudad Real"},"147":{"code":"Cordoba","name":"Cordoba"},"148":{"code":"Cuenca","name":"Cuenca"},"149":{"code":"Girona","name":"Girona"},"150":{"code":"Granada","name":"Granada"},"151":{"code":"Guadalajara","name":"Guadalajara"},"152":{"code":"Guipuzcoa","name":"Guipuzcoa"},"153":{"code":"Huelva","name":"Huelva"},"154":{"code":"Huesca","name":"Huesca"},"155":{"code":"Jaen","name":"Jaen"},"156":{"code":"La Rioja","name":"La Rioja"},"157":{"code":"Las Palmas","name":"Las Palmas"},"158":{"code":"Leon","name":"Leon"},"159":{"code":"Lleida","name":"Lleida"},"160":{"code":"Lugo","name":"Lugo"},"161":{"code":"Madrid","name":"Madrid"},"162":{"code":"Malaga","name":"Malaga"},"163":{"code":"Melilla","name":"Melilla"},"164":{"code":"Murcia","name":"Murcia"},"165":{"code":"Navarra","name":"Navarra"},"166":{"code":"Ourense","name":"Ourense"},"167":{"code":"Palencia","name":"Palencia"},"168":{"code":"Pontevedra","name":"Pontevedra"},"169":{"code":"Salamanca","name":"Salamanca"},"170":{"code":"Santa Cruz de Tenerife","name":"Santa Cruz de Tenerife"},"171":{"code":"Segovia","name":"Segovia"},"172":{"code":"Sevilla","name":"Sevilla"},"173":{"code":"Soria","name":"Soria"},"174":{"code":"Tarragona","name":"Tarragona"},"175":{"code":"Teruel","name":"Teruel"},"176":{"code":"Toledo","name":"Toledo"},"177":{"code":"Valencia","name":"Valencia"},"178":{"code":"Valladolid","name":"Valladolid"},"179":{"code":"Vizcaya","name":"Vizcaya"},"180":{"code":"Zamora","name":"Zamora"},"181":{"code":"Zaragoza","name":"Zaragoza"}},"CH":{"104":{"code":"AG","name":"Aargau"},"106":{"code":"AR","name":"Appenzell Ausserrhoden"},"105":{"code":"AI","name":"Appenzell Innerrhoden"},"108":{"code":"BL","name":"Basel-Landschaft"},"109":{"code":"BS","name":"Basel-Stadt"},"107":{"code":"BE","name":"Bern"},"110":{"code":"FR","name":"Freiburg"},"111":{"code":"GE","name":"Genf"},"112":{"code":"GL","name":"Glarus"},"113":{"code":"GR","name":"Graub\u00fcnden"},"114":{"code":"JU","name":"Jura"},"115":{"code":"LU","name":"Luzern"},"116":{"code":"NE","name":"Neuenburg"},"117":{"code":"NW","name":"Nidwalden"},"118":{"code":"OW","name":"Obwalden"},"120":{"code":"SH","name":"Schaffhausen"},"122":{"code":"SZ","name":"Schwyz"},"121":{"code":"SO","name":"Solothurn"},"119":{"code":"SG","name":"St. Gallen"},"124":{"code":"TI","name":"Tessin"},"123":{"code":"TG","name":"Thurgau"},"125":{"code":"UR","name":"Uri"},"126":{"code":"VD","name":"Waadt"},"127":{"code":"VS","name":"Wallis"},"128":{"code":"ZG","name":"Zug"},"129":{"code":"ZH","name":"Z\u00fcrich"}},"GB":{"500":{"code":"AB","name":"Aberdeenshire"},"501":{"code":"AN","name":"Anglesey"},"502":{"code":"AG","name":"Angus"},"503":{"code":"AR","name":"Argyll"},"504":{"code":"AY","name":"Ayrshire"},"505":{"code":"BN","name":"Banffshire"},"506":{"code":"BD","name":"Bedfordshire"},"507":{"code":"BI","name":"Berwickshire"},"508":{"code":"BR","name":"Breconshire"},"509":{"code":"BK","name":"Buckinghamshire"},"510":{"code":"BU","name":"Bute"},"511":{"code":"CN","name":"Caernarvonshire"},"512":{"code":"CT","name":"Caithness"},"513":{"code":"CM","name":"Cambridgeshire"},"514":{"code":"CG","name":"Cardiganshire"},"515":{"code":"CR","name":"Carmarthenshire"},"516":{"code":"CH","name":"Cheshire"},"517":{"code":"CL","name":"Clackmannanshire"},"518":{"code":"CN","name":"Cornwall and Isles of Scilly"},"519":{"code":"CU","name":"Cumbria"},"520":{"code":"DI","name":"Denbighshire"},"521":{"code":"DB","name":"Derbyshire"},"522":{"code":"DV","name":"Devon"},"523":{"code":"DO","name":"Dorset"},"524":{"code":"DA","name":"Dumbartonshire"},"525":{"code":"DU","name":"Dumfriesshire"},"526":{"code":"DR","name":"Durham"},"527":{"code":"EL","name":"East Lothian"},"528":{"code":"ES","name":"East Sussex"},"529":{"code":"EX","name":"Essex"},"530":{"code":"FI","name":"Fife"},"531":{"code":"FL","name":"Flintshire"},"532":{"code":"GM","name":"Glamorgan"},"533":{"code":"GL","name":"Gloucestershire"},"534":{"code":"GR","name":"Greater London"},"535":{"code":"GM","name":"Greater Manchester"},"536":{"code":"HM","name":"Hampshire"},"537":{"code":"HT","name":"Hertfordshire"},"538":{"code":"IV","name":"Inverness"},"539":{"code":"KN","name":"Kent"},"540":{"code":"KE","name":"Kincardineshire"},"541":{"code":"KP","name":"Kinross-shire"},"542":{"code":"KC","name":"Kirkcudbrightshire"},"543":{"code":"LA","name":"Lanarkshire"},"544":{"code":"LC","name":"Lancashire"},"545":{"code":"LE","name":"Leicestershire"},"546":{"code":"LN","name":"Lincolnshire"},"547":{"code":"LD","name":"London"},"548":{"code":"ME","name":"Merionethshire"},"549":{"code":"MR","name":"Merseyside"},"550":{"code":"MO","name":"Midlothian"},"551":{"code":"MO","name":"Monmouthshire"},"552":{"code":"MG","name":"Montgomeryshire"},"553":{"code":"MY","name":"Moray"},"554":{"code":"NN","name":"Nairnshire"},"555":{"code":"NR","name":"Norfolk"},"558":{"code":"NY","name":"North Yorkshire"},"556":{"code":"NH","name":"Northamptonshire"},"557":{"code":"NU","name":"Northumberland"},"559":{"code":"NO","name":"Nottinghamshire"},"560":{"code":"OR","name":"Orkney"},"561":{"code":"OX","name":"Oxfordshire"},"562":{"code":"PB","name":"Peebleshire"},"563":{"code":"PM","name":"Pembrokeshire"},"564":{"code":"PT","name":"Perthshire"},"565":{"code":"RD","name":"Radnorshire"},"566":{"code":"RN","name":"Renfrewshire"},"567":{"code":"RS","name":"Ross & Cromarty"},"568":{"code":"RX","name":"Roxburghshire"},"569":{"code":"SL","name":"Selkirkshire"},"570":{"code":"SE","name":"Shetland"},"571":{"code":"SH","name":"Shropshire"},"572":{"code":"SO","name":"Somerset"},"573":{"code":"SY","name":"South Yorkshire"},"574":{"code":"ST","name":"Staffordshire"},"575":{"code":"SN","name":"Stirlingshire"},"576":{"code":"SU","name":"Suffolk"},"577":{"code":"SU","name":"Surrey"},"578":{"code":"SR","name":"Sutherland"},"579":{"code":"TW","name":"Tyne and Wear"},"580":{"code":"WR","name":"Warwickshire"},"581":{"code":"WE","name":"West Lothian"},"582":{"code":"WM","name":"West Midlands"},"583":{"code":"WS","name":"West Sussex"},"584":{"code":"WY","name":"West Yorkshire"},"585":{"code":"WG","name":"Wigtownshire"},"586":{"code":"WL","name":"Wiltshire"},"587":{"code":"WO","name":"Worcestershire"}},"LV":{"471":{"code":"\u0100da\u017eu novads","name":"\u0100da\u017eu novads"},"366":{"code":"Aglonas novads","name":"Aglonas novads"},"367":{"code":"LV-AI","name":"Aizkraukles novads"},"368":{"code":"Aizputes novads","name":"Aizputes novads"},"369":{"code":"Akn\u012bstes novads","name":"Akn\u012bstes novads"},"370":{"code":"Alojas novads","name":"Alojas novads"},"371":{"code":"Alsungas novads","name":"Alsungas novads"},"372":{"code":"LV-AL","name":"Al\u016bksnes novads"},"373":{"code":"Amatas novads","name":"Amatas novads"},"374":{"code":"Apes novads","name":"Apes novads"},"375":{"code":"Auces novads","name":"Auces novads"},"376":{"code":"Bab\u012btes novads","name":"Bab\u012btes novads"},"377":{"code":"Baldones novads","name":"Baldones novads"},"378":{"code":"Baltinavas novads","name":"Baltinavas novads"},"379":{"code":"LV-BL","name":"Balvu novads"},"380":{"code":"LV-BU","name":"Bauskas novads"},"381":{"code":"Bever\u012bnas novads","name":"Bever\u012bnas novads"},"382":{"code":"Broc\u0113nu novads","name":"Broc\u0113nu novads"},"383":{"code":"Burtnieku novads","name":"Burtnieku novads"},"384":{"code":"Carnikavas novads","name":"Carnikavas novads"},"387":{"code":"LV-CE","name":"C\u0113su novads"},"385":{"code":"Cesvaines novads","name":"Cesvaines novads"},"386":{"code":"Ciblas novads","name":"Ciblas novads"},"388":{"code":"Dagdas novads","name":"Dagdas novads"},"355":{"code":"LV-DGV","name":"Daugavpils"},"389":{"code":"LV-DA","name":"Daugavpils novads"},"390":{"code":"LV-DO","name":"Dobeles novads"},"391":{"code":"Dundagas novads","name":"Dundagas novads"},"392":{"code":"Durbes novads","name":"Durbes novads"},"393":{"code":"Engures novads","name":"Engures novads"},"472":{"code":"\u0112rg\u013cu novads","name":"\u0112rg\u013cu novads"},"394":{"code":"Garkalnes novads","name":"Garkalnes novads"},"395":{"code":"Grobi\u0146as novads","name":"Grobi\u0146as novads"},"396":{"code":"LV-GU","name":"Gulbenes novads"},"397":{"code":"Iecavas novads","name":"Iecavas novads"},"398":{"code":"Ik\u0161\u0137iles novads","name":"Ik\u0161\u0137iles novads"},"399":{"code":"Il\u016bkstes novads","name":"Il\u016bkstes novads"},"400":{"code":"In\u010dukalna novads","name":"In\u010dukalna novads"},"401":{"code":"Jaunjelgavas novads","name":"Jaunjelgavas novads"},"402":{"code":"Jaunpiebalgas novads","name":"Jaunpiebalgas novads"},"403":{"code":"Jaunpils novads","name":"Jaunpils novads"},"357":{"code":"J\u0113kabpils","name":"J\u0113kabpils"},"405":{"code":"LV-JK","name":"J\u0113kabpils novads"},"356":{"code":"LV-JEL","name":"Jelgava"},"404":{"code":"LV-JL","name":"Jelgavas novads"},"358":{"code":"LV-JUR","name":"J\u016brmala"},"406":{"code":"Kandavas novads","name":"Kandavas novads"},"412":{"code":"K\u0101rsavas novads","name":"K\u0101rsavas novads"},"473":{"code":"\u0136eguma novads","name":"\u0136eguma novads"},"474":{"code":"\u0136ekavas novads","name":"\u0136ekavas novads"},"407":{"code":"Kokneses novads","name":"Kokneses novads"},"410":{"code":"LV-KR","name":"Kr\u0101slavas novads"},"408":{"code":"Krimuldas novads","name":"Krimuldas novads"},"409":{"code":"Krustpils novads","name":"Krustpils novads"},"411":{"code":"LV-KU","name":"Kuld\u012bgas novads"},"413":{"code":"Lielv\u0101rdes novads","name":"Lielv\u0101rdes novads"},"359":{"code":"LV-LPX","name":"Liep\u0101ja"},"360":{"code":"LV-LE","name":"Liep\u0101jas novads"},"417":{"code":"L\u012bgatnes novads","name":"L\u012bgatnes novads"},"414":{"code":"LV-LM","name":"Limba\u017eu novads"},"418":{"code":"L\u012bv\u0101nu novads","name":"L\u012bv\u0101nu novads"},"415":{"code":"Lub\u0101nas novads","name":"Lub\u0101nas novads"},"416":{"code":"LV-LU","name":"Ludzas novads"},"419":{"code":"LV-MA","name":"Madonas novads"},"421":{"code":"M\u0101lpils novads","name":"M\u0101lpils novads"},"422":{"code":"M\u0101rupes novads","name":"M\u0101rupes novads"},"420":{"code":"Mazsalacas novads","name":"Mazsalacas novads"},"423":{"code":"Nauk\u0161\u0113nu novads","name":"Nauk\u0161\u0113nu novads"},"424":{"code":"Neretas novads","name":"Neretas novads"},"425":{"code":"N\u012bcas novads","name":"N\u012bcas novads"},"426":{"code":"LV-OG","name":"Ogres novads"},"427":{"code":"Olaines novads","name":"Olaines novads"},"428":{"code":"Ozolnieku novads","name":"Ozolnieku novads"},"432":{"code":"P\u0101rgaujas novads","name":"P\u0101rgaujas novads"},"433":{"code":"P\u0101vilostas novads","name":"P\u0101vilostas novads"},"434":{"code":"P\u013cavi\u0146u novads","name":"P\u013cavi\u0146u novads"},"429":{"code":"LV-PR","name":"Prei\u013cu novads"},"430":{"code":"Priekules novads","name":"Priekules novads"},"431":{"code":"Prieku\u013cu novads","name":"Prieku\u013cu novads"},"435":{"code":"Raunas novads","name":"Raunas novads"},"361":{"code":"LV-REZ","name":"R\u0113zekne"},"442":{"code":"LV-RE","name":"R\u0113zeknes novads"},"436":{"code":"Riebi\u0146u novads","name":"Riebi\u0146u novads"},"362":{"code":"LV-RIX","name":"R\u012bga"},"363":{"code":"LV-RI","name":"R\u012bgas novads"},"437":{"code":"Rojas novads","name":"Rojas novads"},"438":{"code":"Ropa\u017eu novads","name":"Ropa\u017eu novads"},"439":{"code":"Rucavas novads","name":"Rucavas novads"},"440":{"code":"Rug\u0101ju novads","name":"Rug\u0101ju novads"},"443":{"code":"R\u016bjienas novads","name":"R\u016bjienas novads"},"441":{"code":"Rund\u0101les novads","name":"Rund\u0101les novads"},"444":{"code":"Salacgr\u012bvas novads","name":"Salacgr\u012bvas novads"},"445":{"code":"Salas novads","name":"Salas novads"},"446":{"code":"Salaspils novads","name":"Salaspils novads"},"447":{"code":"LV-SA","name":"Saldus novads"},"448":{"code":"Saulkrastu novads","name":"Saulkrastu novads"},"455":{"code":"S\u0113jas novads","name":"S\u0113jas novads"},"449":{"code":"Siguldas novads","name":"Siguldas novads"},"451":{"code":"Skr\u012bveru novads","name":"Skr\u012bveru novads"},"450":{"code":"Skrundas novads","name":"Skrundas novads"},"452":{"code":"Smiltenes novads","name":"Smiltenes novads"},"453":{"code":"Stopi\u0146u novads","name":"Stopi\u0146u novads"},"454":{"code":"Stren\u010du novads","name":"Stren\u010du novads"},"456":{"code":"LV-TA","name":"Talsu novads"},"458":{"code":"T\u0113rvetes novads","name":"T\u0113rvetes novads"},"457":{"code":"LV-TU","name":"Tukuma novads"},"459":{"code":"Vai\u0146odes novads","name":"Vai\u0146odes novads"},"460":{"code":"LV-VK","name":"Valkas novads"},"364":{"code":"Valmiera","name":"Valmiera"},"461":{"code":"LV-VM","name":"Valmieras novads"},"462":{"code":"Varak\u013c\u0101nu novads","name":"Varak\u013c\u0101nu novads"},"469":{"code":"V\u0101rkavas novads","name":"V\u0101rkavas novads"},"463":{"code":"Vecpiebalgas novads","name":"Vecpiebalgas novads"},"464":{"code":"Vecumnieku novads","name":"Vecumnieku novads"},"365":{"code":"LV-VEN","name":"Ventspils"},"465":{"code":"LV-VE","name":"Ventspils novads"},"466":{"code":"Vies\u012btes novads","name":"Vies\u012btes novads"},"467":{"code":"Vi\u013cakas novads","name":"Vi\u013cakas novads"},"468":{"code":"Vi\u013c\u0101nu novads","name":"Vi\u013c\u0101nu novads"},"470":{"code":"Zilupes novads","name":"Zilupes novads"}},"IL":{"588":{"code":"AF","name":"Afula"},"589":{"code":"AR","name":"Ariel"},"590":{"code":"AS","name":"Ashdod"},"591":{"code":"AH","name":"Ashkelon"},"592":{"code":"BY","name":"Bat Yam"},"593":{"code":"BS","name":"Beer Sheva"},"594":{"code":"BN","name":"Beit Shean"},"595":{"code":"BH","name":"Beit Shemesh"},"596":{"code":"BI","name":"Binyamin"},"597":{"code":"BB","name":"Bnei Brak"},"598":{"code":"ET","name":"Eilat"},"599":{"code":"GL","name":"Galil"},"600":{"code":"GM","name":"Givatayim"},"601":{"code":"GO","name":"Golan"},"602":{"code":"GE","name":"Gush Etzion"},"603":{"code":"GK","name":"Gush Katif (Gaza)"},"604":{"code":"HA","name":"Hadera"},"605":{"code":"HF","name":"Haifa"},"606":{"code":"HE","name":"Herzlia"},"607":{"code":"HH","name":"Hod Hasharon"},"608":{"code":"HO","name":"Holon"},"609":{"code":"JR","name":"Jerusalem"},"610":{"code":"KR","name":"Karmiel"},"611":{"code":"KF","name":"Kfar Sava"},"612":{"code":"KG","name":"Kiryat Gat"},"613":{"code":"LD","name":"Lod"},"614":{"code":"MA","name":"Maaleh Adumim"},"615":{"code":"MD","name":"Modiin"},"616":{"code":"NI","name":"Nazareth Illit"},"617":{"code":"NA","name":"Negev\/Arava"},"618":{"code":"NE","name":"Netanya"},"619":{"code":"PT","name":"Petach Tikva"},"620":{"code":"RA","name":"Raanana"},"621":{"code":"RG","name":"Ramat Gan"},"622":{"code":"RH","name":"Ramat Hasharon"},"623":{"code":"RM","name":"Ramla"},"624":{"code":"RV","name":"Rehovot"},"625":{"code":"RL","name":"Rishon Letzion"},"626":{"code":"RO","name":"Rosh Haayin"},"627":{"code":"SH","name":"Shomron (Samaria)"},"628":{"code":"TA","name":"Tel Aviv"},"629":{"code":"TI","name":"Tiberias"},"630":{"code":"TZ","name":"Tzfat"},"631":{"code":"YE","name":"Yehuda (Judea)"}},"FI":{"339":{"code":"Ahvenanmaa","name":"Ahvenanmaa"},"333":{"code":"Etel\u00e4-Karjala","name":"Etel\u00e4-Karjala"},"326":{"code":"Etel\u00e4-Pohjanmaa","name":"Etel\u00e4-Pohjanmaa"},"325":{"code":"Etel\u00e4-Savo","name":"Etel\u00e4-Savo"},"337":{"code":"It\u00e4-Uusimaa","name":"It\u00e4-Uusimaa"},"322":{"code":"Kainuu","name":"Kainuu"},"335":{"code":"Kanta-H\u00e4me","name":"Kanta-H\u00e4me"},"330":{"code":"Keski-Pohjanmaa","name":"Keski-Pohjanmaa"},"331":{"code":"Keski-Suomi","name":"Keski-Suomi"},"338":{"code":"Kymenlaakso","name":"Kymenlaakso"},"320":{"code":"Lappi","name":"Lappi"},"334":{"code":"P\u00e4ij\u00e4t-H\u00e4me","name":"P\u00e4ij\u00e4t-H\u00e4me"},"328":{"code":"Pirkanmaa","name":"Pirkanmaa"},"327":{"code":"Pohjanmaa","name":"Pohjanmaa"},"323":{"code":"Pohjois-Karjala","name":"Pohjois-Karjala"},"321":{"code":"Pohjois-Pohjanmaa","name":"Pohjois-Pohjanmaa"},"324":{"code":"Pohjois-Savo","name":"Pohjois-Savo"},"329":{"code":"Satakunta","name":"Satakunta"},"336":{"code":"Uusimaa","name":"Uusimaa"},"332":{"code":"Varsinais-Suomi","name":"Varsinais-Suomi"}},"FR":{"182":{"code":"1","name":"Ain"},"183":{"code":"2","name":"Aisne"},"184":{"code":"3","name":"Allier"},"185":{"code":"4","name":"Alpes-de-Haute-Provence"},"187":{"code":"6","name":"Alpes-Maritimes"},"188":{"code":"7","name":"Ard\u00e8che"},"189":{"code":"8","name":"Ardennes"},"190":{"code":"9","name":"Ari\u00e8ge"},"191":{"code":"10","name":"Aube"},"192":{"code":"11","name":"Aude"},"193":{"code":"12","name":"Aveyron"},"249":{"code":"67","name":"Bas-Rhin"},"194":{"code":"13","name":"Bouches-du-Rh\u00f4ne"},"195":{"code":"14","name":"Calvados"},"196":{"code":"15","name":"Cantal"},"197":{"code":"16","name":"Charente"},"198":{"code":"17","name":"Charente-Maritime"},"199":{"code":"18","name":"Cher"},"200":{"code":"19","name":"Corr\u00e8ze"},"201":{"code":"2A","name":"Corse-du-Sud"},"203":{"code":"21","name":"C\u00f4te-d'Or"},"204":{"code":"22","name":"C\u00f4tes-d'Armor"},"205":{"code":"23","name":"Creuse"},"261":{"code":"79","name":"Deux-S\u00e8vres"},"206":{"code":"24","name":"Dordogne"},"207":{"code":"25","name":"Doubs"},"208":{"code":"26","name":"Dr\u00f4me"},"273":{"code":"91","name":"Essonne"},"209":{"code":"27","name":"Eure"},"210":{"code":"28","name":"Eure-et-Loir"},"211":{"code":"29","name":"Finist\u00e8re"},"212":{"code":"30","name":"Gard"},"214":{"code":"32","name":"Gers"},"215":{"code":"33","name":"Gironde"},"250":{"code":"68","name":"Haut-Rhin"},"202":{"code":"2B","name":"Haute-Corse"},"213":{"code":"31","name":"Haute-Garonne"},"225":{"code":"43","name":"Haute-Loire"},"234":{"code":"52","name":"Haute-Marne"},"252":{"code":"70","name":"Haute-Sa\u00f4ne"},"256":{"code":"74","name":"Haute-Savoie"},"269":{"code":"87","name":"Haute-Vienne"},"186":{"code":"5","name":"Hautes-Alpes"},"247":{"code":"65","name":"Hautes-Pyr\u00e9n\u00e9es"},"274":{"code":"92","name":"Hauts-de-Seine"},"216":{"code":"34","name":"H\u00e9rault"},"217":{"code":"35","name":"Ille-et-Vilaine"},"218":{"code":"36","name":"Indre"},"219":{"code":"37","name":"Indre-et-Loire"},"220":{"code":"38","name":"Is\u00e8re"},"221":{"code":"39","name":"Jura"},"222":{"code":"40","name":"Landes"},"223":{"code":"41","name":"Loir-et-Cher"},"224":{"code":"42","name":"Loire"},"226":{"code":"44","name":"Loire-Atlantique"},"227":{"code":"45","name":"Loiret"},"228":{"code":"46","name":"Lot"},"229":{"code":"47","name":"Lot-et-Garonne"},"230":{"code":"48","name":"Loz\u00e8re"},"231":{"code":"49","name":"Maine-et-Loire"},"232":{"code":"50","name":"Manche"},"233":{"code":"51","name":"Marne"},"235":{"code":"53","name":"Mayenne"},"236":{"code":"54","name":"Meurthe-et-Moselle"},"237":{"code":"55","name":"Meuse"},"238":{"code":"56","name":"Morbihan"},"239":{"code":"57","name":"Moselle"},"240":{"code":"58","name":"Ni\u00e8vre"},"241":{"code":"59","name":"Nord"},"242":{"code":"60","name":"Oise"},"243":{"code":"61","name":"Orne"},"257":{"code":"75","name":"Paris"},"244":{"code":"62","name":"Pas-de-Calais"},"245":{"code":"63","name":"Puy-de-D\u00f4me"},"246":{"code":"64","name":"Pyr\u00e9n\u00e9es-Atlantiques"},"248":{"code":"66","name":"Pyr\u00e9n\u00e9es-Orientales"},"251":{"code":"69","name":"Rh\u00f4ne"},"253":{"code":"71","name":"Sa\u00f4ne-et-Loire"},"254":{"code":"72","name":"Sarthe"},"255":{"code":"73","name":"Savoie"},"259":{"code":"77","name":"Seine-et-Marne"},"258":{"code":"76","name":"Seine-Maritime"},"275":{"code":"93","name":"Seine-Saint-Denis"},"262":{"code":"80","name":"Somme"},"263":{"code":"81","name":"Tarn"},"264":{"code":"82","name":"Tarn-et-Garonne"},"272":{"code":"90","name":"Territoire-de-Belfort"},"277":{"code":"95","name":"Val-d'Oise"},"276":{"code":"94","name":"Val-de-Marne"},"265":{"code":"83","name":"Var"},"266":{"code":"84","name":"Vaucluse"},"267":{"code":"85","name":"Vend\u00e9e"},"268":{"code":"86","name":"Vienne"},"270":{"code":"88","name":"Vosges"},"271":{"code":"89","name":"Yonne"},"260":{"code":"78","name":"Yvelines"}},"US":{"1":{"code":"AL","name":"Alabama"},"2":{"code":"AK","name":"Alaska"},"3":{"code":"AS","name":"American Samoa"},"4":{"code":"AZ","name":"Arizona"},"5":{"code":"AR","name":"Arkansas"},"6":{"code":"AF","name":"Armed Forces Africa"},"7":{"code":"AA","name":"Armed Forces Americas"},"8":{"code":"AC","name":"Armed Forces Canada"},"9":{"code":"AE","name":"Armed Forces Europe"},"10":{"code":"AM","name":"Armed Forces Middle East"},"11":{"code":"AP","name":"Armed Forces Pacific"},"12":{"code":"CA","name":"California"},"13":{"code":"CO","name":"Colorado"},"14":{"code":"CT","name":"Connecticut"},"15":{"code":"DE","name":"Delaware"},"16":{"code":"DC","name":"District of Columbia"},"17":{"code":"FM","name":"Federated States Of Micronesia"},"18":{"code":"FL","name":"Florida"},"19":{"code":"GA","name":"Georgia"},"20":{"code":"GU","name":"Guam"},"21":{"code":"HI","name":"Hawaii"},"22":{"code":"ID","name":"Idaho"},"23":{"code":"IL","name":"Illinois"},"24":{"code":"IN","name":"Indiana"},"25":{"code":"IA","name":"Iowa"},"26":{"code":"KS","name":"Kansas"},"27":{"code":"KY","name":"Kentucky"},"28":{"code":"LA","name":"Louisiana"},"29":{"code":"ME","name":"Maine"},"30":{"code":"MH","name":"Marshall Islands"},"31":{"code":"MD","name":"Maryland"},"32":{"code":"MA","name":"Massachusetts"},"33":{"code":"MI","name":"Michigan"},"34":{"code":"MN","name":"Minnesota"},"35":{"code":"MS","name":"Mississippi"},"36":{"code":"MO","name":"Missouri"},"37":{"code":"MT","name":"Montana"},"38":{"code":"NE","name":"Nebraska"},"39":{"code":"NV","name":"Nevada"},"40":{"code":"NH","name":"New Hampshire"},"41":{"code":"NJ","name":"New Jersey"},"42":{"code":"NM","name":"New Mexico"},"43":{"code":"NY","name":"New York"},"44":{"code":"NC","name":"North Carolina"},"45":{"code":"ND","name":"North Dakota"},"46":{"code":"MP","name":"Northern Mariana Islands"},"47":{"code":"OH","name":"Ohio"},"48":{"code":"OK","name":"Oklahoma"},"49":{"code":"OR","name":"Oregon"},"50":{"code":"PW","name":"Palau"},"51":{"code":"PA","name":"Pennsylvania"},"52":{"code":"PR","name":"Puerto Rico"},"53":{"code":"RI","name":"Rhode Island"},"54":{"code":"SC","name":"South Carolina"},"55":{"code":"SD","name":"South Dakota"},"56":{"code":"TN","name":"Tennessee"},"57":{"code":"TX","name":"Texas"},"58":{"code":"UT","name":"Utah"},"59":{"code":"VT","name":"Vermont"},"60":{"code":"VI","name":"Virgin Islands"},"61":{"code":"VA","name":"Virginia"},"62":{"code":"WA","name":"Washington"},"63":{"code":"WV","name":"West Virginia"},"64":{"code":"WI","name":"Wisconsin"},"65":{"code":"WY","name":"Wyoming"}},"RO":{"278":{"code":"AB","name":"Alba"},"279":{"code":"AR","name":"Arad"},"280":{"code":"AG","name":"Arge\u015f"},"281":{"code":"BC","name":"Bac\u0103u"},"282":{"code":"BH","name":"Bihor"},"283":{"code":"BN","name":"Bistri\u0163a-N\u0103s\u0103ud"},"284":{"code":"BT","name":"Boto\u015fani"},"286":{"code":"BR","name":"Br\u0103ila"},"285":{"code":"BV","name":"Bra\u015fov"},"287":{"code":"B","name":"Bucure\u015fti"},"288":{"code":"BZ","name":"Buz\u0103u"},"290":{"code":"CL","name":"C\u0103l\u0103ra\u015fi"},"289":{"code":"CS","name":"Cara\u015f-Severin"},"291":{"code":"CJ","name":"Cluj"},"292":{"code":"CT","name":"Constan\u0163a"},"293":{"code":"CV","name":"Covasna"},"294":{"code":"DB","name":"D\u00e2mbovi\u0163a"},"295":{"code":"DJ","name":"Dolj"},"296":{"code":"GL","name":"Gala\u0163i"},"297":{"code":"GR","name":"Giurgiu"},"298":{"code":"GJ","name":"Gorj"},"299":{"code":"HR","name":"Harghita"},"300":{"code":"HD","name":"Hunedoara"},"301":{"code":"IL","name":"Ialomi\u0163a"},"302":{"code":"IS","name":"Ia\u015fi"},"303":{"code":"IF","name":"Ilfov"},"304":{"code":"MM","name":"Maramure\u015f"},"305":{"code":"MH","name":"Mehedin\u0163i"},"306":{"code":"MS","name":"Mure\u015f"},"307":{"code":"NT","name":"Neam\u0163"},"308":{"code":"OT","name":"Olt"},"309":{"code":"PH","name":"Prahova"},"311":{"code":"SJ","name":"S\u0103laj"},"310":{"code":"SM","name":"Satu-Mare"},"312":{"code":"SB","name":"Sibiu"},"313":{"code":"SV","name":"Suceava"},"314":{"code":"TR","name":"Teleorman"},"315":{"code":"TM","name":"Timi\u015f"},"316":{"code":"TL","name":"Tulcea"},"318":{"code":"VL","name":"V\u00e2lcea"},"317":{"code":"VS","name":"Vaslui"},"319":{"code":"VN","name":"Vrancea"}},"CA":{"66":{"code":"AB","name":"Alberta"},"67":{"code":"BC","name":"British Columbia"},"68":{"code":"MB","name":"Manitoba"},"70":{"code":"NB","name":"New Brunswick"},"69":{"code":"NL","name":"Newfoundland and Labrador"},"72":{"code":"NT","name":"Northwest Territories"},"71":{"code":"NS","name":"Nova Scotia"},"73":{"code":"NU","name":"Nunavut"},"74":{"code":"ON","name":"Ontario"},"75":{"code":"PE","name":"Prince Edward Island"},"76":{"code":"QC","name":"Quebec"},"77":{"code":"SK","name":"Saskatchewan"},"78":{"code":"YT","name":"Yukon Territory"}},"LT":{"475":{"code":"LT-AL","name":"Alytaus Apskritis"},"476":{"code":"LT-KU","name":"Kauno Apskritis"},"477":{"code":"LT-KL","name":"Klaip\u0117dos Apskritis"},"478":{"code":"LT-MR","name":"Marijampol\u0117s Apskritis"},"479":{"code":"LT-PN","name":"Panev\u0117\u017eio Apskritis"},"480":{"code":"LT-SA","name":"\u0160iauli\u0173 Apskritis"},"481":{"code":"LT-TA","name":"Taurag\u0117s Apskritis"},"482":{"code":"LT-TE","name":"Tel\u0161i\u0173 Apskritis"},"483":{"code":"LT-UT","name":"Utenos Apskritis"},"484":{"code":"LT-VL","name":"Vilniaus Apskritis"}},"DE":{"80":{"code":"BAW","name":"Baden-W\u00fcrttemberg"},"81":{"code":"BAY","name":"Bayern"},"82":{"code":"BER","name":"Berlin"},"83":{"code":"BRG","name":"Brandenburg"},"84":{"code":"BRE","name":"Bremen"},"85":{"code":"HAM","name":"Hamburg"},"86":{"code":"HES","name":"Hessen"},"87":{"code":"MEC","name":"Mecklenburg-Vorpommern"},"79":{"code":"NDS","name":"Niedersachsen"},"88":{"code":"NRW","name":"Nordrhein-Westfalen"},"89":{"code":"RHE","name":"Rheinland-Pfalz"},"90":{"code":"SAR","name":"Saarland"},"91":{"code":"SAS","name":"Sachsen"},"92":{"code":"SAC","name":"Sachsen-Anhalt"},"93":{"code":"SCN","name":"Schleswig-Holstein"},"94":{"code":"THE","name":"Th\u00fcringen"}},"AT":{"102":{"code":"BL","name":"Burgenland"},"99":{"code":"KN","name":"K\u00e4rnten"},"96":{"code":"NO","name":"Nieder\u00f6sterreich"},"97":{"code":"OO","name":"Ober\u00f6sterreich"},"98":{"code":"SB","name":"Salzburg"},"100":{"code":"ST","name":"Steiermark"},"101":{"code":"TI","name":"Tirol"},"103":{"code":"VB","name":"Vorarlberg"},"95":{"code":"WI","name":"Wien"}},"EE":{"340":{"code":"EE-37","name":"Harjumaa"},"341":{"code":"EE-39","name":"Hiiumaa"},"342":{"code":"EE-44","name":"Ida-Virumaa"},"344":{"code":"EE-51","name":"J\u00e4rvamaa"},"343":{"code":"EE-49","name":"J\u00f5gevamaa"},"346":{"code":"EE-59","name":"L\u00e4\u00e4ne-Virumaa"},"345":{"code":"EE-57","name":"L\u00e4\u00e4nemaa"},"348":{"code":"EE-67","name":"P\u00e4rnumaa"},"347":{"code":"EE-65","name":"P\u00f5lvamaa"},"349":{"code":"EE-70","name":"Raplamaa"},"350":{"code":"EE-74","name":"Saaremaa"},"351":{"code":"EE-78","name":"Tartumaa"},"352":{"code":"EE-82","name":"Valgamaa"},"353":{"code":"EE-84","name":"Viljandimaa"},"354":{"code":"EE-86","name":"V\u00f5rumaa"}}});
+</script>
+
+            <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_relig">
+    <div class="vss-bordered-row">
+        <span class="form-title">Religiosity</span>
+    </div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Baal Teshuva:</span></div>
+            <div class="form-field-block">
+								<select name="product[teshuva]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="123"  >No</option>
+											<option value="122" selected="selected" >Yes</option>
+									</select>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Family Religious Background:</span></div>
+            <div class="form-field-block">
+								<select name="product[family_background]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="110"  >Religious</option>
+											<option value="111" selected="selected" >Secular</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	    	<div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Shul you attend:</span></div>
+            <div class="form-field-block">
+                <input name="product[shul]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block" id="torah_study_block">
+            <div class="form-label-block"><span class="form-label">Frequency of Torah study:</span></div>
+            <div class="form-field-block">
+								<select name="product[torah_study]" class="custom-input-field input-width3 vssmp_validate_int ">
+					 <option value="">Select</option> 											<option value="113"  >Full time learning</option>
+											<option value="112"  >Koveah Itim</option>
+											<option value="114"  >sometimes</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Frequency of Tefillah:</span></div>
+            <div class="form-field-block">
+								<select name="product[tefillah]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="115"  >3 times daily</option>
+											<option value="116" selected="selected" >daily</option>
+									</select>
+            </div>
+        </div>
+        
+		        <div class="vssmp_small_block" id='head_cover_block'>
+            <div class="form-label-block"><span class="form-label">Head Covering:</span></div>
+            <div class="form-field-block">
+								<select name="product[head_cover]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="117" selected="selected" >Full head covering</option>
+											<option value="119"  >Partial</option>
+											<option value="118"  >Sheitel</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	</div>
+            <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_educ">
+    <div class="vss-bordered-row">
+        <span class="form-title">Education</span>
+    </div>
+        <div class="vss-bordered-row">
+        <!-- Contact -->
+            <div class="vssmp_small_block crvblog_S">
+                <div class="form-label-block">
+                    <span class="form-label">
+                        Seminary:
+                    </span>
+                </div>
+                <!-- Vss_MarketPlace_Block_Product_Section_Education -->
+                <div class="form-field-block crvaccounteditblock_yeshiva">
+                    <input name="product[yeshiva]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="ttt"/>
+                </div>
+            </div>
+                    <div class="vssmp_small_block crvblog_K">
+                <div class="form-label-block"><span class="form-label">How Many Years:</span></div>
+                <div class="form-field-block">
+                                        <select name="product[how_many_year]" class="custom-input-field input-width3 vssmp_validate_int ">
+                                                                            <option value="124"  >1</option>
+                                                    <option value="125"  >2</option>
+                                                    <option value="126"  >3</option>
+                                                    <option value="127"  >4</option>
+                                                    <option value="128" selected="selected" >5</option>
+                                                    <option value="129"  >6</option>
+                                                    <option value="130"  >7</option>
+                                                    <option value="131"  >8</option>
+                                                    <option value="132"  >9+</option>
+                                            </select>
+                </div>
+            </div>
+            </div>
+        <div class="vss-bordered-row">
+                    <div class="vssmp_small_block crvblog_SS1">
+                <div class="form-label-block">Secular Education</div>
+                <div class="form-field-block">
+                    <input name="product['secular_education']" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value=""/>
+                </div>
+            </div>
+            </div>
+</div>
+             <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_phy">
+    <div class="vss-bordered-row">
+        <span class="form-title">Physical Information</span>
+    </div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Hair Color:</span></div>
+            <div class="form-field-block">
+								<select name="product[hair_color]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="133"  >Auburn</option>
+											<option value="134"  >Black</option>
+											<option value="135" selected="selected" >Blonde</option>
+											<option value="136"  >Brown</option>
+											<option value="137"  >Dark Brown</option>
+											<option value="138"  >Grey</option>
+											<option value="139"  >Red</option>
+									</select>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Eye Color:</span></div>
+            <div class="form-field-block">
+								<select name="product[eye_color]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="140"  >Black</option>
+											<option value="141" selected="selected" >Blue</option>
+											<option value="143"  >Blue Grey</option>
+											<option value="142"  >Brown</option>
+											<option value="145"  >Green</option>
+											<option value="144"  >Grey</option>
+											<option value="146"  >Hazel</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	    	<div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Body Type:</span></div>
+            <div class="form-field-block">
+								<select name="product[body_type]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="147"  >Athletic Fit</option>
+											<option value="148"  >Average</option>
+											<option value="149" selected="selected" >Broad Build</option>
+											<option value="150"  >Lean</option>
+											<option value="151"  >Muscular</option>
+									</select>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Height:</span></div>
+            <div class="form-field-block">
+								<select name="product[height]" class="custom-input-field input-width3 vssmp_validate_int ">
+																<option value="760"  >11, 5</option>
+											<option value="154"  >4'9"</option>
+											<option value="766"  >8, 5</option>
+											<option value="155"  >4'10"</option>
+											<option value="156"  >4'11"</option>
+											<option value="157"  >5'0"</option>
+											<option value="158"  >5'1"</option>
+											<option value="159"  >5'2"</option>
+											<option value="160"  >5'3"</option>
+											<option value="161"  >5'4"</option>
+											<option value="162"  >5'5"</option>
+											<option value="163"  >5'6"</option>
+											<option value="164"  >5'7"</option>
+											<option value="165"  >5'8"</option>
+											<option value="166"  >5'9"</option>
+											<option value="167"  >5'10"</option>
+											<option value="168" selected="selected" >5'11"</option>
+											<option value="94"  >6'0"</option>
+											<option value="95"  >6'1"</option>
+											<option value="96"  >6'2"</option>
+											<option value="97"  >6'3"</option>
+											<option value="98"  >6'4"</option>
+											<option value="99"  >6'5"</option>
+											<option value="100"  >6'6"</option>
+											<option value="101"  >6'7"</option>
+											<option value="102"  >6'8"</option>
+											<option value="103"  >6'9"</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Disability:</span></div>
+            <div class="form-field-block">
+								<select id="disability" name="product[disablity]" class="custom-input-field input-width3 vssmp_validate_int ">
+					 <option value="">Select</option> 											<option value="152"  >No</option>
+											<option value="153"  >Yes</option>
+									</select>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block" id="dis_div" style="display:none;">
+            <div class="form-label-block"><span class="form-label">Disability:</span></div>
+            <div class="form-field-block">
+				<input id="dis_box" name="product[disability_box]" type="textarea" class="custom-input-field input-width3 vssmp_validate_varchar " value=""/>
+            </div>
+        </div>
+        	</div>	
+</div>
+
+             <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_refe">
+    <div class="vss-bordered-row">
+        <span class="form-title">References</span>
+    </div>
+<!-------------------------------- First Reference Form ------------------------------>
+<!-------------------------------- First Reference Form ------------------------------>
+<!-------------------------------- First Reference Form ------------------------------>
+	<fieldset style="padding:.35em .625em .75em;">
+	<legend style="margin-bottom:0px;border-bottom:0px;font-size:16px;">Rabbi Reference</legend>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">First Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref1_f_name]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Last Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref1_l_name]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	    	<div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Email:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref1_email]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Primary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref1_phone]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Secondary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref1_phone2]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	</fieldset>
+<!-------------------------------- Second Reference Form ------------------------------>
+<!-------------------------------- Second Reference Form ------------------------------>
+<!-------------------------------- Second Reference Form ------------------------------>
+	<fieldset style="padding:.35em .625em .75em;">
+	<legend style="margin-bottom:0px;border-bottom:0px;font-size:16px;">Family Reference</legend>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">First Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref2_f_name]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Last Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref2_l_name]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	    	<div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Email:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref2_email]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Primary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref2_phone]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Secondary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref2_phone2]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="y"/>
+            </div>
+        </div>
+        	</div>
+	</fieldset>
+<!-------------------------------- Third Reference Form ------------------------------>
+<!-------------------------------- Third Reference Form ------------------------------>
+<!-------------------------------- Third Reference Form ------------------------------>
+	<fieldset style="padding:.35em .625em .75em;">
+	<legend style="margin-bottom:0px;border-bottom:0px;font-size:16px;">Friend Reference</legend>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">First Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref3_fname]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="ey"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Last Name:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref3_lname]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value=""/>
+            </div>
+        </div>
+        	</div>
+		<div class="vss-bordered-row">
+		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Email:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref3_email]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="ey"/>
+            </div>
+        </div>
+        	</div>
+	        <div class="vss-bordered-row">
+        <!-- Contact -->
+                <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Primary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref3_phone]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="ey"/>
+            </div>
+        </div>
+        		        <div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">Secondary Phone:</span></div>
+            <div class="form-field-block">
+				<input name="product[ref3_phone2]" type="text" class="custom-input-field input-width3 vssmp_validate_varchar " value="ey"/>
+            </div>
+        </div>
+        	</div>
+	</fieldset>		
+	
+</div>
+
+            <div id="vssmp-pro-form-blk-general" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk crvcontactsform_look">
+    <div class="vss-bordered-row">
+        <span class="form-title">Looking For</span>
+    </div>
+	    	<div class="vss-bordered-row">
+		<div class="vssmp_small_block xs-autowidth">
+            <div class="form-label-block" style="width:100%"><span class="form-label">
+            Desired Age Range            </span></div>
+
+			<div class="form-field-block" style="width: auto !important;">
+								<select name="product[age_range_two]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="192"  >18</option>
+											<option value="193"  >19</option>
+											<option value="194"  >20</option>
+											<option value="195"  >21</option>
+											<option value="196"  >22</option>
+											<option value="197"  >23</option>
+											<option value="198"  >24</option>
+											<option value="199"  >25</option>
+											<option value="200"  >26</option>
+											<option value="201"  >27</option>
+											<option value="202"  >28</option>
+											<option value="203"  >29</option>
+											<option value="396"  >30</option>
+											<option value="397"  >31</option>
+											<option value="398"  >32</option>
+											<option value="399"  >33</option>
+											<option value="400"  >34</option>
+											<option value="401"  >35</option>
+											<option value="402"  >36</option>
+											<option value="403"  >37</option>
+											<option value="404"  >38</option>
+											<option value="405"  >39</option>
+											<option value="406"  >40</option>
+											<option value="407"  >41</option>
+											<option value="408"  >42</option>
+											<option value="409"  >43</option>
+											<option value="410"  >44</option>
+											<option value="411"  >45</option>
+											<option value="412"  >46</option>
+											<option value="413"  >47</option>
+											<option value="414"  >48</option>
+											<option value="415"  >49</option>
+											<option value="416"  >50</option>
+											<option value="417"  >51</option>
+											<option value="418"  >52</option>
+											<option value="419"  >53</option>
+											<option value="420"  >54</option>
+											<option value="421"  >55</option>
+											<option value="422"  >56</option>
+											<option value="423"  >57</option>
+											<option value="424"  >58</option>
+											<option value="425"  >59</option>
+											<option value="426"  >60</option>
+											<option value="427"  >61</option>
+											<option value="428"  >62</option>
+											<option value="429"  >63</option>
+											<option value="430"  >64</option>
+											<option value="431"  >65</option>
+											<option value="432"  >66</option>
+											<option value="433"  >67</option>
+											<option value="434"  >68</option>
+											<option value="435"  >69</option>
+											<option value="436"  >70</option>
+											<option value="437"  >71</option>
+											<option value="438"  >72</option>
+											<option value="439"  >73</option>
+											<option value="440"  >74</option>
+											<option value="441"  >75</option>
+											<option value="442"  >76</option>
+											<option value="443"  >77</option>
+											<option value="444"  >78</option>
+											<option value="445"  >79</option>
+											<option value="446"  >80</option>
+											<option value="447"  >81</option>
+											<option value="448"  >82</option>
+											<option value="449"  >83</option>
+											<option value="450"  >84</option>
+											<option value="451"  >85</option>
+											<option value="452"  >86</option>
+											<option value="453"  >87</option>
+											<option value="454"  >88</option>
+											<option value="455"  >89</option>
+											<option value="456"  >90</option>
+											<option value="457" selected="selected" >91</option>
+											<option value="458"  >92</option>
+											<option value="459"  >93</option>
+											<option value="460"  >94</option>
+											<option value="461"  >95</option>
+											<option value="462"  >96</option>
+											<option value="463"  >97</option>
+											<option value="464"  >98</option>
+											<option value="465"  >99</option>
+									</select>
+            </div>
+            <span>TO</span>
+            <div class="form-field-block" style="width: auto !important;">
+								<select name="product[age_range_one]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="180" selected="selected" >18</option>
+											<option value="181"  >19</option>
+											<option value="182"  >20</option>
+											<option value="183"  >21</option>
+											<option value="184"  >22</option>
+											<option value="185"  >23</option>
+											<option value="186"  >24</option>
+											<option value="187"  >25</option>
+											<option value="188"  >26</option>
+											<option value="189"  >27</option>
+											<option value="190"  >28</option>
+											<option value="191"  >29</option>
+											<option value="326"  >30</option>
+											<option value="327"  >31</option>
+											<option value="328"  >32</option>
+											<option value="329"  >33</option>
+											<option value="330"  >34</option>
+											<option value="331"  >35</option>
+											<option value="332"  >36</option>
+											<option value="333"  >37</option>
+											<option value="334"  >38</option>
+											<option value="335"  >39</option>
+											<option value="336"  >40</option>
+											<option value="337"  >41</option>
+											<option value="338"  >42</option>
+											<option value="339"  >43</option>
+											<option value="340"  >44</option>
+											<option value="341"  >45</option>
+											<option value="342"  >46</option>
+											<option value="343"  >47</option>
+											<option value="344"  >48</option>
+											<option value="345"  >49</option>
+											<option value="346"  >50</option>
+											<option value="347"  >51</option>
+											<option value="348"  >52</option>
+											<option value="349"  >53</option>
+											<option value="350"  >54</option>
+											<option value="351"  >55</option>
+											<option value="352"  >56</option>
+											<option value="353"  >57</option>
+											<option value="354"  >58</option>
+											<option value="355"  >59</option>
+											<option value="356"  >60</option>
+											<option value="357"  >61</option>
+											<option value="358"  >62</option>
+											<option value="359"  >63</option>
+											<option value="360"  >64</option>
+											<option value="361"  >65</option>
+											<option value="362"  >66</option>
+											<option value="363"  >67</option>
+											<option value="364"  >68</option>
+											<option value="365"  >69</option>
+											<option value="366"  >70</option>
+											<option value="367"  >71</option>
+											<option value="368"  >72</option>
+											<option value="369"  >73</option>
+											<option value="370"  >74</option>
+											<option value="371"  >75</option>
+											<option value="372"  >76</option>
+											<option value="373"  >77</option>
+											<option value="374"  >78</option>
+											<option value="375"  >79</option>
+											<option value="376"  >80</option>
+											<option value="377"  >81</option>
+											<option value="378"  >82</option>
+											<option value="379"  >83</option>
+											<option value="380"  >84</option>
+											<option value="381"  >85</option>
+											<option value="382"  >86</option>
+											<option value="383"  >87</option>
+											<option value="384"  >88</option>
+											<option value="385"  >89</option>
+											<option value="386"  >90</option>
+											<option value="387"  >91</option>
+											<option value="388"  >92</option>
+											<option value="389"  >93</option>
+											<option value="390"  >94</option>
+											<option value="391"  >95</option>
+											<option value="392"  >96</option>
+											<option value="393"  >97</option>
+											<option value="394"  >98</option>
+											<option value="395"  >99</option>
+									</select>
+            </div>
+			
+
+        </div>
+							<div class="vssmp_small_block xs-autowidth">
+            <div class="form-label-block"><span class="form-label">Acceptable Height Range</span></div>
+            <div class="form-field-block" style="width: auto !important;">
+								<select name="product[height_range_one]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="204"  >4'9"(145 cm)</option>
+											<option value="205"  >4'10"(147 cm)</option>
+											<option value="206"  >4'11"(150 cm)</option>
+											<option value="207"  >5'0"(152 cm)</option>
+											<option value="208" selected="selected" >5'1"(155 cm)</option>
+											<option value="209"  >5'2"(157 cm)</option>
+											<option value="210"  >5'3"(160 cm)</option>
+											<option value="211"  >5'4"(163 cm)</option>
+											<option value="212"  >5'5"(165 cm)</option>
+											<option value="213"  >5'6"(168 cm)</option>
+											<option value="214"  >5'7"(170 cm)</option>
+											<option value="215"  >5'8"(173 cm)</option>
+											<option value="216"  >5'9"(175 cm)</option>
+											<option value="217"  >5'10"(178 cm)</option>
+											<option value="218"  >5'11"(180 cm)</option>
+											<option value="219"  >6'0"(183 cm)</option>
+											<option value="220"  >6'1"(185 cm)</option>
+											<option value="221"  >6'2"(188 cm)</option>
+											<option value="222"  >6'3"(191 cm)</option>
+											<option value="223"  >6'4"(193 cm)</option>
+											<option value="224"  >6'5"(196 cm)</option>
+											<option value="225"  >6'6"(198 cm)</option>
+											<option value="226"  >6'7"(201 cm)</option>
+											<option value="227"  >6'8"(203 cm)</option>
+											<option value="228"  >6'9"(206 cm)</option>
+									</select>
+            </div>
+			<span>TO</span>
+			<div class="form-field-block" style="width: auto !important;">
+								<select name="product[height_range_two]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="229"  >4'9"(145 cm)</option>
+											<option value="230"  >4'10"(147 cm)</option>
+											<option value="231"  >4'11"(150 cm)</option>
+											<option value="232"  >5'0"(152 cm)</option>
+											<option value="233"  >5'1"(155 cm)</option>
+											<option value="234"  >5'2"(157 cm)</option>
+											<option value="235"  >5'3"(160 cm)</option>
+											<option value="236"  >5'4"(163 cm)</option>
+											<option value="237"  >5'5"(165 cm)</option>
+											<option value="238"  >5'6"(168 cm)</option>
+											<option value="239"  >5'7"(170 cm)</option>
+											<option value="240"  >5'8"(173 cm)</option>
+											<option value="241" selected="selected" >5'9"(175 cm)</option>
+											<option value="242"  >5'10"(178 cm)</option>
+											<option value="243"  >5'11"(180 cm)</option>
+											<option value="244"  >6'0"(183 cm)</option>
+											<option value="245"  >6'1"(185 cm)</option>
+											<option value="246"  >6'2"(188 cm)</option>
+											<option value="247"  >6'3"(191 cm)</option>
+											<option value="248"  >6'4"(193 cm)</option>
+											<option value="249"  >6'5"(196 cm)</option>
+											<option value="250"  >6'6"(198 cm)</option>
+											<option value="251"  >6'7"(201 cm)</option>
+											<option value="252"  >6'8"(203 cm)</option>
+											<option value="253"  >6'9"(206 cm)</option>
+									</select>
+            </div>
+        </div>
+        	</div>
+	<div class="vss-bordered-row" >	
+						<div class="vssmp_small_block">
+            <div class="form-label-block"><span class="form-label">
+                        Desired Marital Status            </span></div>
+            <div class="form-field-block">
+													<input type="checkbox" name="product[martial_status][]" value="255" checked>Divorced									<input type="checkbox" name="product[martial_status][]" value="254" >Single									<input type="checkbox" name="product[martial_status][]" value="256" checked>Widow/ Spouse Deceased				            </div>
+		</div>
+		<!--<div class="vssmp_small_block">
+			<div class="form-label-block"><span class="form-label">Learning</span></div>
+			<div class="form-field-block">
+								<select name="product[learning]" class="custom-input-field input-width3 vssmp_validate_int ">
+					 <option value="">Select</option> 											<option value="258"  >Any</option>
+											<option value="259"  >Full Time</option>
+											<option value="260"  >Koveah itim</option>
+											<option value="261"  >Sometimes</option>
+									</select>
+            </div>
+        </div>-->
+	</div>
+		<div class="vss-bordered-row" style="width:100%;">
+				<div class="vssmp_small_block">
+			<div class="form-label-block" style="width:auto;"><span class="form-label">Is it acceptable if potential match has children?</span></div>
+			<div class="form-field-block">
+								<select name="product[has_children]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="647"  >No</option>
+											<option value="648"  >1</option>
+											<option value="649"  >2</option>
+											<option value="650"  >3</option>
+											<option value="651"  >4</option>
+											<option value="652"  >5</option>
+											<option value="653"  >6</option>
+											<option value="654" selected="selected" >7</option>
+											<option value="655"  >8</option>
+											<option value="656"  >9</option>
+											<option value="657"  >10</option>
+											<option value="658"  >11</option>
+											<option value="659"  >12</option>
+											<option value="660"  >13</option>
+											<option value="661"  >14</option>
+											<option value="662"  >15</option>
+											<option value="663"  >15+</option>
+									</select>
+            </div>
+		</div>
+	</div>
+		<div class="vss-bordered-row" style="width:100%;">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">
+			 Acceptable religious orientation of potential match :			
+			</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+													<input type="checkbox" name="product[religious_range][]" value="702" >Chabad									<input type="checkbox" name="product[religious_range][]" value="701" >Heimish									<input type="checkbox" name="product[religious_range][]" value="687" checked>Modern Orthodox									<input type="checkbox" name="product[religious_range][]" value="271" checked>Modern Orthodox(Machmir)									<input type="checkbox" name="product[religious_range][]" value="273" >Modren Yeshivish									<input type="checkbox" name="product[religious_range][]" value="274" >Traditional									<input type="checkbox" name="product[religious_range][]" value="688" checked>Yeshivish				            </div>	
+		</div>	
+	</div>
+		<div class="vss-bordered-row" style="width:100%;">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">Acceptable Smoking Habits :</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+								<select name="product[smoking_range]" class="custom-input-field input-width2 vssmp_validate_text ">
+																<option value="276"  >Any</option>
+											<option value="277" selected="selected" >Non Smoker</option>
+											<option value="278"  >Occasional Smoker</option>
+											<option value="279"  >Smoke Regular</option>
+											<option value="280"  >Trying to Quit</option>
+									</select>
+            </div>	
+		</div>	
+	</div>
+		<div class="vss-bordered-row" style="width:100%;">
+				<div class="vssmp_small_block">
+			<div class="form-label-block" style="width:auto;"><span class="form-label">
+				Are you OK with dating someone with disability ?</span></div>
+			<div class="form-field-block">
+								<select name="product[disability_range]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="282"  >No</option>
+											<option value="281" selected="selected" >Yes</option>
+									</select>
+            </div>
+		</div>
+	</div>
+	<div class="vss-bordered-row" style="width:100%;">
+				<div class="vssmp_small_block">
+			<div class="form-label-block" style="width:auto;"><span class="form-label">Acceptable Aliyah response of the other person :</span></div>
+			<div class="form-field-block">
+								<select name="product[aliyah_response]" class="custom-input-field input-width1 vssmp_validate_int ">
+																<option value="285"  >Already in Israel</option>
+											<option value="284"  >Maybe</option>
+											<option value="283" selected="selected" >Yes</option>
+									</select>
+            </div>
+		</div>
+	</div>
+			<fieldset>
+	<!-- <legend>More Preferences</legend> -->
+
+	<div class="vss-bordered-row" style="width:100%;">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">
+				Preference regarding someone's Ethnicity:</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+													<input type="checkbox" name="product[ethnicity_range][]" value="304" checked>Ashkenazi									<input type="checkbox" name="product[ethnicity_range][]" value="305" checked>Mixed									<input type="checkbox" name="product[ethnicity_range][]" value="306" >Sefardi				            </div>	
+		</div>	
+	</div>
+	
+	<div class="vss-bordered-row" style="width:100%;">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">Preference regarding someone's family religious background:</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+													<input type="checkbox" name="product[religious_bak_range][]" value="307" >Religious									<input type="checkbox" name="product[religious_bak_range][]" value="308" checked>Secular				            </div>	
+		</div>	
+	</div>
+	
+	<div class="vss-bordered-row" style="width:100%;" id="head_cover_range_block">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">Do you want to meet someone who will cover their hair ?</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+													<input type="checkbox" name="product[head_cover_range1][]" value="307" >Religious									<input type="checkbox" name="product[head_cover_range1][]" value="308" >Secular				            </div>	
+		</div>	
+	</div>
+	
+	<div class="vss-bordered-row" style="width:100%;">
+				<div class="">
+			<div class="form-label-block" style="width:100%;"><span class="form-label">Body Type :</span></div>
+			<div class="form-field-block" style="width:100% !important;">
+													<input type="checkbox" name="product[bodytype_range][]" value="313" >Any									<input type="checkbox" name="product[bodytype_range][]" value="314" checked>Athletic Fit									<input type="checkbox" name="product[bodytype_range][]" value="315" >Average									<input type="checkbox" name="product[bodytype_range][]" value="316" >Broad Build									<input type="checkbox" name="product[bodytype_range][]" value="317" >Lean									<input type="checkbox" name="product[bodytype_range][]" value="318" >Muscular				            </div>	
+		</div>	
+	</div>
+		</fieldset>
+</div>	
+            
+            
+            
+            
+            <!-- Start - Images -->
+<div id="vssmp-pro-form-blk-images" class="vss_mp_wrapper vssmp_blk_bdr vssmp-pro-form-blk">
+    <div class="vss-bordered-row">
+        <span class="form-title">Images</span>
+    </div>
+    <div class="vss-bordered-row vssmp-pro-img-row">
+        <div class="vssmp-table-blk" style="display:block;">
+            <table class="vssmp-pro-form-table" cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr class="heading-row">
+                        <th width='150'>Image</th>
+                        <th>Label</th>
+                        <th width="80">Sort Order</th>
+                                                    <th>Base Image</th>
+                                                    <th>Small Image</th>
+                                                    <th>Thumbnail</th>
+                                                <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="vssmp-product-img-body">
+<!--                    <tr id="vssmp_media_gallery_content-image-0">
+                        <td class="cell-image">
+                            <img src="http://dev3.developer.chatanvekala.com/media/vss_marketplace/seller_1/pro_thumb.jpg" title="image1" />
+                        </td>
+                        <td class="cell-label">
+                            <input type="text" class="custom-input-field input-width3" />
+                        </td>
+                        <td class="cell-position">
+                            <input type="text" class="custom-input-field input-width3 validate-number" />
+                        </td>
+                                                    <td class="vssmp-txt-cntr cell-image">
+                                <input type="radio" name="product[image]" value="__file__" />
+                            </td>
+                                                    <td class="vssmp-txt-cntr cell-small_image">
+                                <input type="radio" name="product[small_image]" value="__file__" />
+                            </td>
+                                                    <td class="vssmp-txt-cntr cell-thumbnail">
+                                <input type="radio" name="product[thumbnail]" value="__file__" />
+                            </td>
+                                                <td class="vssmp-txt-cntr cell-remove">
+                            <span class="vssmp_remove_img" />
+                        </td>
+                    </tr>-->
+<!--                    <tr id="product-image-blank-row">
+                        <td class="vssmp-txt-cntr" colspan="7">
+                            <span class="">No Image uploaded for this product</span>
+                        </td>
+                    </tr>-->
+                </tbody>
+            </table>
+        </div>
+        <div class="vssmp-row-block">
+            <div id="vssmp-img-ext-err" class="vssmp_row vssmp-lft" style="display:none;">
+                <span class="validation_error_msg">File is not supported</span>    
+            </div>
+            <div class="vssmp-row-block vssmp-ryt" style="margin-top:3px;">
+                <input name="file[]" type="file" id="vssmp-product-image-file" style="display:none;"/>
+                <div class="vssmp-row-block">
+                    <button title="" type="button" class="vssmp-button vss-btn-orange" onclick="createImageRow('[]')" style="width:92px;"><span>Add New Row</span></button>
+                    <br>
+                    <span class="vss_hint">(.jpeg, .jpg, .png, ,gif)</span>
+                </div>
+<!--                <div class="vssmp-row-block"><button title="" type="button" class="vssmp-button vss-btn-green" onclick=""><span>Upload Image</span></button></div>                   -->
+            </div>
+            <div class="vssmp-clearboth" ></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var vssmp_pro_no_img_msg = 'No Image uploaded for this product';
+    var vssmp_image_types = [];
+            vssmp_image_types.push({'id': 'image', 'field': 'product[image]'});
+            vssmp_image_types.push({'id': 'small_image', 'field': 'product[small_image]'});
+            vssmp_image_types.push({'id': 'thumbnail', 'field': 'product[thumbnail]'});
+        var vssmp_pro_img_format = [];
+            vssmp_pro_img_format.push('jpeg');
+            vssmp_pro_img_format.push('png');
+            vssmp_pro_img_format.push('jpg');
+            vssmp_pro_img_format.push('gif');
+    
+                                    createImageRow('{"value_id":"3202","file":"\/a\/c\/access_4.png","product_id":"3258","label":"","position":"0","disabled":"0","label_default":null,"position_default":"0","disabled_default":"0","url":"http:\/\/dev3.developer.chatanvekala.com\/media\/catalog\/product\/a\/c\/access_4.png","id":"3202","path":"\/home\/dev3\/web\/dev3.developer.chatanvekala.com\/public_html\/media\/catalog\/product\/a\/c\/access_4.png","image":1,"small_image":1,"thumbnail":1}');
+                                createImageRow('{"value_id":"3205","file":"\/a\/c\/access_5.png","product_id":"3258","label":"","position":"0","disabled":"0","label_default":null,"position_default":"0","disabled_default":"0","url":"http:\/\/dev3.developer.chatanvekala.com\/media\/catalog\/product\/a\/c\/access_5.png","id":"3205","path":"\/home\/dev3\/web\/dev3.developer.chatanvekala.com\/public_html\/media\/catalog\/product\/a\/c\/access_5.png","image":0,"small_image":0,"thumbnail":0}');
+            </script>
+</div>
+<!-- End - Images -->
+            
+            
+            
+            
+                        <div class="vssmp-row-block">
+                <div class="vssmp-ryt">
+                    <div class="vssmp_loading_162"></div>
+                                                                <button type="button" title="Save Product" class="button js-vssmpValidateForm"><span><span>Save & Continue</span></span></button>        
+<button type="button" class="button js-vssmpSaveAndContinue"><span><span>Save</span></span></button>         
+                        <button type="button" onclick="cancelProductEditing('http://dev3.developer.chatanvekala.com/index.php/marketplace/product/list/');" class="button"><span><span>Cancel</span></span></button>
+                    </div>
+                <div class="vssmp-clearboth"></div>
+            </div>
+    </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        var vssmp_form_block = [];
+                vssmp_form_block.push('general');
+                vssmp_form_block.push('prices');
+                vssmp_form_block.push('inventory');
+                vssmp_form_block.push('meta');
+            var vssmp_short_description_length = 250;
+        var vssmp_long_description_length = 1500;
+        var vssmp_word_count_status = '%d characters remaining.';
+        var vssmp_invalid_form_message = 'Please fill required fields with valid information.';
+        var vssmp_invalid_price_msg = 'Special price should be less than actual price';
+        var vssmp_invalid_date_msg = 'Past date not allowed';
+        var vssmp_dt_page_length = 20;
+        var product_list_params = 'eyJpZCI6MzI1OCwic2V0IjoiNCIsInR5cGUiOiJ2aXJ0dWFsIiwiYXR0cmlidXRlcyI6bnVsbH0=';
+        var vssmp_validate_action = "http://dev3.developer.chatanvekala.com/index.php/marketplace/product/validate/id/3258/";
+        var vssmp_subproducts_datatable_url = "http://dev3.developer.chatanvekala.com/index.php/marketplace/product/getSubProducts/";
+
+
+        jQuery("#disability").on('change', function () {
+            id = jQuery(this).val();
+            if (id == '152') {
+                jQuery('#dis_div').css('display', 'none');
+            }
+            if (id == '153') {
+                jQuery('#dis_div').css('display', 'block');
+            }
+        });
+        jQuery("#gender").on('change', function () {
+            gender = jQuery(this).val();
+            if (gender == '78') {
+                jQuery('#head_cover_block').css('display', 'none');
+                jQuery('#torah_study_block').css('display', 'block');
+                jQuery('#head_cover_range_block').css('display', 'block');
+                jQuery('#secular_education').html('Yeshiva');
+                jQuery('#martial_status_select option[value="256"]').text('Spouse Deceased');
+                jQuery('#p_title_block option[value="90"]').text('Mr');
+            }
+            else {
+                jQuery('#head_cover_block').css('display', 'block');
+                jQuery('#torah_study_block').css('display', 'none');
+                jQuery('#head_cover_range_block').css('display', 'none');
+                jQuery('#secular_education').html('Seminary');
+                jQuery('#martial_status_select option[value="256"]').text('Widow');
+                jQuery('#p_title_block option[value="90"]').text('Ms');
+            }
+        });
+        jQuery(document).ready(function () {
+            gender = jQuery("#gender").val();
+            if (gender == '78') {
+                jQuery('#head_cover_block').css('display', 'none');
+                jQuery('#torah_study_block').css('display', 'block');
+                jQuery('#head_cover_range_block').css('display', 'block');
+                jQuery('#secular_education').html('Yeshiva');
+                jQuery('#martial_status_select option[value="256"]').text('Spouse Deceased');
+                jQuery('#p_title_block option[value="90"]').text('Mr');
+            }
+            else {
+                jQuery('#head_cover_block').css('display', 'block');
+                jQuery('#torah_study_block').css('display', 'none');
+                jQuery('#secular_education').html('Seminary');
+                jQuery('#head_cover_range_block').css('display', 'none');
+                jQuery('#martial_status_select option[value="256"]').text('Widow');
+                jQuery('#p_title_block option[value="90"]').text('Ms');
+            }
+
+
+
+
+
+
+var cooc = get_cookie('coocsuc');
+// var coocer = get_cookie('coocer');
+
+jQuery('.pathway-inner').after(cooc);
+// jQuery('.pathway-inner').after(coocer);
+
+
+function delete_cookie (cookie_name)
+{
+  var cookie_date = new Date ( );  // Текущая дата и время
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name += "=; path=/; expires=" + cookie_date.toGMTString();
+}
+delete_cookie('coocsuc');
+// delete_cookie('coocer');
+
+cooc = get_cookie('coocsuc');
+// coocer = get_cookie('coocer');
+
+
+        });
+
+
+
+
+
+    </script>
+    
+</div>
+                        </div>
+                                    
+                                            </div>
+                    <div id="sns_right" class="col-md-3">
+                    	<div class="wrap-in">
+                        	
+        <div class="block block-account">
+            <div class="block-title">
+                            <strong><span>My Account</span></strong>
+                            </div>
+            <div class="block-content">
+                <!-- Vss_MarketPlace_Block_Sellermenu-->
+                <ul id='navigatorlist'>
+                                        
+                                         
+                                                       
+                                                
+                            
+                                        <li><a href="/index.php/dashboard/">Dashboard</a></li>
+                                    
+                                             
+                                                       
+                                                
+                                                                    <li><a href="http://dev3.developer.chatanvekala.com/index.php/jon123.html">My Profile</a></li>
+
+                                                                                        <li><a href="/index.php/my_shadchanim/">My Shadchanim</a></li>
+                                            
+                                    
+                                             
+                                                       
+                                                
+                            
+                                        <li><a href="http://dev3.developer.chatanvekala.com/index.php/my/account/edit/">Account Information</a></li>
+                                    
+                                             
+                                                       
+                                                
+                            
+                                        <li class="last"><a href="http://dev3.developer.chatanvekala.com/index.php/awraf/index/stats/">Referred Friends</a></li>
+                                    
+                                                                                            <li>
+                                <a href="http://dev3.developer.chatanvekala.com/index.php/csvendorchat/frontend/inbox/">
+                            Messages(12)                                </a>
+                            </li>
+                                                                                        <li class="last">
+                            <a href="/index.php/faqlist">FAQ</a>
+                        </li>
+                        <li class="last">
+                            <a href="/index.php/category_request/">Request new Features</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/subscription">Subscription</a>
+                        </li>
+                        <li>
+                            <a href="/index.php/requestad">Request Ad</a>
+                        </li>
+                        <li class="last">
+                            <a href="/index.php/events">Events Calendar</a>
+                        </li>
+                        <li class="last">
+                            <a href="/index.php/blog/">Blog</a>
+                        </li>
+                        <li>
+                            <a onclick="realactive(this)" href="#">Realtime Activity</a>
+                        </li>
+                        <li>
+                            <a  href="/index.php/checkout/cart/addcheck?product=7648&form_key=RMOuOq9kRMXNFnZz">Donation</a>
+                        </li>
+
+            
+
+                </ul>
+            </div>
+        </div>
+        
+<script>
+    function realactive(elem) {
+        var d = document.getElementById("itoris_realtimeactivity").style.height = 'auto';
+//d.className += " otherclass";
+
+
+    }
+</script>
+        
+
+        
+
+
+	
+<script>
+function savedForLetter() {
+popWin('http://dev3.developer.chatanvekala.com/index.php/catalog/product_compare/index/items/94,82,81,62,98,99,100,101/uenc/aHR0cDovL2RldjMuZGV2ZWxvcGVyLmNoYXRhbnZla2FsYS5jb20vaW5kZXgucGhwL21hcmtldHBsYWNlL3Byb2R1Y3QvZWRpdC9pZC8zMjU4L2RhdGVwaWNrZXIuY3Nz/', 'compare', 'top:0,left:0,width=820,height=600,resizable=yes,scrollbars=yes');
+return false;
+}
+</script>
+<!--  counts Creovector_Chatanvekala_Block_Checkout_Cart_Sidebar -->
+    <div class="block block-cart" style="display:block !important">
+                <div class="block-title" style="display:block !important">
+            <strong><span>My Matches</span></strong>
+        </div>
+        <div class="block-content" style="display:block !important">
+                            <div class="summary crvmincartsummart">
+                    <p class="amount">
+                        You have <a href="http://dev3.developer.chatanvekala.com/index.php/checkout/cart/">1 match(es)</a>                    </p>
+                    <p class="subtotal" style="display:none">
+                                                    <span class="label">Cart Subtotal:</span> <span class="price">$9.99</span>                                                                        </p>
+                </div>
+                                        <div class="actions">
+                                        <button type="button" title="Checkout" class="button" onclick="setLocation('http://dev3.developer.chatanvekala.com/index.php/checkout/cart/')">
+                        <span>
+                            <span>
+                                View Match(es)                            </span>
+                        </span>
+                    </button>
+                </div>
+                                                    <p class="block-subtitle" style="display:none;">Recently added item(s)</p>
+                <ol id="cart-sidebar" class="mini-products-list crvminicart23">
+                                            <!-- 4 -->
+<li class="item sub7655"  >
+	<a href="http://dev3.developer.chatanvekala.com/index.php/shidduch.html" style="float:left;width:100%;">
+            <!--a href="http://dev3.developer.chatanvekala.com/index.php/shidduch.html" title="shidduch" class="product-image"-->
+        				<img src="http://dev3.developer.chatanvekala.com/skin/frontend/sns_luxury/default/images/female_image.jpg" alt="shidduch" width="80" />
+				        
+        <!--/a-->
+          
+    <div class="product-details crvdetail" style="float:right;">
+        <!--a style="display:none;" href="http://dev3.developer.chatanvekala.com/index.php/checkout/cart/delete/id/487/form_key/RMOuOq9kRMXNFnZz/uenc/aHR0cDovL2RldjMuZGV2ZWxvcGVyLmNoYXRhbnZla2FsYS5jb20vaW5kZXgucGhwL21hcmtldHBsYWNlL3Byb2R1Y3QvZWRpdC9pZC8zMjU4L2RhdGVwaWNrZXIuY3Nz/" title="Remove This Item" onclick="return confirm('Are you sure you would like to remove this item from the shopping cart?');" class="btn-remove">Remove This Item</a-->
+                <p class="product-name">shidduch</p>
+        <strong style="display:none;">1</strong>
+
+    
+                                <span class='price'>0 years old. </span>                    
+
+
+    
+    
+            </div>
+	</a>
+</li>
+                                    </ol>
+                <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+                    </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				
+				
+        <div id="sns_footer_middle" class="footer wrap">
+    <div id="currentproducturl" style="display:none">http://dev3.developer.chatanvekala.com/index.php/jon123.html</div>
+	<div class="container">
+		<div class="row">
+            <div class="middle-left col-xs-12 col-lg-9 col-md-9">
+                <div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column column1"><h6>Information</h6>
+<ul>
+<li><a href="http://dev3.developer.chatanvekala.com/index.php/contact-us/">Contact Us</a></li>
+<li><a href="http://dev3.developer.chatanvekala.com/index.php/faqlist/">FAQ</a></li>
+<li><a href="http://www.chatanvekala.com/index.php/subscription">Subscription</a></li>
+<li><a href="http://www.chatanvekala.com/index.php/requestad">Request Ad</a></li>
+<li><a href="http://www.chatanvekala.com/index.php/terms-conditions">Terms and Conditions</a></li>
+</ul></div><div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column column2"></div><div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column column3"></div><div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column column4"></div>            </div>
+            <div class="middle-right col-xs-12 col-lg-3 col-md-3">
+                <div class="subcribe-footer"></div>
+<!--<div class="social-footer"><div class="sns-social">
+	        <div class="block_head">
+            <h3>Socials</h3>
+        </div>
+		<ul>
+				</ul>
+	</div></div>-->            </div>
+		</div>
+	</div>
+</div>
+<div id="sns_footer_bottom" class="footer wrap">
+    <div class="container">
+                <div class="row">
+            <div class="col-sm-6">
+                <div class="sns-copyright">
+                    <p class="mgbottom">
+                        &copy; 2018 Zivugzone. All Rights Reserved.                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="xyz">
+                    					</div>
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(function($){
+    	jQuery(document).ajaxComplete(function(){
+    		//console.log('ajaxComplete');
+	   	});
+	   	jQuery(document).ajaxSuccess(function(){
+    		//console.log('ajaxSuccess');
+	   	});
+    	jQuery(document).on('ready ajaxComplete', function(){
+    		// snsTooltip
+    		    		$("body#bd *[data-toggle='tooltip']").each(function(){
+    			if( $(this).parent().parent().hasClass('deals-action') ){
+    				$(this).tooltip({
+		        		container: 'body',
+		        		placement: 'right'
+		        	});
+    			}else{
+    				$(this).tooltip({
+		        		container: 'body'
+		        	});
+    			}
+    		})
+
+
+        	        	// end snsTooltip
+
+        	// deals countdown
+			jQuery('.countdown').each(function(){
+				var enddate = jQuery(this).attr('data-endtime');
+				if(enddate) {
+					var enddateArr = enddate.split(',');
+					jQuery(this).countdown({
+				        until: new Date(enddateArr[0], enddateArr[1] - 1, enddateArr[2], enddateArr[3], enddateArr[4], enddateArr[5]),
+						labels: ["Years", "Months", "Weeks", "Days", "Hrs", "Mins", "Secs"],
+						labels1: ["Year", "Month", "Week", "Day", "Hr", "Min", "Sec"]				    });
+				}
+			});
+			// end deals countdown
+    	});
+		//JUST AN EXAMPLE, PLEASE USE YOUR OWN PICTURE!
+		var base_url = "http://dev3.developer.chatanvekala.com/";
+		var imageAddr = base_url+"media/wysiwyg/luxury/FRAME1.jpg"; 
+		var downloadSize = 820287; //bytes
+		window.onload = function() {
+			window.setTimeout(MeasureConnectionSpeed, 1);
+		};
+		function MeasureConnectionSpeed() {
+			// var oProgress = document.getElementById("progress");
+			var startTime, endTime;
+			var download = new Image();
+			download.onload = function () {
+				endTime = (new Date()).getTime();
+				showResults();
+			}
+			
+			download.onerror = function (err, msg) {
+				oProgress.innerHTML = "Invalid image, or error downloading";
+			   //  alert( err + msg );
+			}
+			
+			startTime = (new Date()).getTime();
+			var cacheBuster = "?nnn=" + startTime;
+			download.src = imageAddr + cacheBuster;
+			
+			function showResults() {
+				var duration = (endTime - startTime) / 1000;
+				var bitsLoaded = downloadSize * 8;
+				var speedBps = (bitsLoaded / duration).toFixed(2);
+				var speedKbps = (speedBps / 1024).toFixed(2);
+				var speedMbps = (speedKbps / 1024).toFixed(2);
+				var j = jQuery.noConflict();
+				if(speedMbps>2)
+				{
+					j('#homevid source').attr('src', base_url+'media/wysiwyg/luxury/second_2_8mb.mp4');
+					j("#homevid").get(0).load();                
+					j('#homevid').get(0).play();
+					j('#homevid').css('display','block');
+				}
+				else if(speedMbps>=1)
+				{
+					j('#homevid source').attr('src', base_url+'media/wysiwyg/luxury/second_2_8mb.mp4');
+					j("#homevid").get(0).load();                
+					j('#homevid').get(0).play();
+					j('#homevid').css('display','block');
+				}
+				else
+				{
+					j('#homevid source').attr('src', base_url+'media/wysiwyg/luxury/second_2_8mb.mp4');
+					j("#homevid").get(0).load();                
+					j('#homevid').get(0).play();
+					j('#homevid').css('display','block');
+				}
+			}
+		}
+        		
+    });
+
+//]]>
+</script>
+<style>
+.box-collateral.box-tags {
+    display: none;
+}
+</style>
+
+        <style>
+.catalog-category-view .snsprod{display:none}
+ #logo{padding-bottom: 10px;
+    padding-top: 15px;
+}
+.compareprdoct {
+    color: #d31c23;
+    font-size: 15px;
+}
+#sns_right .block-cart{display:none}
+#sns_header{z-index:0!important}
+.feedback-container{position:fixed!important}
+.feedback-content .form-list li input.input-text{height:25px!important}
+
+.price-con {
+	display: none;
+}
+.npadd {
+	display: none;
+}
+
+.block.block-wishlist {
+	display: none;
+}
+#vssmp-catrequest-catid {
+	display: none;
+}
+#sns_header {
+    z-index: 999 !important;
+}
+.block.block-reorder {
+	display: none;
+}
+</style>
+        <div id="referafriend-overlay"></div>
+<div id="referafriend">
+    <div id="rafContent"></div>
+    <div id="rafLoadMessage">
+        <img src="http://dev3.developer.chatanvekala.com/skin/frontend/base/default/images/opc-ajax-loader.gif" class="v-middle" alt="" /> &nbsp; Loading...    </div>
+</div>
+  <div class="wrap-bannerads" style="display:none">
+    <!-- Display type Show all -->
+          <div class="div-banner">
+        <ul class="banner-carousel">
+                                  <li
+              style="max-width:100px" >
+              <a                  onclick="bannerClicks('http://dev3.developer.chatanvekala.com/index.php/bannerads/reports/click/','12','1')">
+                <img
+                  title="Ad"
+                  src="http://dev3.developer.chatanvekala.com/media/bannerads/images/your-ad-here-300x250.jpg" alt=""/>
+              </a>
+            </li>
+                  </ul>
+				      </div>
+    <!-- Display type random -->
+      <div style="clear: both;"></div>
+  </div>
+<div id="sns_proaddto_overlay">
+		<div id="proaddto_loading">
+		<div class ="background-overlay"></div>
+		<p id="sns_loading_container">
+	        <i class="fa fa-spinner fa-spin"></i>
+		</p>
+	</div>
+	<div id="proaddto_confirmbox">
+		<div class ="background-overlay"></div>
+		<div id="sns_msg_container">
+			<div id="sns_proaddto_msg">
+			</div>
+			<div class="btn-close"><i class="fa fa-times"></i></div>
+						<div class="timer">8</div>
+				    </div>
+	</div>	
+</div>
+<!-- CRVSPANLE -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="btn-top">
+	<a id="sns-totop" href="#"><i class="fa fa-angle-up"></i></a>
+	<script type="text/javascript">
+		jQuery(function($){
+			// back to top
+			$("#sns-totop").hide();
+			$(function () {
+				var wh = $(window).height();
+				var whtml =  $(document).height();
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > whtml/10) {
+						$('#sns-totop').fadeIn();
+					} else {
+						$('#sns-totop').fadeOut();
+					}
+				});
+				$('#sns-totop').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+			// end back to top
+		});
+	</script>
+</div>
+	<script type="text/javascript">
+	function addQvClass () {
+		var baseUrl = "http://dev3.developer.chatanvekala.com/index.php/luxury/quickview/";
+		var qvClass = '.wrap-quickview';
+		
+		jQuery(qvClass).each(function() {
+			var productId = jQuery(this).attr('data-id');
+			if(productId) {
+				productId = productId.split("qv_item_");
+				var url = baseUrl+'index'+'?id='+productId[1];
+				jQuery(this).find('a').attr({'href' : url}).addClass('qv_btn');
+			}
+		});
+	}
+	function replaceEncodedUrl (selector) {
+		jQuery(selector).each(function(){
+			var el = jQuery(this);
+			jQuery.each(this.attributes, function() {
+				if(this.specified) el.attr(this.name, this.value.replace(window.ENCODEDURL, window.parent.ENCODEDURL))
+			});
+		});
+	}
+	jQuery(document).ready(function($) {
+		addQvClass();
+		$(".qv_btn").fancybox({
+			type		: 'iframe',
+			iframe		: {
+					preload: true,
+					scrolling: 'no' //Can be set to 'auto', 'yes', 'no' or 'visible' 
+				},
+			width		: '800px',
+			height		: '400px',
+			maxWidth	: '80%',
+			autoHeight	: true,
+			fitToView	: false,
+			aspectRatio	: true,
+			autoSize	: true,
+			closeClick	: false
+		});
+
+		if(window.location != window.parent.location){
+			jQuery('.luxury-quickview-index form').attr('target', '_top');
+			replaceEncodedUrl('a, button, form');
+			jQuery("#sns_product_img_media #zoom_img_media").on("click", function(e) { 
+				e.preventDefault();
+			});
+		}
+		$('.luxury-quickview-index .btn-cart').on('click', function(){
+			
+		});
+		jQuery('.luxury-quickview-index a').on('click', function(e){
+			if(window.location != window.parent.location){
+				if(jQuery(this).hasClass('link-compare')) {
+					e.preventDefault();
+					var url = jQuery(this).attr('href').replace(window.ENCODEDURL, window.parent.ENCODEDURL);
+					window.top.location.href = url;
+					parent.jQuery.fancybox.close();
+				} else {
+					if(jQuery(this).attr('href').match(/^http/)) {
+						e.preventDefault();
+						var url = jQuery(this).attr('href');
+						window.top.location.href = url;
+						parent.jQuery.fancybox.close();
+					}
+				}
+			}
+		});
+	});
+
+	jQuery(document).ajaxComplete(function(){
+		addQvClass();
+	});
+
+	</script>
+    </div>
+</body>
+</html>

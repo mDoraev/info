@@ -1,0 +1,22 @@
+//categoryImg - ссылка
+//e.preventDefault(); - в начале функции
+//е - в скобках функции
+categoryImg.on('click', function(e){
+	e.preventDefault();
+	var that = jQuery(this);
+var parent = that.closest('.product-item-info');
+var quickviewlinke = parent.find('.quickviewlinke');
+var url = quickviewlinke.attr('href');
+console.log(url);
+})
+
+
+//или более тщательно
+categoryImg.on('click', function(event){
+
+	    if(event.preventDefault){ event.preventDefault()}
+    else{event.stop()};
+
+    event.returnValue = false;
+    event.stopPropagation();   
+})

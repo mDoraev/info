@@ -1,0 +1,9 @@
+require(['jquery'], function(jQuery){
+jQuery(document).ready(function(){
+	jQuery('.testimonials').parent('.widget').addClass('js-home-last-block');
+	var homeLastBlock = jQuery('.js-home-last-block');
+	var wrap = jQuery('#maincontent');
+	wrap.after(homeLastBlock);
+
+});
+});

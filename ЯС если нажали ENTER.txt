@@ -1,0 +1,5 @@
+$('html').keydown(function(eventObject){ //отлавливаем нажатие клавиш
+  if (event.keyCode == 13) { //если нажали Enter, то true
+    alert("Ура нажали Enter");
+  }
+});

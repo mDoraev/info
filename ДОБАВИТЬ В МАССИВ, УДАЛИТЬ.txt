@@ -1,0 +1,17 @@
+   // massiv
+var textarVal = {values: ['elem1', 'elem2']};
+// elem
+var messDate = 'elem1';
+
+
+   // днаюбхрэ б люяяхб
+textarVal.values.push(
+   messDate
+);
+
+// сдюкхрэ хг люяяхбю
+    var position = $.inArray(messDate, textarVal.values);
+console.log(position+'POSIIIIIIII');
+if ( ~position ){
+	textarVal.values.splice(position, 1);
+} 

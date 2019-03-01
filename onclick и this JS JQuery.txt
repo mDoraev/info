@@ -1,0 +1,13 @@
+    <button class="hp_productitem__btn" onclick="openBigImg(this)"></button> 
+
+<script>
+	
+   function openBigImg(e){
+   	// просто яваскрипт
+// obj.style.color = "white";
+jQuery(e).css({
+    'border': 'red solid 1px'
+})
+
+   }	
+</script>

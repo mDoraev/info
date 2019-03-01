@@ -1,0 +1,21 @@
+mkdir Desktop/papka
+cd Desktop/papka
+git init
+
+git clone 
+git add ЦA
+
+внести изменени€
+
+git add ЦA
+
+git commit Цm ФkommentarФ
+
+git remote add origin
+
+git push origin master
+
+адрес:
+git clone ssh://programmer@webxmore.com/data/creovector/git/zivug/ 
+пароль:
+zaitAP48

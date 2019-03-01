@@ -1,0 +1,15 @@
+ядекюрэ бшянрс ндмнцн акнйю пюбмни бшянре дпсцнцн.
+еякх рюйху акнйнб меяйнкэйн, дкъ йюфднцн ябнъ бшянрю
+хяо-яъ лернд each
+jQuery(window).load(function () {
+  jQuery('.fotorama__nav__shaft').each(function(){
+jQuery(this).width(jQuery(this).outerHeight()+300);
+  })
+});
+
+еякх ндхм акнй
+jQuery(window).load(function () {
+
+jQuery('.col-main.row.lg-row').height(jQuery('#wrapper-inner').outerHeight());
+
+});

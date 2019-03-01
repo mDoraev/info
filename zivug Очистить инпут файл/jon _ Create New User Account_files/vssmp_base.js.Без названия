@@ -1,0 +1,583 @@
+var vssmp_validation_types = ['int', 'decimal', 'date', 'datetime', 'text', 'varchar'];
+var text_reg = /^(\s*([a-zA-Z])*\s*)*$/;
+var varchar_reg = /^\s*([a-zA-Z0-9])*\s*$/;
+var numeric_reg = /^[0-9]*$/;
+var decimal_reg = /^[0-9]*(?:\.\d{1,6})?$/;
+var date_reg = /^(0[1-9]|1[012])\/(0[1-9]|[12][0-9]|3[01])\/[0-9]{4}$/; //yyyy-mm-dd
+var vssmp_form_field_is_invalid = false;
+var email_reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+var url_regex = new RegExp(expression);
+var img_holder = '';
+var size_limit = 0;
+
+jQuery(document).ready(function(){
+    if(jQuery('input[type="text"].vssmp_validate_datepicker').length)
+    {
+        Protoplasm.use('datepicker').transform('input[type="text"].vssmp_validate_datepicker', {dateFormat: 'MM/dd/yyyy'});    
+    }
+    
+    jQuery('.vssmp-hlyt-inv-field').on('focus', function(){
+            jQuery(this).removeClass('vssmp-hlyt-inv-field');
+    });
+    
+    if(jQuery('ul.vssmp_tabs').length){
+        jQuery(".vssmp_tab_content").hide();
+        jQuery(".vssmp_tab_content:first").show(); 
+
+        jQuery("ul.vssmp_tabs li").click(function() {
+                jQuery("ul.vssmp_tabs li").removeClass("active");
+                jQuery(this).addClass("active");
+                jQuery(".vssmp_tab_content").hide();
+                var activeTab = jQuery(this).attr("rel"); 
+                jQuery("#"+activeTab).fadeIn(); 
+        });    
+    }
+    
+    if(jQuery('#seller-product-box').length){
+        jQuery('.jcarousel').jcarousel();
+
+        jQuery('.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                jQuery(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                jQuery(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        jQuery('.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                jQuery(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                jQuery(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+    }
+    
+    if(jQuery('.vssmp-open-map-popup').length){
+        jQuery('.vssmp-open-map-popup').on('click', function(){
+            jQuery('#vssmp-popup').show();
+        });
+    }
+    
+    jQuery('.map-popup-close').on('click', function(){
+        jQuery('#vssmp-popup').hide();
+    });
+    
+    jQuery('.vssmp-popper').hover(function() {
+        // hover in
+        jQuery(this).find('.vssmp_popper_info').show();
+    },
+    function() {
+        //hover out
+        jQuery(this).find('.vssmp_popper_info').hide();
+    });
+    var rel_load_first_time = true;
+    
+    jQuery(document.body).on('change', '.vssmp-upload-btn-holder input[type="file"]', function(){
+        jQuery(this).parent().parent().find('.vssmp-selected-file-placeholder').html(jQuery(this).attr('value'));
+    });
+    
+//    jQuery(document.body).on('click', '.vssmp-upload-btn-holder .vssmp-upl-btn-blk span', function(){
+//        jQuery(this).parent().find('input[type="file"]').trigger('click');
+//    });
+    jQuery('body').on('change', '.vss_file_upload_field', function(){
+        img_holder = jQuery(this).attr('id');
+        if(img_holder == 'mplogo_img')
+            size_limit = 200000;
+        else if(img_holder == 'mpbanner_img')
+            size_limit = 500000;
+
+        if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = vssmpSellerProfileImageIsLoaded;
+                reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+
+function checkSellerProfileMediaUpload(val)
+{
+    for(var i=0; i<vssmp_profile_img_format.length; i++)
+    {
+        var str = vssmp_profile_img_format[i];
+        if(val.indexOf(str.toLowerCase()) > -1){
+            return true;
+        }
+    }
+    return false;
+}
+
+function vssmpSellerProfileImageIsLoaded(e) 
+{
+    if(checkSellerProfileMediaUpload(e.target.result) && (Number(e.total) < size_limit)){
+        var container = '#'+img_holder+'_holder';
+        jQuery(container+' .vssmp_seller_profile_img_error span').html("");
+        jQuery(container+' .vssmp_seller_profile_img_error').hide();
+        jQuery(container+' .vssmp_seller_img_checker').val(1);
+        jQuery(container+' img').attr('src', e.target.result);
+        jQuery(container).show();
+    }
+    else
+    {
+        var container = '#'+img_holder+'_holder';
+        if(img_holder == 'mplogo_img' && e.total > size_limit)
+            jQuery(container+' .vssmp_seller_profile_img_error span').html(logoSizeExceedingErrorMsg);
+        else if(img_holder == 'mpbanner_img' && e.total > size_limit)
+            jQuery(container+' .vssmp_seller_profile_img_error span').html(bannerSizeExceedingErrorMsg);
+        else
+            jQuery(container+' .vssmp_seller_profile_img_error span').html(fileTypeNotSupportedErrorMsg);
+        
+        jQuery(container+' .vssmp_seller_profile_img_error').show();
+        jQuery(container+' .vssmp_seller_img_checker').val(0);
+    }
+};
+
+function vssmp_upload_file(event){
+    jQuery(event).parent().find('input[type="file"]').trigger('click');
+}
+
+function openVssModal(modal){
+    jQuery('#'+modal).show();
+//    jQuery("html, body").animate({scrollTop:0}, '500');
+}
+
+function closeVssModal(modal){
+    jQuery('#'+modal).hide();
+}
+
+function closeModalAfterReset(modal){
+    jQuery('#'+modal+' input[type="text"]').attr('value', '');
+    jQuery('#'+modal+' select option').removeAttr('selected');
+    jQuery('#'+modal+' textarea').val('');
+    jQuery('#'+modal+' .validation_error_msg').remove();
+    jQuery('#'+modal).hide();
+}
+
+function removeLogo()
+{    
+    jQuery('#vssmp_seller_logo_remove').val(1);
+    jQuery('#vss_seller_logo_clear_link').css('font-weight', 'bold');
+    jQuery('#vss_seller_logo_clear_link').css('color', 'red');
+    jQuery('#vss_seller_logo').attr("src", defaultLogoUrl);
+}
+
+function removeBlinkingTabClass(elem)
+{
+    jQuery(elem).removeClass("vss-mp-blinking-tab");
+}
+
+//function unlinkLogo(seller_id)
+//{
+////    var actionToPerform = confirm("Please confirm removal of Shop Logo?");
+////    if (actionToPerform == true) {
+//        new Ajax.Request(removeLogoRequestUrl, {
+//                method:'post',
+//                parameters: {
+//                        id: seller_id 
+//                },
+//                requestHeaders: {Accept: 'application/json'},
+//                onSuccess: function(transport) {
+////                    if(transport.responseText == 1)
+////                    {
+////                        jQuery('#vss_seller_logo').attr("src", defaultLogoUrl);
+////                        jQuery('#vss_seller_logo_clear_link').attr("onclick", '');
+////                    }
+//                }
+//        });
+////    } else {
+////        return false;
+////    }
+//}
+
+function removeBanner()
+{
+    jQuery('#vssmp_seller_banner_remove').val(1);
+    jQuery('#vss_seller_banner_clear_link').css('font-weight', 'bold');
+    jQuery('#vss_seller_banner_clear_link').css('color', 'red');
+    jQuery('#vss_seller_banner').attr("src", defaultBannerUrl);
+}
+
+//function unlinkBanner(seller_id)
+//{
+////    var actionToPerform = confirm("Please confirm removal of Shop Banner?");
+////    if (actionToPerform == true) {
+//        new Ajax.Request(removeBannerRequestUrl, {
+//                method:'post',
+//                parameters: {
+//                        id: seller_id 
+//                },
+//                requestHeaders: {Accept: 'application/json'},
+//                onSuccess: function(transport) {
+////                    if(transport.responseText == 1)
+////                    {
+////                        jQuery('#vss_seller_banner').attr("src", defaultBannerUrl);
+////                        jQuery('#vss_seller_banner_clear_link').attr("onclick", '');
+////                    }
+//                }
+//        });
+////    } else {
+////        return false;
+////    }
+//}
+
+function submitProfileForm()
+{
+    var error = false;
+    var check = true;
+    jQuery('#vss-mp-profile-warning').hide();
+    jQuery('#vss-mp-profile-warning').html('');
+    jQuery('#sellerProfileForm .validation_error_msg').remove();
+    jQuery('#sellerProfileForm input, #sellerProfileForm select, #sellerProfileForm textarea, #sellerProfileForm img').removeClass('vssmp-hlyt-inv-field');
+    //jQuery('#vss_mp_shop_title input, #vss_mp_shop_line1 input, #vss_mp_shop_state input, #vss_mp_shop_contact_number input, #vss_mp_shop_city input, #vss_mp_shop_country select,#vss_mp_shop_pincode input, #vss_mp_meta_keywords textarea, #vss_mp_seller_paypal_id input, #vss_mp_shop_fburl input, #vss_mp_shop_googleurl input, #vss_mp_shop_twitterurl input, #vss_seller_logo img, #vss_seller_banner img').removeClass('vssmp-hlyt-inv-field');
+    jQuery('#vss_general_profile, #vss_payment_info, #vss_meta_data, #vss_policy_data').removeClass('vss-mp-blinking-tab');
+    
+    if(jQuery('#vssmp_seller_logo_checker').val() == 0)
+    {
+        jQuery('#vss_seller_logo').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        for(i=0;i<3;i++) {
+            jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vssmp_seller_banner_checker').val() == 0)
+    {
+        jQuery('#vss_seller_banner').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        for(i=0;i<3;i++) {
+            jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_title').val() == '')
+    {
+        jQuery('#vss_mp_shop_title').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        for(i=0;i<3;i++) {
+            jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_line1').val() == '')
+    {
+        jQuery('#vss_mp_shop_line1').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_city').val() == '')
+    {
+        jQuery('#vss_mp_shop_city').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_state').val() == '')
+    {
+        jQuery('#vss_mp_shop_state').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_country').val() == '')
+    {
+        jQuery('#vss_mp_shop_country').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_shop_pincode').val() == '')
+    {
+        jQuery('#vss_mp_shop_pincode').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(!numeric_reg.test(jQuery('#vss_mp_shop_pincode').val()))
+    {
+        jQuery('#vss_mp_shop_pincode').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(!numeric_reg.test(jQuery('#vss_mp_shop_contact_number').val()))
+    {
+        jQuery('#vss_mp_shop_contact_number').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    var fb = jQuery('#vss_mp_shop_fburl').val();
+    var google = jQuery('#vss_mp_shop_googleurl').val();
+    var twitter = jQuery('#vss_mp_shop_twitterurl').val();
+   
+    if(fb != '' && !fb.match(url_regex))
+    {
+        jQuery('#vss_mp_shop_fburl').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(google != '' && !google.match(url_regex))
+    {
+        jQuery('#vss_mp_shop_googleurl').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(twitter != '' && !twitter.match(url_regex))
+    {
+        jQuery('#vss_mp_shop_twitterurl').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_general_profile').addClass('vss-mp-blinking-tab');
+        if(check){
+            for(i=0;i<3;i++) {
+                jQuery('#vss_general_profile').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+            }
+        }
+        check = false;
+        error = true;
+    }
+    if(jQuery('#vss_mp_meta_keywords').val() == '')
+    {
+        jQuery('#vss_mp_meta_keywords').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_meta_data').addClass('vss-mp-blinking-tab');
+        for(i=0;i<3;i++) {
+            jQuery('#vss_meta_data').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        }
+        error = true;
+    }
+    
+//    var url_key = jQuery('#vss_mp_seller_urlkey').val();
+//    url_key = url_key.trim();
+//    var urlkeyvalidator = /^[a-zA-Z]+(\-[a-zA-Z]+)*$/;
+//    if(url_key != '' && !urlkeyvalidator.test(url_key))
+//    {
+//        jQuery('#vss_mp_seller_urlkey').addClass('vssmp-hlyt-inv-field');
+//        jQuery('#vss_mp_seller_urlkey').parent().append('<span class="validation_error_msg">'+url_key_err_msg+'</span>');
+//        jQuery('#vss_meta_data').addClass('vss-mp-blinking-tab');
+//        for(i=0;i<3;i++) {
+//            jQuery('#vss_meta_data').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+//        }
+//        error = true;
+//    }
+    
+    if(jQuery('#vss_mp_seller_paypal_id').val() == '' || !email_reg.test(jQuery('#vss_mp_seller_paypal_id').val()))
+    {
+        jQuery('#vss_mp_seller_paypal_id').addClass('vssmp-hlyt-inv-field');
+        jQuery('#vss_payment_info').addClass('vss-mp-blinking-tab');
+        for(i=0;i<3;i++) {
+            jQuery('#vss_payment_info').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+        }
+        error = true;
+    }
+    
+    if(error){
+        jQuery('#vss-mp-profile-warning').html(vssmp_invalid_profile_form_message);
+        jQuery('#vss-mp-profile-warning').show();
+//        jQuery('html, body').animate({scrollTop:100}, 'slow');
+        setTimeout(function(){ jQuery('#vss-mp-profile-warning').hide(); }, 10000);
+        return false;
+    }
+    else{
+        jQuery('#sellerProfileForm').submit();
+        //checkSellerPageUrl(jQuery('#vss_mp_seller_urlkey'));
+    }
+}
+
+function openSellerReviewModal(seller_id, modal)
+{
+    jQuery('#vss_seller_id_hidden').val(seller_id);
+    jQuery('#'+modal).show();
+//    jQuery("html, body").animate({scrollTop:0}, '500');
+}
+
+function drawVssmpSellerReviewTable()
+{
+    seller_product_review_list_dt.fnDraw();
+}
+
+function resetReviewTableFilterFields()
+{
+    jQuery('#seller_product_review_from_date').val('');
+    jQuery('#seller_product_review_to_date').val('');
+    jQuery('#seller_product_review_product_name').val('');
+    jQuery('#seller_product_review_customer_name').val('');
+    jQuery('#seller_product_review_rating').val('');
+    drawVssmpSellerReviewTable();
+}
+
+function openVssSellerProductReviewModal(modal, review_id, product_id)
+{    
+    jQuery('#vss_seller_product_review_loader').show();
+    new Ajax.Request(getProductReviewDetailsUrl, {
+                method:'post',
+                parameters: {
+                        id: review_id,
+                        pro_id: product_id
+                },
+                requestHeaders: {Accept: 'application/json'},                
+                onSuccess: function(transport) {
+                    retjson = transport.responseText.evalJSON();
+                    jQuery('#vss_seller_product_review_loader').hide();
+                    jQuery('#vss_product_reviewpopup_name').html(retjson['product_name']);
+                    jQuery('#vss_product_reviewpopup_created_date').html(retjson['reviewData'][0]['created_at']);
+                    jQuery('#vss_product_reviewpopup_customer_name').html(retjson['reviewData'][0]['nickname']);
+                    jQuery('#vss_product_reviewpopup_review_content').html(retjson['reviewData'][0]['detail']);
+                    jQuery('#vss_product_reviewpopup_review_summary').html(retjson['reviewData'][0]['title']);
+                    jQuery('#vss_product_reviewpopup_average_rating').css('width',retjson['average_rating']+'%');
+                    jQuery('#vss_product_reviewpopup_value_rating').css('width',retjson['ratings'][0]+'%');
+                    jQuery('#vss_product_reviewpopup_quality_rating').css('width',retjson['ratings'][1]+'%');
+                    jQuery('#vss_product_reviewpopup_price_rating').css('width',retjson['ratings'][2]+'%');
+                    jQuery('#'+modal).show();
+//                    jQuery("html, body").animate({scrollTop:0}, '500');
+                }
+        });
+}
+
+function vssmpShowLengthStatus(element, type)
+{
+    var limit = 0;
+    if(type == 'short'){
+        limit = vssmp_short_description_length;
+    }else if(type == 'long'){
+        limit = vssmp_long_description_length;
+    }
+    var txt = jQuery(element).val();
+    jQuery(element).parent().find('.vss_hint').html(vssmp_word_count_status.replace('%d', parseInt(limit - txt.length)));
+}
+
+function fetchSellerProduct()
+{    
+    var category_id = jQuery('#vss_category_filter').val();
+    var sort_as = jQuery('#vss_sorting_filter').val();
+    var seller_id = jQuery('#vssmp_seller_id').val();
+    jQuery('#seller-product-list-holder').hide();
+    jQuery('#seller-product-list-loader').show();    
+    new Ajax.Request(getSellerProductsUrl, {
+            method:'post',
+            parameters: {
+                    cat_id: category_id,
+                    order: sort_as,
+                    id: seller_id
+            },
+            requestHeaders: {Accept: 'application/json'},
+            onSuccess: function(transport) {
+//                console.log(transport.responseText);
+                jQuery('#seller-product-list-holder').html(transport.responseText);
+                jQuery('#seller-product-list-loader').hide();
+                jQuery('#seller-product-list-holder').show();
+            }
+    });
+}
+
+function validateReviewForm()
+{
+    var check = true;
+    jQuery('#vssmpSellerReviewSummary, #vssmpSellerReviewDetail, #vssmpSellerReviewerName').removeClass('vssmp-hlyt-inv-field');
+    if(jQuery('#vssmpSellerReviewSummary').val() == '')
+    {
+        jQuery('#vssmpSellerReviewSummary').addClass('vssmp-hlyt-inv-field');
+        check = false;
+    }
+    
+    if(jQuery('#vssmpSellerReviewDetail').val() == '')
+    {
+        jQuery('#vssmpSellerReviewDetail').addClass('vssmp-hlyt-inv-field');
+        check = false;
+    }
+    
+    if(jQuery('#vssmpSellerReviewerName').val() == '')
+    {
+        jQuery('#vssmpSellerReviewerName').addClass('vssmp-hlyt-inv-field');
+        check = false;
+    }
+    if(check)
+        return true;
+    else
+        return false;
+}
+
+function checkSellerPageUrl(e)
+{
+        var value = jQuery(e).val();
+        if(value.trim() != ''){
+            new Ajax.Request(check_url_key_path, {
+                    method:'post',
+                    parameters: {
+                            key_url: value,
+                            isAjax: true
+                    },
+                    requestHeaders: {Accept: 'application/json'},
+                    onSuccess: function(transport) {
+                        retjson = transport.responseText.evalJSON();
+                        if(retjson['exist']){
+                            jQuery(e).addClass('vssmp-hlyt-inv-field');
+                            jQuery(e).parent().append('<span class="validation_error_msg">'+url_key_exist_msg+'</span>');
+                            jQuery('#vss_meta_data').addClass('vss-mp-blinking-tab');
+                            for(i=0;i<3;i++) {
+                                jQuery('#vss_meta_data').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
+                            }    
+                        }else{
+                            jQuery('#sellerProfileForm').submit();
+                        }
+                    }
+            });
+    }else{
+        jQuery('#sellerProfileForm').submit();
+    }
+}

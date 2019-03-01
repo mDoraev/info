@@ -1,0 +1,5 @@
+document.addEventListener("DOMContentLoaded", defaultCal);
+
+function defaultCal(){
+alert('DoM onload');
+}

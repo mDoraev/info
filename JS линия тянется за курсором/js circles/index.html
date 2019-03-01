@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>structure formation mechanism</title>
+<script src ="jquery-3.2.1.min.js"></script>
+	<style>
+.wrapper{
+		width: 100%;
+		height: 800px;
+		background-image: url(nastol.com.ua-116936.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding-top: 300px;
+
+	}	
+
+
+/*JS*/
+/*отвечает за некликабельные границы области*/
+	.js-area-wrapper{
+	padding: 40px;
+	background-color: black;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.js-area{
+position: relative;
+/*border: #fff solid 1px;*/
+background-color: inherit;
+margin: 0;
+padding: 0;
+}
+.js-area_bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*отвечает за размер кружков*/
+.js-circle-wrap{
+	position: absolute;
+	/*border: green solid 1px;*/
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+
+}
+/*для гибкости js*/
+.js-false-circle{
+	display: none !important;
+}
+.js-circle-wrap_bg{
+	width: 50%;
+	height: 50%;
+	background-color: green;
+	border-radius: 50%;
+	z-index: 2;
+}
+.js-area_menu-wrap{
+	position: absolute;
+	top: 20px;
+	background-color: transparent;
+	width: 100%;
+	z-index: 10;
+
+}
+.js-area_menu{
+	width: 200px;
+	height: auto;
+	/*position: absolute;*/
+	padding: 10px;
+	background-color: #fff;
+	color: #222;
+	list-style: none;
+	margin: 0 auto;
+
+
+}
+.js-area_menu li{
+	cursor: pointer;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+
+}
+.js-circle-wrap_bg--active{
+	border: yellow solid 2px;
+}
+.js-line{
+	position: absolute;
+	height: 2px;
+	background-color: yellow;
+	z-index: 1;
+	-webkit-transform-origin: 0;
+	    -ms-transform-origin: 0;
+	        transform-origin: 0;
+}
+.js-area_ui{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	display: none;
+	/*pointer-events: none;*/
+	background-color: transparent;
+}
+.vis{
+	display: block;
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="wrapper">
+	<!-- элемент, после которого появится область -->
+		<div class="anchor-js-area"></div>
+	</div>
+
+
+<script>
+
+	// FUNCTIONS============================================
+
+// инициализация. появление области
+function showArea(w, h){
+	// элемент, после которого появится область
+	var anchor = jQuery('.anchor-js-area');
+
+var areaHtml = '<div class="js-area"></div> ';
+anchor.after(areaHtml);
+var area = jQuery('.js-area');
+area.css({
+	'width': '100%',
+	'height': h
+});
+area.html('<div class="js-area_bg"></div>');
+// для переменной math
+area.append('<div class="js-circle-wrap js-false-circle"></>');
+area.wrap('<div class="js-area-wrapper" style="width: '+w+'px"></div>');
+area.append('<div class="js-area_ui"></div>');
+
+// area.append('<div class="js-line js-line-akt"></div>');
+// aaa();
+}
+
+
+// двойной клик для появления кружка
+function showCircle(e){
+	var math = jQuery('.js-circle-wrap').outerWidth()/2;
+  var x = e.offsetX==undefined?e.layerX:e.offsetX;
+  var y = e.offsetY==undefined?e.layerY:e.offsetY;
+  x=x-math;
+  y=y-math;
+  // console.log(x+' , '+y);
+
+  var area = jQuery('.js-area');
+  area.append('<div class="js-circle-wrap" style="left:'+x+'px; top:'+y+'px"><div class="js-circle-wrap_bg"></div></div>');
+}
+
+
+// клик правой кнопкой по кружку
+function showCircleMenu(e){
+e=jQuery(e);
+var menuHtml = '<ul class="js-area_menu"></ul>';
+e.parent().after(menuHtml);
+var menu = jQuery('.js-area_menu');
+menu.wrap('<div class="js-area_menu-wrap"></div>');
+
+li1html = '<li>пункт1</li>';
+li2html = '<li>пункт2</li>';
+li3html = '<li class="js-area_menu_weight">вес</li>';
+menu.append(li1html);
+menu.append(li2html);
+menu.append(li3html);
+}
+
+// скрытие меню
+function hideMenu(){
+	jQuery('.js-area_menu-wrap').css({
+		'visibility': 'hidden'
+	});
+
+}
+
+// удаление меню
+function removeMenu(){
+	jQuery('.js-area_menu-wrap').remove();
+}
+
+
+// присвоение активного класса кружка
+function addClassActiveCircle(e){
+e=jQuery(e);
+e.addClass('js-circle-wrap_bg--active');
+}
+
+
+// удаление активного класса всех кружков
+function removeClassActiveCircle(){
+	jQuery('.js-circle-wrap_bg--active').removeClass('js-circle-wrap_bg--active');
+}
+
+
+// создание линии
+function showLine(){
+var circle1 = jQuery('.js-circle-wrap_bg--active');
+var circleParent = circle1.parent('.js-circle-wrap');
+var math = circleParent.outerWidth()/2;
+// var math = 0;
+
+var lineHtml = '<div class="js-line js-line-akt"></div>';
+var orX = circleParent.css('left');
+orX = parseInt(orX)+math;
+var orY = circleParent.css('top');
+orY = parseInt(orY)+math;
+// circle1.after(lineHtml);
+  var area = jQuery('.js-area');
+
+area.append(lineHtml);
+startTransformLine(orX, orY);
+
+}
+
+// определяет, навели линию на круг или мимо
+function addMouseover(){
+		var bg = jQuery('.js-area_bg');
+
+	 var circles = jQuery('.js-circle-wrap_bg');
+
+// mouseover событие установить, если нужно событие в 1 клик
+	circles.on('click', function(){
+		// console.log('click js-circle-wrap_bg');
+		fixLine();
+	// circles.unbind('mouseover');
+
+		return;
+
+	});
+// mouseover событие установить, если нужно событие в 1 клик
+
+		bg.on('click', function(){
+		// console.log('click js-circle-wrap_bg');
+		removeLine();
+	// bg.unbind('mouseover');
+
+		return;
+
+	});
+		setTimeout(function(){
+removeLine();
+}, 500)
+}
+// тянем линию
+function startTransformLine(orX, orY){
+var ui = jQuery('.js-area_ui');
+ui.addClass('vis');
+	// координаты круга
+  var originX = orX;
+  var originY = orY;
+
+
+	var canvas = document.querySelector('.js-area_ui'),
+    mx = my = angle = x = y = dist = grd = 0;
+
+
+    canvas.addEventListener('mousemove', function(e) {
+var trans = jQuery('.js-line-akt');
+
+      x = e.offsetX; 
+      y = e.offsetY;
+ 
+      mx = x - originX;
+      my = y - originY;
+      dist = Math.sqrt(mx * mx + my * my);
+      angle = Math.atan2( my, mx ) * 180 / Math.PI;
+
+
+
+transfRot = parseInt(angle);
+// console.log(angle);
+trans.css({
+  'width': dist,
+  'transform': 'rotate('+transfRot+'deg)',
+  'top': originY,
+  'left': originX
+})
+
+ui.on('click', function(){
+	ui.removeClass('vis');
+addMouseover();
+
+})
+
+    }, false);
+
+
+
+}
+
+
+// закрепление линии на втором кружке
+function fixLine(){
+var lineAkt = jQuery('.js-line-akt');
+lineAkt.removeClass('js-line-akt');
+removeLine();
+}
+// удаление не закрепленной линии
+function removeLine(){
+jQuery('.js-line-akt').remove();
+}
+// ACTIONS==================================================
+	jQuery(document).ready(function(){
+		// инициализация
+showArea(600, 300);
+// соZдание кружка
+jQuery('.js-area_bg').on('dblclick', function(e) {
+	showCircle(e);
+});
+// правой кнопкой по кружку
+jQuery('.js-area').on('contextmenu', '.js-circle-wrap_bg', function() {
+	removeMenu();
+showCircleMenu(this);
+addClassActiveCircle(this);
+return false;
+
+});
+// клик по элементам списка
+jQuery('.js-area').on('click', '.js-area_menu li', function(e) {
+	var that = jQuery(this);
+
+	if(that.hasClass('js-area_menu_weight')){
+console.log('click WES');
+
+// КОДИРОВАТЬ ТУТ
+showLine();
+
+	}
+	else{
+        removeClassActiveCircle();
+
+	}
+
+hideMenu();
+
+});
+
+
+// клик не по списку menu
+jQuery('.js-area').on('click', function(e){
+    var menu = jQuery('.js-area_menu-wrap');
+    // если не элемент и не его дочери
+    if (menu.has(e.target).length === 0){
+        removeClassActiveCircle();
+
+        removeMenu();
+    }
+
+
+});
+
+
+
+
+
+
+
+
+
+
+});
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

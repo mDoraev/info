@@ -1,0 +1,5 @@
+   <?php if (Mage::getSingleton('customer/session')->isLoggedIn()) { ?>
+
+    jQuery('li#opc-billing span.number').html('2');
+
+<?php } ?>

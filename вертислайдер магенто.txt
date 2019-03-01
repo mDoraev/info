@@ -1,0 +1,15 @@
+Go to the the file app/design/frontend/Vendor/Theme/etc/view.xml
+
+We can see a variable navdir.
+
+This variable has ability to change the thumbnails alignment in Fotorama.
+
+By default it is set as:
+
+<var name="navdir"> horizontal</var>
+
+Change the code like this:
+
+<var name="navdir"> vertical</var>
+
+to make the thumbnails as vertical.

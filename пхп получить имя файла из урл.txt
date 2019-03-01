@@ -1,0 +1,8 @@
+Чтобы получить имя файла из ссылки делаем так:
+?
+1
+2
+3
+$url = "htttp://example.com/images/logo.png";
+$file = basename($url); // получение имени файла
+print $file;

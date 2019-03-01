@@ -1,0 +1,13 @@
+One Solution collect form web for “Как выйти из слияния git с просьбой сообщить сообщение?”
+Это зависит от того, какой редактор вы используете.
+
+Если vim вы можете использовать ESC и : wq или ESC и 
+
+
+Shift + zz
+
+Обе команды сохраняют файл и выходят.
+
+Вы также можете проверить ~/.gitconfig для редактора, в моем случае ( cat ~/.gitconfig ):
+
+ [user] name = somename email = somemail@gmail.com [core] editor = vim excludesfile = /home/mypath/.gitignore_global [color] ui = auto # other settings here 

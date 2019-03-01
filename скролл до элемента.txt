@@ -1,0 +1,10 @@
+jQuery
+
+
+$('h1').on('click', function(){
+
+//куда скроллить
+var elem = $('.has-error');
+                $('html, body').animate({ scrollTop: elem.offset().top }, 500);
+
+});

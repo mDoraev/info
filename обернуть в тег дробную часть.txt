@@ -1,0 +1,20 @@
+
+цель - сделать верхним индексом дробную часть цифр
+как - получение текста, поискв нем  точки, 
+разбиение текста на текст до точки и текст после точки,
+текст после точки обертываем в тег,
+заменяем хтмл-содержимое нужного элемента
+
+var str = jQuery('span#drobn').text(); // ищем в этой строке
+var target = '.'; // цель поиска
+
+var pos = 0;
+while (true) {
+  var foundPos = str.indexOf(target, pos);
+  if (foundPos == -1) break;
+var subst = str.substring(foundPos);
+
+  pos = foundPos + 1; // продолжить поиск со следующей
+  var dosubst=str.substring(0, foundPos);
+jQuery('span#drobn').html(dosubst+'<sup>'+subst+'</sup>');
+}

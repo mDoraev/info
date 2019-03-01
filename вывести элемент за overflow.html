@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	h2{
+		color: red;
+	}
+	.big-cont{
+		width: 700px;
+		height: 700px;
+		border: blue solid 1px;
+		position: relative;
+		overflow: hidden;
+	}
+		.cont{
+			width: 500px;
+			height: 500px;
+			border: red solid 1px;
+			overflow: hidden;
+			position: static;
+		
+		}
+		.el{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: absolute;
+			top: 80px;
+			right: 20px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="big-cont">
+	<h2>transform должен быть none!!!!!</h2>
+	<div class="cont">
+		<div class="el"></div>
+	</div>
+
+</div>
+
+</body>
+</html>

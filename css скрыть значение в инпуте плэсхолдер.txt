@@ -1,0 +1,33 @@
+/*textarea*/
+.contact textarea{
+height: 200px;
+padding: 20px 15px;
+}
+
+.contact textarea::-moz-placeholder{
+  font-size: 14px;
+} 
+.contact textarea:-moz-placeholder{
+  font-size: 14px;
+} 
+.contact textarea:-ms-input-placeholder{
+  font-size: 14px;
+}  
+.contact textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: 'Scada', serif;
+}
+
+.contact textarea:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+.contact textarea:focus::-moz-placeholder{
+  color: transparent;
+}
+.contact textarea:focus:-moz-placeholder{
+  color: transparent;
+}
+.contact textarea:focus:-ms-input-placeholder{
+  color: transparent;
+}
+/* end textarea*/

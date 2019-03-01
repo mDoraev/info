@@ -1,0 +1,26 @@
+связной@---------- MINGW32 ~/Desktop/creogit/gbs (master)
+$ git checkout -b split_payment
+Switched to a new branch 'split_payment'
+M       Skin/Signedint.php
+
+связной@---------- MINGW32 ~/Desktop/creogit/gbs (split_payment)
+$ git commit -a -m "break an payment into 2 parts"
+warning: LF will be replaced by CRLF in app/design/frontend/ultimo/default/template/checkout/onepage.phtml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/design/frontend/ultimo/default/template/page/html/head.phtml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in app/design/frontend/ultimo/default/template/persistent/checkout/onepage/login.phtml.
+The file will have its original line endings in your working directory.
+[split_payment b095ab47] break an payment into 2 parts
+ 3 files changed, 72 insertions(+), 82 deletions(-)
+
+связной@---------- MINGW32 ~/Desktop/creogit/gbs (split_payment)
+$ git push -u origin split_payment
+Counting objects: 17, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (17/17), 2.01 KiB | 228.00 KiB/s, done.
+Total 17 (delta 11), reused 0 (delta 0)
+To http://gogs.arixess.com/GlobalBullionSuppliers/gbs.git
+ * [new branch]        split_payment -> split_payment
+Branch 'split_payment' set up to track remote branch 'split_payment' from 'origin'.

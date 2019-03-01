@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<title>Добавить и убрать высоту для блока</title>
+<style>
+#kw{
+width:400px;
+height:300px;
+background-color:green;
+}
+.newid{
+position:absolute;
+top:-9999px;
+left:-9999px;
+}
+.wid{
+position:absolute;
+top:400px;
+left:300px;
+}
+
+button.red_b{
+background-color:red;
+}
+button.wh_b{
+background-color:white;
+}
+</style>
+
+
+</head>
+
+<body>
+<button>Клац</button>
+<div style="background: red; height: 0px;"></div>
+
+
+<div class="col-md-1 but_menu">
+<button id="exp"">
+<p>меню</p>
+<div class="menu_polosa"></div>
+<div class="menu_polosa"></div>
+<div class="menu_polosa"></div>
+</button>
+</div>
+<div id="kw" class="newid">
+Работает это так: в зависимости от условия, будет выполнена либо первая, либо вторая часть после '?'.
+
+Результат выполнения не присваивается в переменную, так что пропадёт (впрочем, alert ничего не возвращает).
+
+Рекомендуется не использовать вопросительный знак таким образом.
+
+Несмотря на то, что с виду такая запись короче if, она является существенно менее читаемой.
+
+Вот, для сравнения, то же самое с if:
+</div>
+
+<!-- <script>
+var e = document.querySelector('button#exp');
+var p = document.querySelector('div#kw');
+
+e.addEventListener("click", function() {		
+p.style.height = (p.style.height == "185px") ? '0px' : '185px';
+});    
+</script>
+ -->
+ <script>
+var e = document.querySelector('button#exp');
+var p = document.querySelector('div#kw');
+
+e.addEventListener("click", function() {		
+p.className = (p.className == "wid") ? 'newid' : 'wid';
+e.className = (e.className == "red_b") ? 'wh_b' : 'red_b';
+});    
+</script>
+
+</body>
+</html>

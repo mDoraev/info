@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://shpargalkablog.ru/2011/06/css-box-shadow.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class=" ya-page_js_yes"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Тень блока (свойство box-shadow) | CSS — Примеры</title>
+<meta content="Тень блока (свойство box-shadow) | CSS как сделать" name="keywords">
+
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="blogger" name="generator">
+<link href="http://shpargalkablog.ru/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://shpargalkablog.ru/feeds/posts/default" rel="alternate" title="шпаргалка блоггера - Atom" type="application/atom+xml">
+<link href="http://shpargalkablog.ru/feeds/posts/default?alt=rss" rel="alternate" title="шпаргалка блоггера - RSS" type="application/rss+xml">
+<link href="http://www.blogger.com/feeds/2459396858793814199/posts/default" rel="service.post" title="шпаргалка блоггера - Atom" type="application/atom+xml">
+<link href="http://shpargalkablog.ru/2011/06/css-box-shadow.html" rel="canonical">
+<meta content="Простой box-shadow генератор, разнообразные примеры создания тени для блока div." name="description">
+<link href="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/box-shadow.png" rel="image_src">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,main,mark,menu,meter,nav,output," + "progress,section,time,video,svg").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+
+<style title=" &lt;link type=&#39;text/css&#39; rel=&#39;stylesheet&#39; href=&#39;https://www.blogger.com/static/v1/widgets/3899416659-widget_css_bundle.css&#39; /&gt;
+&lt;link type=&#39;text/css&#39; rel=&#39;stylesheet&#39; href=&#39;https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2459396858793814199&amp;zx=9ea9b4f8-71c0-4df4-94aa-5c2d8e0e87b1&#39; /&gt;
+&lt;style id=&#39;page-skin-1&#39; type=&#39;text/css&#39;&gt;&lt;!--
+
+--&gt;&lt;/style&gt; "></style>
+<style>
+html, body, .body-fauxcolumn-outer {
+color: rgb(34, 34, 34);
+font: 100%/1.4em "Helvetica Neue",Helvetica,Arial,sans-serif;
+margin: 0;
+padding: 0;
+}
+a:hover {
+color: #ff3200;
+text-decoration: underline;
+}
+a img, a iframe {border: none;}
+section,main,nav,article,aside,hgroup,header,footer{display:block}time,mark{display:inline}
+/* Header
+----------------------------------------------- */
+header {
+width: 100%;
+float: left;
+box-shadow:  0 2px 4px -2px rgba(0,0,0,.5);
+border-bottom: .2em solid #E7D5C0;
+}
+header h1, header a.logo, header a.logo:hover {
+float: left;
+margin-right: 2em;
+padding: .2em 0 0 .5em;
+text-transform: uppercase;
+white-space: pre;
+font-weight: 900;
+line-height: 1;
+text-decoration: none;
+text-align: center;
+text-shadow: -1px -1px rgba(0,0,0,.5), 1px 1px rgba(255,255,255,.1);
+color: rgba(261, 243, 223, .4);
+}
+header h1 {
+margin: 0;
+font-size: 100%;
+}
+nav {
+float: left;
+color: #ccc;
+}
+nav a, nav a:hover, nav .articleActive {
+display: inline-block;
+padding: .5em 1em;
+font-size: 90%;
+text-decoration: none;
+}
+nav a {
+color: #655545;
+}
+nav .articleSection {
+background: #E7D5C0;
+}
+.MaxWidthSection {
+position: relative;
+max-width: 85em;
+min-width: 40em;
+clear: both;
+}
+#TimeNMitra {
+position: relative;
+z-index: 0;
+text-align: center;
+}
+#TimeNMitra:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 50%;
+left: 0;
+width: 100%;
+}
+time {color: rgb(109, 109, 109);}
+time, a[href$="authors.html"], a[href^="http://www.google.com/translate"] {
+padding: 0 .5em;
+font-family: monospace;
+background: #fff;
+}
+a[href$="authors.html"] {
+margin: 0 2em;
+}
+a[href$="authors.html"] span {
+background: url(http://1.bp.blogspot.com/-l805Va2ctxo/UD3sQtYDebI/AAAAAAAADHc/cqKnrJpUsag/s1600/NMitra.png) no-repeat;
+padding-left: 20px;
+}
+a[href^="http://www.google.com/translate"] img {
+vertical-align: middle;
+}
+time:before {
+content: 'Дата обновления: ';
+}
+.comment-link {
+font-family: monospace;
+}
+#karakula {
+margin-top: 1em;
+padding: .5em 0;
+border-top: 1px dashed #E7D5C0;
+border-bottom: 1px dashed #E7D5C0;
+}
+.comment-link:after {
+content: '\A';
+white-space: pre;
+}
+footer {
+margin-top: 2em;
+background: rgb(45, 45, 45);
+word-wrap: break-word;
+word-spacing: 1em;
+color: rgb(200, 200, 200);
+-moz-text-align-last: justify; text-align-last: justify;
+}
+footer div div {
+max-width: 75em;
+margin: 0 0 0 auto;
+}
+footer div div div {
+display: inline-block;
+word-spacing: normal;
+-moz-text-align-last: auto; text-align-last: auto;
+font-size: 70%;
+}
+footer span {
+white-space: nowrap;
+}
+footer a {
+color: rgb(255, 255, 255);
+}
+footer img {
+width: 88px;
+height: 31px;
+margin-left: 1em;
+vertical-align: middle;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+main {
+max-width: 55em;
+margin: 3em 19em 0 auto;
+padding: 1em;
+word-wrap: break-word;
+}
+.aside {
+position: absolute;
+top: 0;
+right: 0;
+width: 19em;
+}
+.aside ul, .aside li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.aside ul {
+width: 18.6em;
+padding: .2em;
+background: #e7d5c0;
+box-shadow: 0 2px 4px -2px rgba(0,0,0,.5);
+}
+.aside input:checked ~ ul {
+position: fixed;
+}
+.aside li {
+padding: .5em;
+font-size: 80%;
+line-height: 1.3;
+}
+.aside li li {
+font-size: 95%;
+}
+.aside .soderzhanie:before, .aside .pohozhie:before {
+display: block;
+padding: .5em;
+font-size: 120%;
+font-weight: 700;
+}
+.aside .soderzhanie:before {
+content: "Содержание:";
+}
+.aside .pohozhie:before {
+content: "Дополняющие тему статьи:";
+}
+.aside > ul > li:last-child {
+padding: 0;
+}
+.aside input {
+position: fixed;
+display: none;
+}
+.aside label {
+display: block;
+margin-top: 1em;
+padding: .5em 0;
+text-align: center;
+color: #766d76;
+background: #ffedd8;
+opacity: .8;
+cursor: pointer;
+}
+.aside ul label:hover, .aside input:checked ~ ul label:hover {
+opacity: 1;
+}
+.aside input:checked ~ ul label {
+opacity: .6;
+}
+.aside label:before {
+content: "Закрепить панель";
+}
+.aside input:checked ~ ul label:before {
+content: "Открепить панель";
+}
+
+/* Posts
+----------------------------------------------- */
+.post-body.entry-content {
+margin: 1.5em 0 0;
+line-height: 1.6em;
+}
+.tr-caption-container {
+display: block;
+margin: 10px auto;
+box-shadow: 0px 0px 0px 1px #fff, 0px 2px 5px 1px #000;
+border: none;
+}
+.full-screen img {
+max-width: 100%;
+height: auto;
+}
+.entry-title {
+text-align: center;
+font-size: 160%;
+margin-bottom: .2em;
+font-weight: 700;
+color: #655545;
+}
+h2, h3 {
+font-weight: normal;
+color: #655545;
+}
+h2 {margin-top: 2em;}
+h4 {color: #655545;}
+.post-body p {
+text-indent: 2em;
+}
+.post-body pre, [contenteditable], .kodtextarea {
+margin: 10px 0px 10px 10px;
+padding: 10px;
+color: #3f0309;
+font: 90% normal helvetica, sans-serif;
+border-left: 4px solid #d2bf94;
+white-space: pre-wrap;
+position: relative;
+}
+[contenteditable], .kodtextarea {
+display:block;
+width: 100%;
+border: 1px dashed #d2bf94;
+background: #fff5d7;
+text-indent: 0;
+resize: both;
+overflow: auto;
+}
+[contenteditable]:focus, .kodtextarea:focus {
+border: 1px solid #d2bf94;
+background: #fff;
+}
+.style[contenteditable]:before {content: "\3cstyle\3e"; color: #8f494f;}
+.style[contenteditable]:after {content: "\3c\2fstyle\3e"; color: #8f494f;}
+.post-body pre.kod:before {
+content: attr(title);
+position: absolute;
+top: 5px;
+left: -15px;
+width: .6em;
+width: 1ch;
+text-align: center;
+font: Consolas, Monaco, monospace;
+}
+pre style.style {margin: 0; font-size: 100%; -moz-box-sizing: border-box; box-sizing: border-box;}
+.post-body blockquote {
+color: #3f0309;
+border: solid #f7f2e7;
+border-image: repeating-linear-gradient(300deg, transparent, #E7D5C0 3%, transparent 10%) 100% 10% 100% 10% / 1;
+margin: .5em 0;
+padding: 2%;
+
+}
+.kod-comments {color: #759000; font-style: italic;}
+.vydelit {color: rgb(251, 72, 2);}
+.video {
+width: 100%;
+position: relative;
+padding-top: 56.25%;
+}
+.video iframe, .video object, .video embed{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+#adsenseNiz {
+margin-top: 1em;
+text-align: center;
+}
+#rss, #facebook, #vkontakte, #twitter {
+display: inline-block;
+text-decoration: none;
+border-radius: 3px;
+color: #fff;
+}
+#rss {
+position: absolute;
+right: .6em;
+top: -28px;
+font-size: 28px;
+height: 20px; width: 20px;
+background: #e36443;
+line-height: 12px;
+text-indent: 2px;
+}
+#rss:after {
+content:"";
+position:absolute;
+bottom: 4px;
+left: 4px;
+width: 6px;
+height: 6px;
+border-style: double;
+border-width: 6px 6px 0 0;
+border-color: #fff;
+border-radius: 0 50px 0 0;
+}
+#facebook, #vkontakte, #twitter {
+border: 1px solid #3b6798;
+height: 17px;
+width: 17px;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+font-weight: bold;
+}
+#facebook {
+line-height: 20px;
+text-indent: 7px;
+font-size: 20px;
+background: #3c5a98;
+}
+#vkontakte {
+line-height: 14px;
+text-indent: 3px;
+font-size: 17px;
+background: #6d8fb3;
+}
+#twitter {
+font-size: 17px;
+line-height: 16px;
+background: #3399cc;
+text-indent: 5px;
+font-weight: 900;
+}
+#podpiska {
+padding: 1em 1em 1.7em;
+}
+#soc-kn {float: left;}
+#soc-kn:before {content: 'Поделиться: ';}
+.chitatform, .vverh {float: right;}
+.chitatform input[type="submit"] {
+outline: none;
+background: #e36443;
+color: #fff;
+border: 1px solid #3b6798;
+border-radius: 3px;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+font-weight: bold;
+cursor: pointer;
+font-size: 16px;
+padding: 3px;
+}
+.chitatform input[type="text"] {
+font-size: 16px;
+padding: 3px;
+width: 12.9em;
+}
+#inline-r {
+position: fixed;
+bottom: 1em;
+right: 0
+}
+/* Comments
+----------------------------------------------- */
+#comment-editor, .comment-form {width: 100%; border: none;}
+#comments-block {counter-reset: commentnumber;}
+#comments-block dt {
+color: rgb(109, 109, 109);
+position: relative;
+}
+#comments .avtor {
+padding-left: 20px;
+background: url(http://1.bp.blogspot.com/-l805Va2ctxo/UD3sQtYDebI/AAAAAAAADHc/cqKnrJpUsag/s1600/NMitra.png) no-repeat 0 0;
+}
+#comments-block dt:after {
+content: counter(commentnumber);
+counter-increment: commentnumber;
+position: absolute;
+right: 10px;
+}
+#comments-block dd {
+padding: 5px 5px 20px 20px;
+margin: 0 0 5px 0;
+border-bottom: 1px dashed #E7D5C0;
+position: relative;
+font-size: 80%;
+}
+#comments-block dd:after {
+content: attr(title);
+position: absolute;
+right: 3px;
+bottom: 3px;
+color: rgb(109, 109, 109);
+font-size: 90%;
+}
+/* Sidebar Content
+----------------------------------------------- */
+#blog-pager {padding: 0 .6em 1em; overflow: hidden;}
+.blog-pager-newer-link {float: left;}
+.blog-pager-older-link {float: right;}
+.main #BlogList1 {
+padding: 2em .6em 1em;
+border-top: 1px dotted #e1d4c0;
+margin: 0;
+text-align: right;
+}
+.prilip {position: fixed; top: 0; width: 300px; padding-top: 0 !important;}
+
+@media (max-width: 52em) {
+.MaxWidthSection {min-width: 0;}
+main {margin: 0;}
+.aside, .aside ul, .aside input:checked ~ ul {position: static; width: auto; box-shadow: none; background: rgba(231,213,192,.3);}
+.aside {border: 2px solid #E7D5C0;}
+.aside label {margin: 0; padding: 0;}
+.aside label:before, .aside input:checked ~ ul label:before, time:before, #soc-kn:before, #comments-block dd:after {content: none;}
+img {max-width: 100%; height: auto;}
+#comment-editor, .comment-form {width: 100%;}
+#comment-editor {height: 300px;}
+.post-body pre, .post-body blockquote {margin: 0;}
+nav a, nav a:hover, nav .articleActive {padding: .6em .3em; font-size: 75%;}
+.post-body p {text-indent: 0;}
+li, ul, ol {margin: 0; padding: 0; list-style-position: inside;}
+#facebook, #vkontakte, #twitter {margin-right: 1.5em;}
+#soc-kn, .chitatform {float: none;}
+}
+@media (max-width: 27em) {
+#ya-site-form0 {float: none;}
+header h1, header a.logo, header a.logo:hover {float: none; display: block; padding-top: 1em; white-space: normal;}
+}
+</style>
+<script src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/cb=gapi.loaded_1" async=""></script><script src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/plusone.js.Без названия" gapi_processed="true"></script><script type="text/javascript" async="" charset="utf-8" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/all.js.Без названия"></script><script src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/ca-pub-8940431700851648.js.Без названия"></script><script>
+cookieChoices = {};
+</script>
+
+<!-- 
+</head> -->
+  <link rel="preload" href="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/integrator.js.Без названия" as="script"><script type="text/javascript" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/integrator.js.Без названия"></script><link rel="preload" href="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/integrator.js(1).Без названия" as="script"><script type="text/javascript" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/integrator.js(1).Без названия"></script><style type="text/css">#ya-site-form0,#ya-site-form0 .ya-site-form__form,#ya-site-form0 .ya-site-form__input,#ya-site-form0 .ya-site-form__input-text,#ya-site-form0 .ya-site-form__submit,#ya-site-form0 .ya-site-form__search-precise{font-size:12px!important;color:#000!important}#ya-site-form0 .ya-site-form__form-form{display:block}#ya-site-form0 .ya-site-form__form-form,#ya-site-form0 .ya-site-form__input,#ya-site-form0 .ya-site-form__search-precise,#ya-site-form0 .ya-site-form__search-precise__radio,#ya-site-form0 .ya-site-form__gap,#ya-site-form0 .ya-site-form__gap-i,#ya-site-form0 .ya-site-form__logo-img{margin:0;padding:0}#ya-site-form0{margin:0!important;padding:0!important}#ya-site-form0 .ya-site-form__logo-wrap{width:65px;vertical-align:top;border-collapse:collapse}#ya-site-form0 .ya-site-form__logo{display:block;width:52px;margin:0;padding:0 6px 0 0;text-decoration:none}#ya-site-form0 .ya-site-form__logo-img{width:52px;height:21px;border:0!important}#ya-site-form0 .ya-site-form__search-wrap{border-collapse:collapse}#ya-site-form0 .ya-site-form__search{font-size:12px!important;width:100%}#ya-site-form0 .ya-site-form__search-input,#ya-site-form0 .ya-site-form__search-precise,{border:0}#ya-site-form0 .ya-site-form__search-input{padding:6px}#ya-site-form0 .ya-site-form__search-input-layout,#ya-site-form0 .ya-site-form__search-input-layout-l,#ya-site-form0 .ya-site-form__search-input-layout-r{font-size:12px!important;padding:0;vertical-align:middle;border:0;border-collapse:collapse}#ya-site-form0 .ya-site-form__search-input-layout,#ya-site-form0 .ya-site-form__search-input-layout-l{width:100%}#ya-site-form0 .ya-site-form__search-precise{padding:0 18px 5px 6px;text-align:left;vertical-align:top}#ya-site-form0 .ya-site-form__search-precise-i{white-space:nowrap}#ya-site-form0 .ya-site-form__search-precise__radio{width:auto;margin:0 .3em 0 0;vertical-align:middle;background:none}#ya-site-form0 .ya-site-form__search-precise__label{margin:0 .4em 0 0;padding:0;vertical-align:middle}#ya-site-form0 .ya-site-form__input-text{width:100%;margin:0!important;cursor:text;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border:1px solid #7f9db9;outline-style:none;-webkit-appearance:textfield}#ya-site-form0 .ya-site-form__input-text_type_hint{background-repeat:no-repeat;background-position:.2em 50%}#ya-site-form0 .ya-site-form__submit{display:block;width:auto;margin:0 0 0 5px}#ya-site-form0 .ya-site-form__arrow-wrap{overflow:hidden;width:30px;padding:0;vertical-align:middle}#ya-site-form0 .ya-site-form__arrow{position:relative}#ya-site-form0 .ya-site-form__arrow-a{position:absolute;top:50%;right:0;width:0;height:0;margin-top:-59px;border:solid transparent;border-width:59px 0 59px 30px;-moz-border-end-style:dotted}#ya-site-form0 .ya-site-form__wrap{width:100%;table-layout:fixed;border-collapse:collapse}#ya-site-form0 .ya-site-form__gap{border:0}#ya-site-form0 .ya-site-form__gap-i{width:9em}#ya-site-form0.ya-site-form_arrow_yes .ya-site-form__search-input{padding-right:0}#ya-site-form0.ya-site-form_logo_left .ya-site-form__logo{margin-top:4px;margin-left:5px}#ya-site-form0.ya-site-form_logo_top .ya-site-form__logo{display:block;margin:6px 0 0 6px}#ya-site-form0 .ya-site-form__submit_type_image{width:19px;height:15px;outline:none;cursor:pointer;border:0}#ya-site-form0 .ya-site-form__submit_type_image { background: url(https://site.yandex.net/v2.0/i/search.png) no-repeat }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text::-webkit-input-placeholder{color:#000000;}#ya-site-form0 .ya-site-form__form .ya-site-form__input-text:-moz-placeholder{color:#000000;}#ya-site-form0 .ya-site-form__form .ya-site-form__input-text::-moz-placeholder{color:#000000;}#ya-site-form0 .ya-site-form__form .ya-site-form__input-text:-ms-input-placeholder{color:#000000;}#ya-site-form0 .ya-site-form__form * { font-size: 16px !important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text { font-style: normal!important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text { font-weight: normal!important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text { color: #000000!important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text { border-color: #7f9db9!important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text:focus { border-color: #7f9db9!important }#ya-site-form0 .ya-site-form__form .ya-site-form__input-text { background-color: #ffffff!important }#ya-site-form0 .ya-site-form__search, #ya-site-form0 .ya-site-form__search td, #ya-site-form0 .yaform__precise-i { background-color: transparent !important }#ya-site-form0 .ya-site-form__search-precise__label { color:#000000 !important }#ya-site-form0 .ya-site-form__arrow-a { border-left-color: transparent }</style><link title="shpargalkablog.ru" rel="search" type="application/opensearchdescription+xml" href="https://yandex.ru/search/site/opensearch.xml?ShortName=shpargalkablog.ru&amp;InputEncoding=utf-8&amp;Image=&amp;Url-results=http%3A%2F%2Fshpargalkablog.ru%2F2011%2F01%2Fpoisk-ot-yandeksa-dlya-saita.html%3Fsearchid%3D808327%26web%3D0%26text%3D%7BsearchTerms%7D&amp;Url-suggest=https%3A%2F%2Fsitesearch-suggest.yandex.ru%2Fv1%2Fsuggest%3F%26site%3D808327%26lang%3Dru%26part%3D%7BsearchTerms%7D&amp;Url-opensearchdescr=https%3A%2F%2Fyandex.ru%2Fsearch%2Fsite%2Fopensearch.xml%3FShortName%3Dshpargalkablog.ru%26InputEncoding%3Dutf-8%26Image%3D%26Url-results%3Dhttp%253A%252F%252Fshpargalkablog.ru%252F2011%252F01%252Fpoisk-ot-yandeksa-dlya-saita.html%253Fsearchid%253D808327%2526web%253D0%2526text%253D%257BsearchTerms%257D%26Url-suggest%3Dhttps%253A%252F%252Fsitesearch-suggest.yandex.ru%252Fv1%252Fsuggest%253F%2526site%253D808327%2526lang%253Dru%2526part%253D%257BsearchTerms%257D"><style type="text/css">#ya-site-form0 .ya-site-suggest{position:relative;margin:0}#ya-site-form0 .ya-site-suggest-popup{position:absolute;width:100%}#ya-site-form0 .ya-site-suggest__opera-gap{position:absolute;height:25em;border:1px solid transparent}#ya-site-form0 .ya-site-suggest-list{position:absolute;z-index:9999;overflow:hidden;min-width:25em;width:100%;margin-top:-1px;border-collapse:separate;-webkit-box-shadow:0 1px 7px #9a9a9a;-moz-box-shadow:0 1px 7px #9a9a9a;box-shadow:0 1px 7px #9a9a9a;border:1px solid #dedede;border-color:rgba(154,154,154,0.5);border-top-color:rgba(154,154,154,0.4);border-bottom-color:rgba(154,154,154,0.6)}#ya-site-form0 .ya-site-suggest-list{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}#ya-site-form0 .ya-site-suggest__iframe{position:absolute;z-index:-1;min-width:25em;width:100%;height:100%;background:#fff}#ya-site-form0 .ya-site-suggest-items{font-size:16px;min-width:25em;width:100%;margin:0;padding:0 1px 0 0;list-style:none}#ya-site-form0 .ya-site-suggest-items li{margin:0;padding:0;line-height:normal}#ya-site-form0 .ya-site-suggest-elem{display:block;padding:.25em .3em;cursor:pointer;background:url()}#ya-site-form0 a.ya-site-suggest-elem:link,#ya-site-form0 a.ya-site-suggest-elem:visited{text-decoration:none}html body #ya-site-form0 .ya-site-suggest-elem:link,html body #ya-site-form0 .ya-site-suggest-elem-link{color:#000!important}#ya-site-form0 .ya-site-suggest-elem:hover,html body #ya-site-form0 .ya-site-suggest-elem_state_hover{background:#fef6d7}#ya-site-form0 .ya-site-suggest-elem_nav:hover,#ya-site-form0 .ya-site-suggest-elem_translate:hover{text-decoration:none;color:#000!important}#ya-site-form0 .ya-site-suggest-elem_nav .ya-site-suggest__link{text-decoration:underline;color:#1a3dc1}#ya-site-form0 .ya-site-suggest-elem_translate .ya-site-suggest__link{text-decoration:underline;color:#000}#ya-site-form0 .ya-site-suggest-elem .ya-site-suggest__info{white-space:nowrap;color:#666}#ya-site-form0 .ya-site-suggest-elem_selected{background:#fdedaf}#ya-site-form0 .ya-site-suggest__fact{color:#555}#ya-site-form0 .ya-site-suggest__highlight{font-weight:bold}</style></head>
+
+
+  <body>
+<div class="section" id="main"><div class="widget Blog" data-version="1" id="Blog1">
+<header><div class="MaxWidthSection"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="logo" href="http://shpargalkablog.ru/" itemprop="url" title="На главную страницу «Шпаргалки блоггера»"><span itemprop="title">шпаргалка
+блоггера</span></a></span><div class="ya-site-form ya-site-form_bg_transparent ya-site-form_inited_yes" id="ya-site-form0"><div class="ya-site-form__form"><table class="ya-site-form__wrap" cellpadding="0" cellspacing="0"><tbody><tr><td class="ya-site-form__search-wrap"><table class="ya-site-form__search" cellpadding="0" cellspacing="0"><tbody><tr><td class="ya-site-form__search-input"><table class="ya-site-form__search-input-layout"><tbody><tr><td class="ya-site-form__search-input-layout-l"><div class="ya-site-form__input"><input name="text" type="search" value="" class="ya-site-form__input-text" placeholder="" autocomplete="off"><div class="ya-site-suggest"><div class="ya-site-suggest-popup" style="display: none;"><i class="ya-site-suggest__opera-gap"></i><div class="ya-site-suggest-list"><div class="ya-site-suggest__iframe"></div><ul class="ya-site-suggest-items"></ul></div></div></div></div></td><td class="ya-site-form__search-input-layout-r"><input class="ya-site-form__submit" type="button" value="Найти"></td></tr></tbody></table></td></tr><tr><td class="ya-site-form__gap"><div class="ya-site-form__gap-i"></div></td></tr></tbody></table></td></tr></tbody></table></div></div>
+<nav>
+<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="articleSection" href="http://shpargalkablog.ru/p/html-css-javascript.html" itemprop="url" title="Примеры HTML, CSS, JavaScript"><span itemprop="title">HTML/CSS</span></a></span>
+<a href="http://shpargalkablog.ru/p/raskrutka-bloga.html" title="Оптимизация сайта своими руками (SEO обучение)">Оптимизация</a>
+<a href="http://shpargalkablog.ru/2010/07/razrabotka-bloga-v-blogger.html" title="Разработка, оформление дизайна и настройка блога на Blogger">Blogger</a>
+<a href="http://shpargalkablog.ru/p/raznoe.html" title="Много информации для мам школьников, которой я тоже являюсь. Тут же калькуляторы процентов, времени, онлайн линейки и другой понравившийся мне материал на сторонние от сайтостроительства темы.">Полезное</a>
+</nav>
+</div></header>
+
+<div class="MaxWidthSection"><main class="post hentry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+    
+<h1 class="post-title entry-title" itemprop="headline">Тень блока (свойство box-shadow) | CSS</h1>
+<div id="TimeNMitra">
+<time class="updated" content="2014-01-13T13:22:00+04:00" datetime="2014-01-13T13:22:00+04:00" itemprop="dateModified" title="2014-01-13T13:22:00+04:00">13.01.14</time>
+<span class="vcard" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a class="fn" href="http://shpargalkablog.ru/p/authors.html" itemprop="url" title="Об авторе Шпаргалки блоггера, показатели и стоимость рекламы на блоге"><span itemprop="name">NMitra</span></a></span></div><a href="http://phphtml.net/" title="Курсы HTML, CSS, PHP, JavaScript, лектор Трепачёв Д.П." rel="nofollow" target="_blank"><img src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/3.jpg" srcset="//3.bp.blogspot.com/--SJebjXCVuk/Wg54i2fXm7I/AAAAAAAAGRc/DK6O6CY-z1IIyKXnrKAkYGd4rG7EmiAoQCLcBGAs/s00/3.jpg 300w, //2.bp.blogspot.com/-gidrC8b9TpE/Wg54i31PzPI/AAAAAAAAGRY/swALmviUBQkpKDv8t5jC0NaWJ-Ef9LlWACLcBGAs/s00/2.jpg 700w, //1.bp.blogspot.com/-p9c2Ppvr3UM/Wg54izn792I/AAAAAAAAGRg/gQ8sDwhcFzIdjOo1iMOvR-TI5ZRql-waQCLcBGAs/s1600/1.jpg 880w" sizes="(min-width: 880px) 880px" alt="Курсы HTML, CSS, PHP, JavaScript, лектор Трепачёв Д.П." class="post-img"></a>
+<div class="post-body entry-content" id="post-body-6863288481318925029" itemprop="articleBody">
+<div class="aside"><input id="aside" type="checkbox"><ul>
+<li class="soderzhanie" style="list-style: none;"><div style="text-align: center;">Параграф «<a href="http://shpargalkablog.ru/2012/02/css-ramka.html">CSS рамка</a>»:</div>
+</li><li><a href="http://shpargalkablog.ru/2013/12/border.html" title="толщина, стиль и цвет границы элемента">border</a>
+</li><li><a href="http://shpargalkablog.ru/2011/02/zakruglennye-ugly-css.html#generator-border-radius" title="закруглённые или срезанные углы элемента">border-radius</a>
+</li><li><a href="http://shpargalkablog.ru/2013/09/border-image.html#borderimage" title="рамка элемента в виде градиента или изображения">border-image</a>
+</li><li><a href="http://shpargalkablog.ru/2013/10/outline-css.html#generator" title="контур элемента">outline</a>
+</li><li>box-shadow
+<ol>
+<li><a href="http://shpargalkablog.ru/2011/06/css-box-shadow.html#generator">Генератор box-shadow</a>
+</li></ol>
+</li><li class="pohozhie"><a href="http://shpargalkablog.ru/2011/06/box-shadow.html">Красивая тень блока CSS</a>
+</li><li><a href="http://shpargalkablog.ru/2011/02/css-ten-teksta.html">Cделать тень тексту (свойство text-shadow)</a>
+</li><li><label for="aside"></label></li></ul></div>
+
+<h2 id="generator">box-shadow generator</h2>
+<p>Свойство <b class="vydelit">box-shadow</b> (<a href="http://www.w3.org/TR/css3-background/#the-box-shadow">w3.org</a>) создаёт элементу тень.
+</p><table class="generator">
+<tbody><tr><td>↔</td><td><input type="range" min="-100" max="100" oninput="boxShadow()" title="смещение влево/вправо"></td><td rowspan="6"><style contenteditable="">box-shadow: none;</style>
+</td></tr><tr><td>↕</td><td><input type="range" min="-100" max="100" oninput="boxShadow()" title="смещение вверх/вниз">
+</td></tr><tr><td>●</td><td><input type="range" max="100" value="0" oninput="boxShadow()" title="размытие">
+</td></tr><tr><td><span>●</span></td><td><input type="range" min="-100" max="100" value="0" oninput="boxShadow()" title="ширина">
+</td></tr><tr><td></td><td><input type="color" onchange="boxShadow()" placeholder="цвет, например, #000">
+</td></tr><tr><td></td><td><label title="при его наличии тень будет во внутрь"><input type="checkbox" onclick="boxShadow()"> inset</label>
+</td></tr></tbody></table>
+<style>
+.generator {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  text-align: center;
+}
+.generator td:nth-child(1) {
+  width: 1em;
+  padding-left: 7px;
+  font-size: 150%;
+  color: #dad871;
+  vertical-align: top;
+  background: green;
+}
+.generator label {
+  color: #dad871;
+}
+.generator tr:nth-child(3) td:nth-child(1) {
+  text-shadow: #dad871 0 0 5px;
+  color: rgba(0, 0, 0, 0);
+}
+.generator tr:nth-child(4) td:nth-child(1) span {
+  transform: scale(1.5, 1.5);
+}
+.generator tr:nth-child(5) td:nth-child(1) {
+   background-image: repeating-radial-gradient(circle closest-side, blue, red, yellow, green 40%, green 150%)
+}
+.generator tr:nth-child(-n+5) td:nth-child(2) input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.generator td:nth-child(2) {
+  width: 160px;
+  padding-right: 7px;
+  background: green;
+}
+.generator tr:nth-child(6) td:nth-child(1), .generator tr:nth-child(6) td:nth-child(2) {
+  padding-bottom: 7px;
+}
+.generator tr:nth-child(1) td:nth-child(1), .generator tr:nth-child(1) td:nth-child(2) {
+  padding-top: 7px;
+}
+.generator td:nth-child(3) {
+  vertical-align: middle;
+}
+.generator [contenteditable] {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 20px;
+  border: none;
+  color: #3f0309;
+  font: 90% normal helvetica, sans-serif;
+  background: #f1f1f1;
+  white-space: pre-wrap;
+  text-align: left;
+}
+[contenteditable]:focus {
+  border: none;
+  background: #f1f1f1;
+}
+</style>
+<script>
+function boxShadow() {
+document.querySelector('.generator style').innerHTML = '.generator style {\n  box-shadow: ' + document.querySelector('.generator tr:nth-child(1) input').value + 'px ' + document.querySelector('.generator tr:nth-child(2) input').value + 'px ' + document.querySelector('.generator tr:nth-child(3) input').value + 'px ' + document.querySelector('.generator tr:nth-child(4) input').value + 'px ' + document.querySelector('.generator tr:nth-child(5) input').value + ';\n}';
+if (document.querySelector('.generator tr:nth-child(6) input').checked) {
+document.querySelector('.generator style').innerHTML = '.generator style {\n  box-shadow: ' + document.querySelector('.generator tr:nth-child(1) input').value + 'px ' + document.querySelector('.generator tr:nth-child(2) input').value + 'px ' + document.querySelector('.generator tr:nth-child(3) input').value + 'px ' + document.querySelector('.generator tr:nth-child(4) input').value + 'px ' + document.querySelector('.generator tr:nth-child(5) input').value + ' inset;\n}';
+}
+}
+</script>
+<br><br><br><img alt="Тень блока CSS" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/box-shadow.png" width="400" height="140" style="display: block; margin: 0 auto;">
+
+
+<h3>Как создать объёмный HTML элемент из нескольких box-shadow</h3>
+<p>box-shadow может иметь сколько угодно значений. Поэтому им можно заменить картинки форматов JPEG, PNG и даже GIF [<a href="http://lvivski.com/vexel/">инструмент lvivski.com</a>]. Можно, но не нужно. А вот создание объёма может быть полезным для того, чтобы смастерить, например, <a href="http://shpargalkablog.ru/2012/04/css-knopki.html">объёмную красивую кнопку</a>.
+<style>
+#cube {
+  table-layout: fixed;
+  margin: 2em auto;
+}
+#cube tr:nth-child(2) td:nth-child(2) {width: 100px;}
+</style>
+</p><table id="cube">
+  <tbody><tr>
+      <td><input type="radio" name="raz" onclick="cube()">
+      </td><td>
+      </td><td><input type="radio" name="raz" onclick="cube()">
+  </td></tr><tr>
+      <td>
+      </td><td>
+      </td><td>
+  </td></tr><tr>
+      <td><input type="radio" name="raz" onclick="cube()" checked="checked">
+      </td><td>
+      </td><td><input type="radio" name="raz" onclick="cube()">
+</td></tr></tbody></table>
+цвет одной стороны <input type="color" id="h" value="#dcc323" oninput="cube()"><br><br>
+цвет другой стороны <input type="color" id="g" value="#c0a707" oninput="cube()"><br><br>
+толщина тени <input type="range" min="1" max="50" value="8" id="r" oninput="cube()">
+<br><br>
+<pre><style class="style" style="margin: 0; font-size: 100%; -moz-box-sizing: border-box; box-sizing: border-box;" contenteditable="" id="cubeStyle">
+#cube {
+  background: linear-gradient(to top, #fce25b, #ecc92b);
+  box-shadow:
+   -1px 0px rgb(220,195,35), -1px 1px rgb(192,167,7),
+   -2px 1px rgb(219,194,34), -2px 2px rgb(191,166,6),
+   -3px 2px rgb(218,193,33), -3px 3px rgb(190,165,5),
+   -4px 3px rgb(217,192,32), -4px 4px rgb(189,164,4),
+   -5px 4px rgb(216,191,31), -5px 5px rgb(188,163,3),
+   -6px 5px rgb(215,190,30), -6px 6px rgb(187,162,2),
+   -7px 6px rgb(214,189,29), -7px 7px rgb(186,161,1),
+   -8px 7px rgb(213,188,28), -8px 8px rgb(185,160,0);
+}
+</style>
+&lt;div id="cube"&gt;&lt;/div&gt;</pre>
+<script>
+  function toR(h) { return parseInt((cutHex(h)).substring(0,2),16) }
+  function toG(h) { return parseInt((cutHex(h)).substring(2,4),16) }
+  function toB(h) { return parseInt((cutHex(h)).substring(4,6),16) }
+  function cutHex(h) { return (h.charAt(0)=="#") ? h.substring(1,7) : h}
+
+function cube() {
+  var h = document.getElementById('h').value,
+      g = document.getElementById('g').value,
+      r = document.getElementById('r').value,
+      raz = document.getElementsByName('raz'),
+      ten = '';
+  for (var i=0; i<parseFloat(r); i++) {
+    if (raz[2].checked) {
+      ten += '  -'+Math.floor(1+Math.floor([i]))+'px '+Math.floor([i])+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(h))-Math.floor([i])))+'), -'+Math.floor(1+Math.floor([i]))+'px '+Math.floor(1+Math.floor([i]))+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(g))-Math.floor([i])))+'),\n';
+    } else {
+      if (raz[3].checked) {
+        ten += '  '+Math.floor(1+Math.floor([i]))+'px '+Math.floor([i])+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(h))-Math.floor([i])))+'), '+Math.floor(1+Math.floor([i]))+'px '+Math.floor(1+Math.floor([i]))+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(g))-Math.floor([i])))+'),\n';
+      } else {
+        if (raz[0].checked) {
+          ten += '  -'+Math.floor(1+Math.floor([i]))+'px -'+Math.floor([i])+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(h))-Math.floor([i])))+'), -'+Math.floor(1+Math.floor([i]))+'px -'+Math.floor(1+Math.floor([i]))+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(g))-Math.floor([i])))+'),\n';
+        } else {
+          if (raz[1].checked) {
+            ten += '  '+Math.floor(1+Math.floor([i]))+'px -'+Math.floor([i])+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(h))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(h))-Math.floor([i])))+'), '+Math.floor(1+Math.floor([i]))+'px -'+Math.floor(1+Math.floor([i]))+'px rgb('+Math.max(0,Math.floor(Math.floor(toR(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toG(g))-Math.floor([i])))+','+Math.max(0,Math.floor(Math.floor(toB(g))-Math.floor([i])))+'),\n';
+          }
+        }
+      }
+    }
+  }
+  document.getElementById('cubeStyle').innerHTML = document.getElementById('cubeStyle').innerHTML.replace(/box-shadow:[^;]*;/, 'box-shadow:\n'+ten.slice(0, -2)+';');
+}
+</script>
+
+
+<h2>Эффект тени блока</h2>
+<style>[class^="boxShadow"] {
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+</style>
+<style class="boxShadow16 style" contenteditable="">
+.boxShadow16 {
+  width: 80%;
+  max-width: 550px;
+  margin: 2.5em auto 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
+}
+</style>
+
+<h2>Тень вокруг div CSS</h2>
+<p>Хм, отбрасывает ли предмет тень, когда свет на него падает сверху? Да, если предмет удалён от поверхности. Чем дальше, тем интенсивнее тень. Сама проверяла, светя фонариком. <img src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/ulybka-smailik.gif" alt="Смайлик улыбка" width="21" height="21" style="vertical-align: middle;">
+<style class="boxShadow style" contenteditable="">
+.boxShadow {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+</style>
+<style class="boxShadow8 style" contenteditable="">
+.boxShadow8 {
+  width: 80%;
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 1em;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+</style>
+
+</p><h2>CSS тень с одной стороны</h2>
+<h3>Снизу (под блоком div)</h3>
+<style class="boxShadow1 style" contenteditable="">
+.boxShadow1 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+</style>
+<h3>По бокам (справа и слева)</h3>
+<style class="boxShadow2 style" contenteditable="">
+.boxShadow2 {
+  width: 80%;
+  max-width: 550px;
+  margin: 10px auto;
+  padding: 1em;
+  box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+</style>
+
+<h2>Многослойный блок с помощью box-shadow</h2>
+<style class="boxShadow9 style" contenteditable="">
+.boxShadow9 {
+  width: 80%;
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #d6d5d5;
+  box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+}
+</style>
+<style class="boxShadow10 style" contenteditable="">
+.boxShadow10 {
+  width: 80%;
+  max-width: 550px;
+  margin: 3em auto 2em;
+  padding: 2em;
+  box-shadow:
+   0 0 0 1px silver,
+   0 -20px 0 -10px coral,
+   20px 0 0 -10px darkturquoise,
+   0 20px 0 -10px gold,
+   -20px 0 0 -10px chartreuse;
+}
+</style>
+<style class="boxShadow7 style" contenteditable="">
+.boxShadow7 {
+  width: 80%;
+  max-width: 550px;
+  margin: 12px auto;
+  padding: 1em;
+  box-shadow:
+   0 0 0 1px rgb(194, 192, 184) inset,
+   0 5px 0 -4px rgb(255, 255, 255),
+   0 5px 0 -3px rgb(194, 192, 184),
+   0 11px 0 -8px rgb(255, 255, 255),
+   0 11px 0 -7px rgb(194, 192, 184),
+   0 17px 0 -12px rgb(255, 255, 255),
+   0 17px 0 -11px rgb(194, 192, 184);
+}
+</style>
+<style class="boxShadow12 style" contenteditable="">
+.boxShadow12 {
+  width: 80%;
+  max-width: 550px;
+  margin: 3em auto;
+  padding: 1em;
+  box-shadow:
+   0 0 0 7px #60B88D,
+   0 0 0 14px #90CDAF,
+   0 0 0 21px #BFE3D1;
+}
+</style>
+
+<h2>Разноцветная CSS рамка</h2>
+<style class="boxShadow5 style" contenteditable="">
+.boxShadow5 {
+  width: 80%;
+  max-width: 550px;
+  margin: 3em auto;
+  padding: 1em;
+  box-shadow:
+   -15px -15px 2px -5px rgba(160,82,45,.5),
+   -15px 15px 2px -5px rgba(0,255,255,.5),
+   15px -15px 2px -5px rgba(255,0,0,.5),
+   15px 15px 2px -5px rgba(255,255,0,.5);
+}
+</style>
+<style class="boxShadow14 style" contenteditable="">
+.boxShadow14 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  border: 2px dashed #ccc;
+  box-shadow:
+    0 0 0 1px #ccc,
+    inset 0 0 0 1px #ccc;
+}
+</style>
+<style class="boxShadow15 style" contenteditable="">
+.boxShadow15 {
+  width: 80%;
+  max-width: 550px;
+  margin: 3em auto;
+  padding: 1em;
+  box-shadow:
+   -20px 20px 0 -17px #fff,
+   20px -20px 0 -17px #fff,
+   20px 20px 0 -20px #c27153,
+   0 0 0 2px #c27153;
+}
+</style>
+<p>Еще варианты можно посмотреть у <a href="http://css.yoksel.ru/box-shadow/">css.yoksel.ru</a>.
+
+</p><h2>CSS внутренняя тень блока (внутри элемента)</h2>
+<style class="boxShadow3 style" contenteditable="">
+.boxShadow3 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset; 
+}
+</style>
+<style class="boxShadow4 style" contenteditable="">
+.boxShadow4 {
+  width: 80%;
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 4em;
+  background: lightcyan;
+  box-shadow: 0 0 4em 4em white inset;
+}
+</style>
+<h3>Как сделать вдавленный элемент</h3>
+<style class="boxShadow11 style" contenteditable="">
+.boxShadow11 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  box-shadow: 0 3px 3px #575555 inset; 
+}
+</style>
+<style class="boxShadow6 style" contenteditable="">
+.boxShadow6 {
+  width: 80%;
+  max-width: 550px;
+  margin: 10px auto;
+  padding: 1em;
+  box-shadow:
+   inset 0 0 100px hsla(0,0%,0%,.2),
+   inset 0px 1px 5px #999,
+   inset 0px 2px 0px #888,
+   inset 0px 3px 0px #777,
+   inset 0px 4px 0px #666,
+   inset 0px 5px 0px #555,
+   inset 0px 6px 0px #444,
+   inset 0px 7px 0px #333,
+   inset 0px 8px 7px #001135;
+}
+</style>
+
+<h3>Как сделать выпуклый элемент с округлыми краями</h3>
+<style class="boxShadow21 style" contenteditable="">
+.boxShadow21 {
+  width: 80%; max-width: 550px;
+  margin: 1em auto; padding: 1em; border: 1px solid rgb(100,100,100);
+  box-shadow: 20px 0 20px -20px #000 inset, -20px 0 20px -20px #000 inset;
+}
+</style>
+<style class="boxShadow18 style" contenteditable="">
+.boxShadow18 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+  box-shadow:
+   inset rgba(0,0,0,.6) 0 -3px 8px,
+   inset rgba(252,255,255,.7) 0 3px 8px,
+   rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+</style>
+<style class="boxShadow17 style" contenteditable="">
+.boxShadow17 {
+  width: 80%;
+  max-width: 550px;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgb(100,100,100) radial-gradient(circle at 0 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+  box-shadow:
+   inset rgba(0,0,0,.5) -3px -3px 8px,
+   inset rgba(255,255,255,.9) 3px 3px 8px,
+   rgba(0,0,0,.8) 3px 3px 8px -3px;
+}
+</style>
+<style class="boxShadow19 style" contenteditable="">
+.boxShadow19 {
+  position: relative;
+  width: 80%;
+  max-width: 550px;
+  margin: 2em auto 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgb(100,160,210) radial-gradient(circle at 100% 100%, rgba(255,255,255,.60), rgba(255,255,255,.20));
+  box-shadow:
+   -1px -1px rgb(100, 150, 200),
+   -2px -2px rgb(100, 140, 190),
+   -3px -3px rgb(100, 130, 180),
+   -4px -4px rgb(100, 120, 170),
+   -5px -5px rgb(100, 120, 160),
+   -6px -6px rgb(100, 120, 150),
+  /* тень подложки */
+   -7px -7px 4px 2px rgb(180, 180, 180),
+   -8px -8px 6px 3px rgb(200, 200, 200);
+}
+</style>
+
+<h2>box-shadow inset и картинка img</h2>
+<p>Понадобится статья "<a href="http://shpargalkablog.ru/2013/12/inside-a-div-has-an-extra-space-below-the-image.html">Как убрать отступ под изображением</a>"</p>
+<span class="boxShadow20"><img alt="котёнок мечтает стать львом" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/mechty.jpg" height="400" width="302"></span>
+<pre><style class="style" contenteditable="">
+.boxShadow20 {
+  display: inline-block;
+  line-height: 0;
+  box-shadow: 0 0 10px 10px red inset;
+}
+.boxShadow20 img { 
+  position: relative;
+  z-index: -1; 
+}
+</style>
+&lt;span class="boxShadow20"&gt;&lt;img alt="котёнок мечтает стать львом" src="http://4.bp.blogspot.com/-uXTQrdgmR5A/TVOtm4AfAzI/AAAAAAAABcA/ZPY0DjhgY0o/s00/mechty.jpg" height="400" width="302"/&gt;&lt;/span&gt;</pre>
+
+<h2>box-shadow и HTML тег input</h2>
+<p>Сначала поле как-будто вдавленное, при наведении появляется голубая обводка, а <a href="http://shpargalkablog.ru/2014/04/focus-css.html">при фокусе виден эффект плавно появляющегося свечения</a>. Вот так может выглядеть <a href="http://shpargalkablog.ru/2011/02/modalnoe-okno-css.html">всплывающая форма обратной связи</a>.
+</p><form style="display: inline-block; position: relative; margin: 1em 0; padding-top: 2.1em;">
+<input type="text" placeholder="псевдоним или email" class="shadow" style="position: absolute; left: 0; top: 0; width: 100%; -moz-box-sizing: border-box; box-sizing: border-box;">
+<input type="password" placeholder="пароль" class="shadow"> <input type="submit" value="войти">
+</form>
+<pre><style class="style" contenteditable="" style="margin: 0; font-size: 100%; -moz-box-sizing: border-box; box-sizing: border-box;">
+.shadow {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2) inset, 0 -1px 0 rgba(0,0,0,.05) inset;
+}
+.shadow:hover {  /* при наведении курсора мышки */
+  box-shadow: 0 0 0 1px #7eb4ea inset, 0 1px 2px rgba(0,0,0,.2) inset;
+}
+.shadow:focus {  /* при фокусе, когда поле input активно */
+  outline: none;
+  box-shadow: 0 0 0 1px #7eb4ea inset, 0 1px 2px rgba(0,0,0,.2) inset, 0 0 4px rgba(35,146,243,.5);
+  transition: .2s linear;
+}
+.shadow::-moz-placeholder {
+  color: #999999;
+}
+.shadow::-webkit-placeholder {
+  color: #999999;
+}
+.shadow::placeholder {
+  color: #999999;
+}
+</style>
+&lt;input type="text" placeholder="псевдоним или email" class="shadow"/&gt;
+&lt;input type="password" placeholder="пароль" class="shadow"&gt;</pre>
+
+<p>Или подсветка внутри input (получилась красивая форма входа CSS):
+</p><form style="-moz-box-sizing: border-box; box-sizing: border-box; padding: 20px 3px; background: #282a2b;">
+<input type="text" placeholder="псевдоним или email" class="backlight">
+<input type="password" placeholder="пароль" class="backlight">
+<input type="submit" value="войти" style="display: block; margin: 0 auto;">
+</form>
+<pre><style class="style" contenteditable="" style="margin: 0; font-size: 100%; -moz-box-sizing: border-box; box-sizing: border-box;">
+.backlight {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 0 auto 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 10px 1px rgba(0,0,0,.3), inset 0 0 0 60px rgba(0,0,0,.3), 0 1px rgba(255,255,255,.08);
+  background: linear-gradient(rgb(70,70,70), rgb(120,120,120));
+  color: #ccc;
+  transition: .5s linear;
+}
+.backlight:focus {
+  outline: none;
+  box-shadow: inset 0 1px 3px 1px  rgba(0,0,0,.5), inset 0 0 0 60px rgba(0,0,0,0), 0 1px rgba(255,255,255,.08);
+}
+</style>
+&lt;input type="text" placeholder="псевдоним или email" class="backlight"/&gt;
+&lt;input type="password" placeholder="пароль" class="backlight"&gt;</pre>
+
+<h2>box-shadow и transition или animation</h2>
+<p>box-shadow можно плавно изменять, но нужно учитывать особенность этого изменения:</p>
+<span class="dva1">?</span> <span class="dva2">нет</span> <span class="dva3">да</span>
+<pre><style class="style" contenteditable="" style="margin: 0; font-size: 100%; -moz-box-sizing: border-box; box-sizing: border-box;">
+[class^="dva"] {
+  display: inline-block;
+  padding: 3em;
+  background: yellow;
+  transition: .3s;
+}
+.dva2 {
+  box-shadow: inset 0 0 0 2em rgba(255,255,255,.5);
+}
+.dva3 {
+  box-shadow: inset 0 1px 3px 1px rgba(0,0,0,0), inset 0 0 0 2em rgba(255,255,255,.5);
+}
+[class^="dva"]:hover {
+  box-shadow: inset 0 1px 3px 1px rgba(0,0,0,.5), inset 0 0 0 2em rgba(255,255,255,.5);
+}
+</style>
+&lt;span class="dva1"&gt;да&lt;/span&gt;
+&lt;span class="dva2"&gt;нет&lt;/span&gt;
+&lt;span class="dva3"&gt;да&lt;/span&gt;</pre>
+
+
+<p>Продолжение следует: <a href="http://prilozhenie1.blogspot.ru/2013/10/box-shadow.html">box-shadow и :before и :after</a>.
+</p></div>
+<script>//<![CDATA[
+document.addEventListener("DOMContentLoaded", function() {
+  var theS = document.getElementById('TimeNMitra'),
+  theA = document.createElement('a');
+  theA.href = '//phphtml.net/';
+  theA.title="Курсы HTML, CSS, PHP, JavaScript, лектор Трепачёв Д.П.";
+  theA.rel="nofollow";
+  theA.target="_blank";
+  theA.innerHTML = '<img src="//3.bp.blogspot.com/--SJebjXCVuk/Wg54i2fXm7I/AAAAAAAAGRc/DK6O6CY-z1IIyKXnrKAkYGd4rG7EmiAoQCLcBGAs/s00/3.jpg" srcset="//3.bp.blogspot.com/--SJebjXCVuk/Wg54i2fXm7I/AAAAAAAAGRc/DK6O6CY-z1IIyKXnrKAkYGd4rG7EmiAoQCLcBGAs/s00/3.jpg 300w, //2.bp.blogspot.com/-gidrC8b9TpE/Wg54i31PzPI/AAAAAAAAGRY/swALmviUBQkpKDv8t5jC0NaWJ-Ef9LlWACLcBGAs/s00/2.jpg 700w, //1.bp.blogspot.com/-p9c2Ppvr3UM/Wg54izn792I/AAAAAAAAGRg/gQ8sDwhcFzIdjOo1iMOvR-TI5ZRql-waQCLcBGAs/s1600/1.jpg 880w" sizes="(min-width: 880px) 880px" alt="Курсы HTML, CSS, PHP, JavaScript, лектор Трепачёв Д.П." class="post-img">';
+  theS.parentNode.insertBefore(theA, theS.nextSibling);
+  theA.onclick = function() {
+        if (window.XMLHttpRequest) {
+          var http = new XMLHttpRequest();
+          http.open("POST", "http://stat-ad.esy.es/html/stat.php");
+          http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          http.timeout = 10000;
+          http.send("url=" + location + "&title=" + document.title + "&log=1");
+        }
+  }
+}, true);
+//]]></script>
+<style>
+#TimeNMitra + div {
+  margin-top: 1em;
+  padding: .5em 0;
+  border-top: 1px dashed #E7D5C0;
+  border-bottom: 1px dashed #E7D5C0;
+  text-align: center;
+}
+#TimeNMitra + div img {
+  cursor: pointer;
+}
+</style>
+
+<div id="adsenseNiz">
+<script>//<![CDATA[
+google_ad_client = "ca-pub-8940431700851648";
+google_ad_host = "pub-1556223355139109";
+if (document.getElementById('adsenseNiz').clientWidth > 728) {
+  google_ad_slot = "1992272456";
+  google_ad_width = 728;
+  google_ad_height = 90;
+} else {
+  if (document.getElementById('adsenseNiz').clientWidth > 299) {
+    google_ad_slot = "7260613258";
+    google_ad_width = 300;
+    google_ad_height = 250;
+  } else {
+    google_ad_slot = "1214079652";
+    google_ad_width = 200;
+    google_ad_height = 200;
+  }
+}
+ document.write('<scr'+'ipt src="//pagead2.googlesyndication.com/pagead/show_ads.js"></scr'+'ipt>');
+//]]>
+</script><script src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/show_ads.js.Без названия"></script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/saved_resource.html"></iframe></ins></ins>
+</div>
+<script>
+//<![CDATA[
+setTimeout(function(){
+  if (document.querySelector("#adsenseNiz").clientHeight == "0") {
+    document.querySelector("#adsenseNiz").innerHTML = '<a target="_blank" rel="nofollow" href="http://www.telderi.ru/?pid=e3f7b1"><img src="http://1.bp.blogspot.com/-FxtdNf6Eklo/VW1QYusSjKI/AAAAAAAAFS4/CATGD1dQQho/s1600/1.gif" alt="Купить-продать сайт" /></a>';
+  }
+}, 2000);
+//]]>
+</script>
+<div id="podpiska"><div id="soc-kn"><a href="http://vk.com/share.php?url=http://zarabotokiinternet.blogspot.ru/2011/06/css-box-shadow.html" id="vkontakte" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" rel="nofollow" title="Поделиться в ВКонтакте">в</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http://zarabotokiinternet.blogspot.ru/2011/06/css-box-shadow.html" id="facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" rel="nofollow" title="Поделиться в Facebook">f</a>
+<a href="https://twitter.com/intent/tweet?text=%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B0%20(%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%20box-shadow)%20|%20CSS+http://zarabotokiinternet.blogspot.ru/2011/06/css-box-shadow.html+@shpargalkablog&amp;related=shpargalkablog" id="twitter" onclick="window.open(this.href.replace(/\|/, &quot;:&quot;), &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" rel="nofollow" title="Поделиться в Twitter">t</a>
+<div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;" id="___plusone_0"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1523901923612" name="I0_1523901923612" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/fastbutton.html" data-gapiattached="true" title="G+"></iframe></div></div><form action="http://feedburner.google.com/fb/a/mailverify" class="chitatform" method="post" target="popupwindow"><input name="email" placeholder="email-адрес" type="text">
+<input name="uri" type="hidden" value="shpargalkablog"><input name="loc" type="hidden" value="ru_RU"><input title="Получать обновление блога на электронную почту" type="submit" value="подписаться"></form></div>
+<section class="comments" id="comments">
+<a class="vverh" href="http://shpargalkablog.ru/2011/06/css-box-shadow.html#" title="подняться к началу страницы"> наверх ↑</a>
+<h3 id="comment-form">75 комментариев:</h3>
+<div id="Blog1_comments-block-wrapper">
+<dl id="comments-block">
+<dt class="comment-author anon-comment-icon" data-data="21 октября, 2011 14:02" id="c5938195348304031936">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо, вам большое.<br>Статья очень пригодилась
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="21 октября, 2011 14:03" id="c5438092653760820911">NMitra</dt>
+<dd class="comment-body" title="">
+Рада слышать.)
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="22 октября, 2011 00:06" id="c5564996273511437364">VjokerA</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08026507314178908981">
+интересно
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="08 января, 2012 19:18" id="c2689551500861020554">Versus</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/11231446255324123112">
+Отличная статья, огромное спасибо автору!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 февраля, 2012 16:38" id="c5448330833197656323">Анонимный</dt>
+<dd class="comment-body" title="">
+Отличная статья, большое спасибо.
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="20 февраля, 2012 17:17" id="c999298797708735722">Marina</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/02205636818017299425">
+Здорово, что Вы опять открыли коменты.<br>Спасибо за статью! Очень понравилось.<br>Но опять вопрос, как этим пользоваться?<br>Например если я хочу на блоге сделать так блок со статьями. <br>Вставила Ваш код перед ]]&gt; и получилась Ваша катринка выше всего блога, пробовала вставить перед header и тоже ужас.<br>Можно поподробнее рассказать как пользоваться этими тенями по применению к конкретному блоку на blogger. <br>Заранее спасибо. <br>Кстати с иконками в шапку я разобралась. Нашла интересное решение беж гаджетов и прочего. :)))<br>С Уважением  Марина.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="22 февраля, 2012 01:06" id="c3207065738723830172">NMitra</dt>
+<dd class="comment-body" title="">
+Мне трудно представить как это сделать (объяснить). Нужно подбирать селекторы http://shpargalkablog.ru/2011/10/css-selectors.html http://shpargalkablog.ru/2011/08/kak-ispolzovat-css.html. Другое дело если нужно добавить в тело статьи или гаджет HTML/JavaScript: копируете весь код.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="07 мая, 2012 04:34" id="c3553384240666532808">Анонимный</dt>
+<dd class="comment-body" title="">
+NMitra - Ты Мужик и я Тя уважаю)) Статья просто класс!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="07 мая, 2012 08:19" id="c7877137182967245934">NMitra</dt>
+<dd class="comment-body" title="">
+))) Спасибо за комментарий!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="18 июня, 2012 12:27" id="c2005912604427460572">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо большое! Очень полезная статья :)
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 января, 2013 13:40" id="c3737318807049400311">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо!!! Очень-очень пригодилось!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 января, 2013 23:52" id="c1205174236484380677">NMitra</dt>
+<dd class="comment-body" title="">
+Отлично!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="18 мая, 2013 09:30" id="c5032553097769895792">Анонимный</dt>
+<dd class="comment-body" title="">
+круто
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="19 мая, 2013 07:03" id="c1130707187640139633">NMitra</dt>
+<dd class="comment-body" title="">
+Благодарю за отзыв!
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="29 июня, 2013 18:40" id="c3487614856182739148">Віталій Данілов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/11918449843520260862">
+Класно! Спасибо!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 октября, 2013 11:29" id="c8891881386100892012">Анонимный</dt>
+<dd class="comment-body" title="">
+А как сделать тень внутри и только сверху?
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 октября, 2013 12:23" id="c551046198953180231">NMitra</dt>
+<dd class="comment-body" title="">
+ box-shadow: 0 3px 3px #575555 inset, 0px -6px 4px -4px;
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 октября, 2013 14:54" id="c8655939199494492974">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо, Наташа :) А у меня еще и вот так получилось: box-shadow: 0 6px 4px -4px #dadada inset; Тоже подходит. Правда, не до конца понял как оно работает...
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 октября, 2013 15:00" id="c7170925999059088600">NMitra</dt>
+<dd class="comment-body" title="">
+Аааа, я не правильно поняла. Вместо внутренней тени только над верхней стороной, дала вариант внутренней тени и тени над верхней стороной. Ужас какой, язык сломаешь :))<br>
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 октября, 2013 16:06" id="c3467647612614940588">Анонимный</dt>
+<dd class="comment-body" title="">
+:D да я сам просмотрел, решение то уже описано Вами в варианте тени "снизу", а для верха добавил только inset и все получилось. Здоровские решения на Вашем блоге всегда находятся, спасибо за чудеса CSS! ;)
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="04 ноября, 2013 16:02" id="c4895236812694466620">Анонимный</dt>
+<dd class="comment-body" title="">
+спасибо большое намного облегчает труд!!!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="27 ноября, 2013 02:04" id="c4773215004115935372">Анонимный</dt>
+<dd class="comment-body" title="">
+И снова я в поиске нашел Ваш блог. Как и прежде кликал по всем рекламным блокам. Спасибо!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="27 ноября, 2013 09:30" id="c8316287320263529640">NMitra</dt>
+<dd class="comment-body" title="">
+Приходите ещё)
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="06 декабря, 2013 13:32" id="c5480299561438073349">teller</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/07246563059241089388">
+Несколько раз находил и опять терял вашу страницу, в конце концов внес в закладки)
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="06 декабря, 2013 13:41" id="c795416227392315187">NMitra</dt>
+<dd class="comment-body" title="">
+))) А в моих закладках сам чёрт ногу сломает :) Но найти эти статьи через поиск совсем не предоставляется возможным. Вспомнить правильный запрос, а потом просмотреть выдачу просто нереально. Порой час приходится на закладки тратить, плюс отвлекает дико, там же другие хорошие материалы, содержание которых уже подзабылись. В общем это мой больной вопрос )))
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="31 января, 2014 23:13" id="c1005546360223701123">Айнур Шакиров</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/11419402950326787587">
+Не давно перебрался с делфи на веб программирование, php освоил быстро, но вот css.. его выучить мало.. тут такое воображение надо, что я прямо не знаю, и всегда у меня все криво)... Благо ваш блог нашел, все понятно и удобно и все начинает получатся! Огромное спасибо!! Прошелся по всем рекламным ссылкам).. Просто уже не знаю как отблагодарить)) Нигде таких внятных уроков я еще не видел))
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="01 февраля, 2014 23:56" id="c8307088728449306180">NMitra</dt>
+<dd class="comment-body" title="">
+Ох, да у меня тоже с воображением туго. Из той серии, что знаю как, но не знаю что. Порой что-то выходит только в результате случайных действий. Когда с тенью разбиралась, то бегала по квартире с фонариком, смотрела как кнопки на пульте, листок бумаги и т.п. смотрится, когда на них свет падает. )))
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="06 февраля, 2014 09:42" id="c2494034070633282714">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо ,статья дельная. очень пригодилось для реализации. Даже не знал, и не мог подумать, что у тени так много реализаций . Спасибо
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="24 февраля, 2014 22:30" id="c4637915281265980043">Анонимный</dt>
+<dd class="comment-body" title="">
+Огромный респект и вселенская уважуха!!!
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="05 марта, 2014 10:38" id="c4009147822990851390">Roman Lozinsky</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/10851459024937815191">
+офигенно.<br>спасибо.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="06 марта, 2014 14:36" id="c7758225071428221779">NMitra</dt>
+<dd class="comment-body" title="">
+Очень-очень приятно видеть восторженные реплики! Благодарю!
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="10 марта, 2014 02:22" id="c7449161266551006448">Натааша</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/03643112391869918017">
+супер! спасибо!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="11 апреля, 2014 02:22" id="c2840169456353914204">Анонимный</dt>
+<dd class="comment-body" title="">
+Отличная страница, полезная!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="28 июня, 2014 07:10" id="c6328013312729484559">Анонимный</dt>
+<dd class="comment-body" title="">
+Замечательно)) Чпасибо автору! Здесь то что нужно, можно точно и правильно подобрать значения!!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="29 июня, 2014 17:52" id="c5303114837345284415">NMitra</dt>
+<dd class="comment-body" title="">
+Благодарю за комментарии!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 июля, 2014 16:44" id="c6686871505158106470">Виктория</dt>
+<dd class="comment-body" title="http://inetsovety.ru">
+Понравилось оформление блока тенью по бокам (справа и слева). Оформила себе блок подписки. Огромное спасибо за код стилей.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="04 августа, 2014 22:39" id="c8763743924221618174">Анонимный</dt>
+<dd class="comment-body" title="">
+Я только не могу понять где HTML код???????:???
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="05 августа, 2014 07:18" id="c6430140994179275129">NMitra</dt>
+<dd class="comment-body" title="">
+&lt;div class="boxShadow"&gt;&lt;/div&gt; К boxShadow подставляйте необходимые цифры.<br><br>Один селектор, я посчитала лишним писать каждый раз HTML. К тому же тут не нужен даже весь код CSS, нужно только значение box-shadow. У "box-shadow inset и картинка img" и ниже есть HTML после CSS.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 августа, 2014 11:32" id="c3550906011561098754">Анонимный</dt>
+<dd class="comment-body" title="">
+Отлично СПАСИБИЩЕ!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="14 августа, 2014 10:49" id="c1003346903100360742">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо за статью. А что нужно добавит, чтоб это работало и  в сафари 5.1. ?  у меня не получается!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="14 августа, 2014 11:04" id="c7308780515320840617">NMitra</dt>
+<dd class="comment-body" title="">
+Добавьте -webkit-<br><br>-webkit-box-shadow: 0 0 8px;
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="14 августа, 2014 12:26" id="c5957193321363816462">Анонимный</dt>
+<dd class="comment-body" title="">
+Нет, не помогает. Я взял на вооружения boxShadow18. Сафари не реагирует.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="14 августа, 2014 21:36" id="c1160807046762360163">NMitra</dt>
+<dd class="comment-body" title="">
+Он вообще box-shadow не понимает или именно мой код? У браузеров может быть разная поддержка на разных устройствах. На компьютере будет работать, а на планшетах и телефонах - нет. Эффект box-shadow можно заменить с помощью фоновой картинки.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="15 августа, 2014 01:26" id="c5807445558247768219">Анонимный</dt>
+<dd class="comment-body" title="">
+#leftmenu{<br>  width: 100%;<br> max-width: 180px;<br> margin: 1em auto;<br> padding: 1em;<br> border-radius: 40px;<br>  background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));/*(Скорее всего тут я допускаю ошибку*/<br> box-shadow:<br> inset rgba(0,0,0,.6) 0 -3px 8px,<br> inset rgba(252,255,255,.7) 0 3px 8px,<br> rgba(0,0,0,.8) 0 3px 8px -3px;<br>-webkit-box-shadow: inset 0px 0px -3px 8px rgba(0, 0, 0, 0.6),<br>-webkit-box-shadow: inset 0px 0px 3px 8px rgba(252, 255, 255, 0.7),<br>-webkit-box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.8);<br>}<br>
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="15 августа, 2014 07:37" id="c384077097972006945">NMitra</dt>
+<dd class="comment-body" title="">
+Вместо одной<br><br>background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));<br><br>напишите так<br><br>background-color: #646464;<br>background-image: -webkit-radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));<br>background-image: radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="15 августа, 2014 12:40" id="c2501826129974694619">Анонимный</dt>
+<dd class="comment-body" title="">
+#leftmenu<br>День добрый! Я Вас не оставляю в покое. Спасибо что откликнулись. Просто действительно понравилось ваша статья и примеры, и решил некоторые свой блоки оформить подобным образом. Что касается моей проблемы, такова эффекта я и вчера добился, но тогда пропадает эффект выпуклости, а это для меня как-то важно. А именно почему можете посмотреть, при желании, на сайте www.dlcompany.org  спасибо за отзывчивость!!!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="17 августа, 2014 06:33" id="c4660776456905679839">Анонимный</dt>
+<dd class="comment-body" title="">
+Скажите пожалуйста, как для движка mozilla применить одновременно и внутреннюю и внешнюю тень, через запятую работает только одна тень (которая первая, вторая игнорируется). Вот правда - на движке web-kit работает всё 100% - и в chrome и в maxthon - и вроде даже в последней opera, а вот в seamonkey, mozilla, pale moon - нет, в internet explorer - тоже неработает (я имел ввиду запись типа: <br>box-shadow:0px 0px 30px 4px rgba(236, 255, 66, 1), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.98);<br>-moz-box-shadow: 0px 0px 30px 4px rgba(236, 255, 66, 1), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.98); <br>-webkit-box-shadow:0px 0px 30px 4px rgba(236, 255, 66, 1), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.98);)
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="17 августа, 2014 16:49" id="c1231169876968753518">NMitra</dt>
+<dd class="comment-body" title="">
+Вы хоть имя подставляйте...<br><br>Комментарий 46:<br>сделать так, чтобы на всех браузерах на всех устройствах при использовании всех операционных систем картинка 3D выглядела одинаково крайне не просто. Или просто, коли использовать нарисованный background: url(). Разработчик может лишь следовать общим стандартам w3.org и сделать так, чтобы при отсутствии поддержки box-shadow или другого свойства макет сайта не разъехался и были доступны основные функции регистрации, заказа, формы связи и т.п.<br><br>Комментарий 47:<br>у меня всё работает на windows, префиксы пишутся в другом порядке<br><br>-webkit-box-shadow<br>-moz-box-shadow<br>box-shadow (должен идти последним)
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="17 сентября, 2014 01:35" id="c3645366162092161431">Владимир Трофымлюк</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08341290451432234225">
+Спасибо! Клас! Давно искал теперь доволен как слоненок!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="23 сентября, 2014 18:21" id="c4847857363428699143">NMitra</dt>
+<dd class="comment-body" title="">
+Ура ))
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="08 октября, 2014 10:53" id="c3468576765319367845">Леонид Кирьянов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/04721098322727028498">
+Подробно... Спасибо, огромное :)
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="08 октября, 2014 11:22" id="c8356865665614643294">NMitra</dt>
+<dd class="comment-body" title="">
+Хм, только сейчас поняла, что никак не прокомментировала значения box-shadow, предоставив только генератор. На эту мысль натолкнуло меня слово "Подробно". Благодарю за него :))
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="21 октября, 2014 21:02" id="c3690562819781413714">Victor</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/10281997364585225167">
+Увидел .boxShadow15 и .boxShadow17 и пришёл в полный восторг!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="21 октября, 2014 23:04" id="c391330235002472358">NMitra</dt>
+<dd class="comment-body" title="">
+Ой, уголки эти для резинового блока ведут себя непредсказуемо. В новых свойствах с помощью border-clip легче и приятней они реализуется http://dev.w3.org/csswg/css-backgrounds-4/#propdef-border-clip да только пока ни одним браузером не поддерживается.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="31 октября, 2014 17:15" id="c1422437286470190373">Анонимный</dt>
+<dd class="comment-body" title="">
+А можно выложить блок с двумя тенями вертикальными изгибами
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="01 ноября, 2014 14:46" id="c5644143616677953157">NMitra</dt>
+<dd class="comment-body" title="">
+"блок с двумя тенями вертикальными изгибами" - у меня очень плохо с фантазией, не представляю как это
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="28 ноября, 2014 18:25" id="c3017800951319850279">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо большое! Однозначно в закладки!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="16 февраля, 2015 16:44" id="c2886619201990431275">Анонимный</dt>
+<dd class="comment-body" title="">
+Подскажите - internet explorer 11 не умеет правильно отображать тени? Или это у меня что-то с ним не то...? Просто я посмотрел отображение тени через opera, chrome и mozilla - все отлично, проверил через IE11 - так сущий кошмар - тени ездят по экрану - то появятся, то исчезнут и т.д.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="16 февраля, 2015 20:34" id="c3612217023388779023">NMitra</dt>
+<dd class="comment-body" title="">
+У меня вполне корректно. Не должно быть проблем, разве что с генераторами, так как нет поддержки oninput.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="17 февраля, 2015 07:22" id="c5641109380695216038">Анонимный</dt>
+<dd class="comment-body" title="">
+Спасибо за ответ - переустановить наверно нужно. Кстати эта страница с примерами в IE, у меня тоже ужасно отображается. А подскажите еще - что такое oninput.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="17 февраля, 2015 09:17" id="c4004414821171870072">NMitra</dt>
+<dd class="comment-body" title="">
+Событие JavaScript
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="16 апреля, 2015 22:45" id="c1644425638877470734">Радик</dt>
+<dd class="comment-body" title="http://arif.ru">
+Здравствуйте! Можно еще костылики для нескольких IE? Для shadow8
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="17 апреля, 2015 09:51" id="c6640553168862093037">NMitra</dt>
+<dd class="comment-body" title="">
+Здравствуйте, здесь есть похожий пример http://www.useragentman.com/blog/2011/08/24/how-to-simulate-css3-box-shadow-in-ie7-8-without-javascript/ Честно говоря, я не разбиралась как фильтр работает в IE
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="12 июля, 2015 17:09" id="c8782980742117715976">Liuda Nizhnik</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/05973046601830155572">
+Спасибо, NMitra. Статья очень пригодилась, хорошие примеры. 
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="13 июля, 2015 08:28" id="c4344857947295698829">NMitra</dt>
+<dd class="comment-body" title="">
+Благодарю за отзыв!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="23 июля, 2015 22:05" id="c3879642679183724856">Анонимный</dt>
+<dd class="comment-body" title="">
+класс! спасибо<br><br>Kai | http://www.dogica.com
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="05 августа, 2015 03:14" id="c2960806616002411125">Анонимный</dt>
+<dd class="comment-body" title="">
+СПАСИБИЩЕ!!!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="05 августа, 2015 03:15" id="c3659928763186827393">Анонимный</dt>
+<dd class="comment-body" title="">
+Ставлю в закладки!
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="05 августа, 2015 07:17" id="c7948051259400086453">NMitra</dt>
+<dd class="comment-body" title="">
+Рада помочь!
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="13 сентября, 2015 09:13" id="c5310377708437972837">Павел Корнилов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08777285256962914486">
+Здравствуйте! А возможно ли сделать такую тень средствами CSS? - http://test.kpa-ing.ru/Oformlenie/shadow_bottom.png
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="14 сентября, 2015 16:33" id="c4973244051878000150">Павел Корнилов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08777285256962914486">
+Что, сайт умер? Никто не отвечат?
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="14 сентября, 2015 22:04" id="c4256178067140484834">NMitra</dt>
+<dd class="comment-body" title="">
+Пока некогда. Возможно, в течение недели напишу. В Фотошопе красивше выходит
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="15 сентября, 2015 09:50" id="c8877811723387071191">Павел Корнилов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08777285256962914486">
+Хорошо, спасибо, буду ждать. Тут просто для меня принцип важен - возможно такое или нет. А в фотошопе и так этот образец нарисован.
+</dd>
+<dt class="comment-author anon-comment-icon" data-data="19 сентября, 2015 00:25" id="c8696138056818294627">NMitra</dt>
+<dd class="comment-body" title="">
+Вот тут есть http://studentwebhosting.com/tutorials/amazing-css3-box-shadow-examples/
+</dd>
+<dt class="comment-author blogger-comment-icon" data-data="21 сентября, 2015 20:11" id="c8914188285810875258">Павел Корнилов</dt>
+<dd class="comment-body" title="https://www.blogger.com/profile/08777285256962914486">
+Жуть, да и не функционально. Насколько я понял все подвязывается под единственный идентификатор изображения #inner, то есть применить, получается, можно только к одному изображению? Нет, ну понятно, можно на классы переделать, но сама технология многодельна. Я ожидал наличие какой-нибудь встроенной функции у box-shadow, которая бы делала нечно подобное, но уже понял, что ошибался.<br>Написал скрипт, который позволяет использовать такой эффект намного проще, лишь присваивая изображению соответствующий класс - http://kpa-ing.ru/Javascripts/Изображения/Изменение%20оформления.htm<br>Возможно, кому-то пригодится.
+</dd>
+</dl>
+</div>
+</section>
+<div class="blog-pager" id="blog-pager">
+<a class="blog-pager-newer-link" href="http://shpargalkablog.ru/2014/01/loading-css.html" id="Blog1_blog-pager-newer-link" title="Следующее">« следующие записи</a>
+<a class="blog-pager-older-link" href="http://shpargalkablog.ru/2014/01/feedback-form-blogger.html" id="Blog1_blog-pager-older-link" title="Предыдущее">предыдущие записи »</a>
+</div>
+
+</main></div>
+</div></div>
+<style>.ya-page_js_yes .ya-site-form_inited_no {display: none;} #ya-site-form0 {float: right;} #ya-site-form0 .ya-site-form__search-input {padding: .3em;} @media (min-width: 27em) {#ya-site-form0 .ya-site-form__wrap {width: auto;}}</style><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');
+document.querySelector('header nav').parentNode.insertBefore(document.querySelector('.ya-site-form.ya-site-form_inited_no'), document.querySelector('header nav').previousSibling);
+</script>
+<footer><div class="MaxWidthSection"><div><div>Используя данный сайт, Вы обязуетесь выполнять условия <a href="http://shpargalkablog.ru/p/pravovaya-informaciya.html">этого Соглашения</a>.
+  <span>© 2010-<script>document.write(new Date().getFullYear());</script>2018 гг.</span></div>
+<div><a href="http://shpargalkablog.ru/p/ad.html" title="Показ рекламы посетителям с AdBlock бесплатен!">Реклама</a>
+<!-- YM -->
+</div></div></div></footer>
+<!-- Г+ -->
+<script>
+  window.___gcfg = {lang: 'ru'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<style id="fullScreen">
+@media (min-width: 83em) {
+.full-screen {
+  position: relative;
+  width: 60%;
+  margin-left: 50%;
+}
+.full-screen > div {
+  width: 200%;
+  margin-left: -100%;
+}
+}
+</style>
+<!-- "зафиксировать панель" запонимается -->
+<script>
+var fullScreenStyle = document.getElementById('fullScreen').innerHTML;
+document.getElementById('aside').onclick = function() {
+  if(document.getElementById('aside').checked) {
+    localStorage.setItem('asideFix', "true");
+    document.getElementById('fullScreen').innerHTML = "";
+  } else {
+    localStorage.setItem('asideFix', "false");
+    document.getElementById('fullScreen').innerHTML = fullScreenStyle;
+  }
+}
+if (localStorage.getItem('asideFix') == "true") {
+  document.getElementById("aside").setAttribute('checked','checked');
+  document.getElementById('fullScreen').innerHTML = "";
+}
+</script>
+
+ 
+<iframe name="oauth2relay248911577" id="oauth2relay248911577" src="./Тень блока (свойство box-shadow) _ CSS — Примеры_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

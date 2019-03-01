@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<style>
+	.hid-block{
+		width: 40%;
+		height: 50px;
+		border: red solid 1px;
+	}
+</style>
+</head>
+<body>
+	<div class="app">
+		<p>{{mes}}</p>
+		<textarea v-bind:class="mes" name="" id="" cols="30" rows="10" v-on:input="tex"></textarea>
+	<button v-on:click="fun">ok</button>
+
+
+<button v-on:click="hid"><span>{{ hidmes }}</span></button>
+<div v-if="flag" class="hid-block">
+	<ul>
+		<li v-for="(li, i) in spisok">{{i}} {{ li.color }}</li>
+	</ul>
+</div>
+
+	</div>
+
+	<script>
+		var vu = new Vue({
+el: '.app',
+data: {
+	mes: 'hopa!',
+	flag: 'true',
+	hidmes: 'спрятать',
+	spisok: [
+	{color: 'white', font: '14'},
+	{color: 'red', font: '14'},
+	{color: 'green', font: '16'},
+	{color: 'blue', font: '12'},
+	{color: 'orange', font: '18'}
+	]
+},
+methods: {
+	fun: function(){
+		this.mes = 'hopana';
+	},
+	tex: function(event){
+		this.mes = event.target.value;
+	},
+	hid: function(){
+		this.flag=!this.flag;
+		if(this.flag){
+			this.hidmes='спрятать'
+		}
+		else{
+			this.hidmes='показать'
+		}
+	}
+}
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.product-collateral_buttons button.js-product_btn-act:after{
+content: '';
+display: block;
+width: 10px;
+border: 10px solid transparent;	border-top: 10px solid #604a39;
+}

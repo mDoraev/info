@@ -1,0 +1,15 @@
+var body = jQuery('body');
+    body.append('<iframe src = "'+url+'" id="js-ifr"></iframe>');
+    document.getElementById("js-ifr").onload = function () {
+            var frame = document.getElementById("js-ifr");
+           var log = frame.contentWindow.document.getElementById("checkout-step-login").innerHTML;
+           console.log(log);
+            // console.log(FRAM.contentDocument.body);
+            // window.parent.jQuery('body').append(DOC);
+window.parent.document.getElementById("checkout-step-login").innerHTML = log;
+        jQuery('#js-ifr').remove();
+     el1.removeClass('hid');
+      el2.removeClass('hid');
+preload.css({
+    'display': 'none'
+});

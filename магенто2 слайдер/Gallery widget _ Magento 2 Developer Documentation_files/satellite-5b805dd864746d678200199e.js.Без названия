@@ -1,0 +1,4 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  _satellite.getVar('populatePage');
+_satellite.track('page');
+});

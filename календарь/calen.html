@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/my-jquery-ui.js"></script>
+<link rel="stylesheet" href="css/my-jquery-ui.min.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<!-- delete -->
+	<style>
+	textarea[name="holidays"]{
+		width: 100%;
+	}
+	</style>
+<!-- delete -->
+
+
+</head>
+<body>
+
+<!-- <input type="text" ng-model="name"> -->
+<p>
+	{{name}}
+	
+</p>
+
+<!-- default -->
+
+<textarea name="holidays" ng-model="name">{"range":["2018-10-01","2019-12-31"],"values":["2018-10-22","2018-11-04","2018-11-05","2018-11-25"]}</textarea>
+
+<button class="calendarsavebutton">Save</button>
+
+
+
+<!-- default -->
+
+
+
+
+
+
+	<input type="text" id="calendar">
+
+	<script>
+
+function holiLoad(){
+var textar = jQuery('textarea[name="holidays"]');
+var textarVal = textar.val();
+textarVal = JSON.parse(textarVal);
+// console.log(textarVal);
+
+// console.log(textarVal.values[3]);
+
+var limit = textarVal.values.length;
+var calendar = jQuery('.ui-datepicker-calendar');
+var allA = calendar.find('td>a');
+allA.each(function(){
+	var that = jQuery(this);
+	var val = that.text();
+if(val.length<2){
+	val='0'+val;
+}
+	that.attr('data-day', val);
+
+})
+// console.log(limit);
+for (var i = 0; i < limit; i++) {
+	// console.log(textarVal.values[i]);
+var str = textarVal.values[i];
+var year = str.substr(0, 4);
+var month = str.substr(5, 2);
+month = +month;
+
+var firstSymbMonth = str.substr(5, 1);
+
+if (firstSymbMonth=='0') {
+month = str.substr(6, 1);
+}
+month--;
+
+var day = str.substr(8, 2);
+// console.log('day'+day+' month'+month+' year'+year);
+
+var holiTd = calendar.find('td[data-month='+month+'][data-year='+year+']');
+
+// holiTd.find('a').addClass('fiol');
+holiTd.find('a[data-day='+day+']').addClass('fiol');
+
+
+}
+
+
+}
+
+function showLimitDateCal(){
+	var textar = jQuery('textarea[name="holidays"]');
+var textarVal = textar.val();
+textarVal = JSON.parse(textarVal);
+var limit = textarVal.range.length;
+
+
+// min
+var strMin = textarVal.range[0];
+var yearMin = strMin.substr(0, 4);
+var monthMin = strMin.substr(5, 2);
+monthMin = +monthMin;
+monthMin--;
+var firstSymbMonthMin = strMin.substr(5, 1);
+
+if (firstSymbMonthMin=='0') {
+monthMin = strMin.substr(6, 1);
+}
+var dayMin = strMin.substr(8, 2);
+// console.log('RANGE MIN:  day'+dayMin+' month'+monthMin+' year'+yearMin);
+
+// max
+var strMax = textarVal.range[1];
+var yearMax = strMax.substr(0, 4);
+var monthMax = strMax.substr(5, 2);
+monthMax = +monthMax;
+monthMax--;
+var firstSymbMonthMax = strMax.substr(5, 1);
+
+if (firstSymbMonthMax=='0') {
+monthMax = strMax.substr(6, 1);
+}
+var dayMax = strMax.substr(8, 2);
+// console.log('RANGE MAX:  day'+dayMax+' month'+monthMax+' year'+yearMax);
+
+
+    $('#calendar').datepicker({
+      numberOfMonths: 2,
+      dateFormat: 'yy-mm-dd',
+      maxDate: (new Date(yearMax, monthMax, dayMax)),
+      minDate: (new Date(yearMin, monthMin, dayMin))
+   
+   
+    });
+
+}
+
+		  $(function() {
+showLimitDateCal();
+
+
+
+
+    setTimeout(function(){
+$('#calendar').trigger('focus');
+holiLoad();
+    }, 1000)
+
+jQuery('.ui-corner-all').on('click', function(){
+holiLoad();
+});
+
+
+
+  });
+
+		  function add0(el){
+if(el.length<2){
+	el = '0'+el;
+}
+		  }
+
+function clickDate(e){
+	var that = jQuery(e);
+	var cl = that.hasClass('fiol');
+// var valInp = jQuery('#calendar').val();
+var clickDay = that.attr('data-day');
+var clickMonth = that.parent('td').attr('data-month');
+var clickYear = that.parent('td').attr('data-year');
+// month
+	clickMonth = +clickMonth;
+	clickMonth++;
+	if(clickMonth==13){
+		clickMonth='01';
+	}
+clickMonth = String(clickMonth);
+if(clickMonth.length<2){
+	clickMonth = '0'+clickMonth;
+}
+// month
+
+
+// day
+add0(clickDay);
+// day
+// new date
+var messDate = clickYear+'-'+clickMonth+'-'+clickDay;
+// new date
+
+// textarea
+var textar = jQuery('textarea[name="holidays"]');
+var textarVal = textar.val();
+textarVal = JSON.parse(textarVal);
+
+if(cl){
+	that.removeClass('fiol');
+
+    var position = $.inArray(messDate, textarVal.values);
+console.log(position+'POSIIIIIIII');
+if ( ~position ){
+	textarVal.values.splice(position, 1);
+} 
+
+
+}
+else{
+	that.addClass('fiol');
+// add data
+textarVal.values.push(
+   messDate
+);
+console.log(textarVal);
+
+}
+textarVal = JSON.stringify(textarVal);
+
+textar.val(textarVal);
+
+// console.log(messDate);
+
+
+}
+
+	</script>
+
+
+</body>
+</html>

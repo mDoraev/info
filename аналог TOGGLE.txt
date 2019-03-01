@@ -1,0 +1,28 @@
+//аналог тоггле с классами
+
+function openFilter(e){
+//нажатый элемент-кнопка
+  var that = jQuery(e);
+//объект-мишень
+  var p = jQuery('.block-layered-nav--no-filters');
+
+//если у кнопки есть класс
+if(that.hasClass('js-btn-click')){
+//убираем класс
+  that.removeClass('js-btn-click');
+
+// и выполняем действие
+p.removeClass('js-open-mobile-filter');
+}
+else{
+
+//если нет - то добавляем
+  that.addClass('js-btn-click');
+
+//и вып.другое действо
+p.addClass('js-open-mobile-filter');
+
+}
+
+  
+}

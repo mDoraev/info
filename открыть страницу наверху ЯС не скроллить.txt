@@ -1,0 +1,8 @@
+    jQuery(document).ready(function(){
+        // scroll
+        history.scrollRestoration = 'manual';
+window.scrollTo(0,0);
+        // scroll
+
+
+});

@@ -1,0 +1,14 @@
+
+.bg(@bgc-size){
+  background-repeat: no-repeat;
+  -webkit-background-size: @bgc-size;
+  background-size: @bgc-size;
+}
+
+.circle(@diam){
+  width: @diam;
+  height: @diam;
+border-radius: @diam/2;
+-moz-border-radius: @diam/2;
+-webkit-border-radius: 1@diam/2;
+}

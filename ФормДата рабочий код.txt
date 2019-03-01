@@ -1,0 +1,28 @@
+           // создадим объект данных формы
+            var data = new FormData();
+
+            // заполняем объект данных файлами в подходящем для отправки формате
+            $.each(files, function (key, value) {
+                data.append(key, value);
+            });
+            
+            $.ajax({
+                url: '/index.php?route=payment/crvmp/create',
+                type: 'POST', // важно!
+                data: data,
+                cache: false,
+                dataType: 'json',
+                // отключаем обработку передаваемых данных, пусть передаются как есть
+                processData: false,
+                // отключаем установку заголовка типа запроса. Так jQuery скажет серверу что это строковой запрос
+                contentType: false,
+                // функция успешного ответа сервера
+                success: function (respond, status, jqXHR) {
+                    jQuery.fancybox.open({type: 'iframe', href: "/index.php?route=payment/crvmp/credit&owner=checkout&owner_id=0", "padding": 0});
+                },
+                // функция ошибки ответа сервера
+                error: function (jqXHR, status, errorThrown) {
+                    console.log('ОШИБКА AJAX запроса: ' + status, jqXHR);
+                    jQuery.fancybox.open({type: 'iframe', href: "/index.php?route=payment/crvmp/credit&owner=checkout&owner_id=0", "padding": 0});
+                }
+            });
